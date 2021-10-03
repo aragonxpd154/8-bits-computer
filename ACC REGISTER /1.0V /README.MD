@@ -10,7 +10,7 @@ The ACC Register must perform logical functions such as "AND", "OR" or "OR EXCLU
 Electronic Scheme
 -------
 
-![image](https://i.imgur.com/ElBRN8j.png)
+![image](https://raw.githubusercontent.com/aragonxpd154/8-bit-computer/main/ACC%20REGISTER/1.0V/Schematic_ACC%20Register_2021-10-02.png)
 
 
 3D Visualization and Progress
