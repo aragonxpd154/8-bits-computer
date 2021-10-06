@@ -1,4 +1,4 @@
-**ACCUMULATOR AND REGISTER A or ACC Register**
+**Arithmetic Logical Unit (ALU)**
 ===============================
 
 Description 
