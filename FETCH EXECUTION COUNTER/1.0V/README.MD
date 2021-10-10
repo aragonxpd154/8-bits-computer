@@ -1,4 +1,4 @@
-**Control Decoder**
+**Fetch Execution Counter**
 ===============================
 
 Description 
