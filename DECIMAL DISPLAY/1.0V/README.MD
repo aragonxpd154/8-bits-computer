@@ -1,19 +1,19 @@
-**Arithmetic Logical Unit (ALU)**
+**Decimal Display**
 ===============================
 
 Description 
 -------
 
-The Arithmetic Logical Unit (ALU) is a block that performs arithmetic and logical operations. Among the arithmetic operations it performs, it adds, subtracts, divides, and determines whether a number is positive or negative or zero. It can also perform logic functions like "AND", "OR" or "OR EXCLUSIVE". A ULA is a basic building block of a computer's microprocessor or CPU.
+To perform the conversion from decimal to binary, successive division by 2 (base of the binary system) is performed. The result of the conversion will be given by the last quotient (MSB) and the grouping of the division remainders will be the binary number. In test what the Display Decimal , is to receive these high values and decrypt in decimal conversion
 
 
 Electronic Scheme
 -------
 
-![image](https://raw.githubusercontent.com/aragonxpd154/8-bit-computer/main/ARITHMETIC%20LOGIC%20UNIT/1.0V/Schematic_Arithmetic%20Logic%20Unit_2021-10-03.png)
+![image](https://raw.githubusercontent.com/aragonxpd154/8-bit-computer/main/DECIMAL%20DISPLAY/1.0V/Schematic_Decimal%20Display_2021-10-08.png)
 
 
 3D Visualization and Progress
 -------
 
-![image](https://i.imgur.com/JMUdEXB.png)
+![image](https://i.imgur.com/tIhjmyB.png)
