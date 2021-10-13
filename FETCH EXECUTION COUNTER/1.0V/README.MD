@@ -12,7 +12,7 @@ Abstract
 * The processor reviews the program counter to see which command to execute next.
 * The program counter gives an address value in the memory of where the next command is.
 * The processor fetches the command value from the memory location.
-* Once the command has been fetched, it needs to be decoded and executed. For example, this could include taking one value, putting it into the Arithmetic Logic Unit (ALU), then * * taking a different value from a register and adding the two together.
+* Once the command has been fetched, it needs to be decoded and executed. For example, this could include taking one value, putting it into the Arithmetic Logic Unit (ALU), then taking a different value from a register and adding the two together.
 * Once this has been completed, the processor returns to the program counter to find the next command.
 * This cycle is replicated until the program stops.
 * The Execute Cycle is the only step useful to the end user, everything else is required to make the execute cycle happen, as it performs the function of the command.  The ALU is utilised if the command involves arithmetic or logical operations.
