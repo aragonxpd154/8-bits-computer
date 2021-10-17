@@ -18,4 +18,13 @@ Abstract
 * The Execute Cycle is the only step useful to the end user, everything else is required to make the execute cycle happen, as it performs the function of the command.  The ALU is utilised if the command involves arithmetic or logical operations.
 
 
+Electronic Scheme
+-------
 
+![image](https://raw.githubusercontent.com/aragonxpd154/8-bit-computer/main/FETCH%20EXECUTION%20COUNTER/1.0V/Schematic_Fetch%20Execution%20Counter_2021-10-10.png)
+
+
+3D Visualization and Progress
+-------
+
+![image](https://i.imgur.com/RgGtgZl.png)
