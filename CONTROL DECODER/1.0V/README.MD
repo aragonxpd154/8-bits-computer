@@ -38,7 +38,7 @@ Another feature found on the 74 series ICs is the common presence of buffer port
 Depending on the decoder IC and the type of display used, although it may sometimes be necessary to use a transient amplifier to drive each display segment, there are Decoder / Driver ICs available such as the 74LS46, 47, 48 and 49 that have enough current outputs and a choice of output designs such as open collector, internal pullup resistors and high or low active output levels that allow direct connection to LED and filament lamp displays.
 
 
-Prototype working article basis [website (https://www.learnabout-electronics.org/Digital/dig44.php)][website] 
+Prototype working article basis ![website](https://www.learnabout-electronics.org/Digital/dig44.php)]
 
 Electronic Scheme
 -------
