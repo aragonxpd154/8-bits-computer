@@ -43,7 +43,7 @@ Prototype working article basis in [website](https://www.learnabout-electronics.
 Electronic Scheme
 -------
 
-![image](https://www.learnabout-electronics.org/Digital/images/encoder-8-to-3.gif)
+![image](https://raw.githubusercontent.com/aragonxpd154/8-bit-computer/main/CONTROL%20DECODER/1.0V/Schematic_Control%20Decoder_2021-10-07.png)
 
 
 3D Visualization and Progress
