@@ -19,7 +19,7 @@ The circuit can be put into an unstable state via an input signal. The time the 
 Electronic Scheme
 -------
 
-![image](https://github.com/aragonxpd154/8-bit-computer/blob/main/ASTABLE%20AND%20MONOSTABLE%20CLOCK%20CIRCUIT/1.0V/Schematic_Astavel%20and%20Monostable%20Clock%20Circuit_2021-10-04.png?raw=true)
+![image](https://raw.githubusercontent.com/aragonxpd154/8-bit-computer/main/ASTABLE%20AND%20MONOSTABLE%20CLOCK%20CIRCUIT/2.1V/Schematic_Astavel%20and%20Monostable%20Clock%20Circuit%20-%202.0_2021-10-20.png)
 
 
 3D Visualization and Progress
