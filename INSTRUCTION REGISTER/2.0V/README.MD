@@ -9,10 +9,18 @@ A register is a series of physical switches on a microprocessor or circuit board
 Electronic Scheme
 -------
 
-![image](https://raw.githubusercontent.com/aragonxpd154/8-bit-computer/main/FETCH%20EXECUTION%20COUNTER/1.0V/Schematic_Fetch%20Execution%20Counter_2021-10-10.png)
+![image](https://github.com/aragonxpd154/8-bit-computer/blob/main/INSTRUCTION%20REGISTER/2.0V/Schematic_Instruction%20Register_2021-10-21.png?raw=true)
 
 
 3D Visualization and Progress
 -------
 
-![image](https://i.imgur.com/RgGtgZl.png)
+![image](https://i.imgur.com/ORPsYBU.png)
+
+
+UPDATE 2.0V
+-------
+
+2.0.1 - Placing coupling capacitors close to logic gate ICs to avoid parallel noise coming from the clock circuit
+
+2.0.2 - Optimized electronic component locations
