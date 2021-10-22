@@ -12,3 +12,8 @@ No SoC's or microcontrollers, everything will be done like the old days without 
 -------
 
 https://skfb.ly/o7ENM
+
+Annotation
+-------
+
+This version is the final revision of the circuit, there may be differences in the boards in the final prototype development images, don't worry, the update does not differ from the version proposed by the generated file.
