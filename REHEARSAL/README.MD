@@ -10,7 +10,7 @@ In this tab, you will find the tests of each circuit board and its components in
 Test Lists 
 -------
 
-[ASTABLE AND MONSTABLE CLOCK CIRCUIT]
+**ASTABLE AND MONSTABLE CLOCK CIRCUIT**
 
 
 
