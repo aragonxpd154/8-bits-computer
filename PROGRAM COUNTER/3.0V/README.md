@@ -20,3 +20,9 @@ Electronic Scheme
 -------
 
 ![image](https://i.imgur.com/xuMiodl.png)
+
+
+UPDATE 3.0V
+-------
+
+3.0.1 - Placing coupling capacitors close to logic gate ICs to avoid parallel noise coming from the clock circuit
