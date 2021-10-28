@@ -13,10 +13,10 @@ Some engineers refer to a program counter as an instruction address register or 
 Electronic Scheme
 -------
 
-In Progress
+![image](https://raw.githubusercontent.com/aragonxpd154/8-bit-computer/main/PROGRAM%20COUNTER/3.0V/Schematic_Program%20Counter%20-%201.0_2021-10-28.png)
 
 
 3D Visualization and Progress
 -------
 
-In Progress
+![image](https://i.imgur.com/xuMiodl.png)
