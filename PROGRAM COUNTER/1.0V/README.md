@@ -13,7 +13,7 @@ Some engineers refer to a program counter as an instruction address register or 
 Electronic Scheme
 -------
 
-![image](https://raw.githubusercontent.com/aragonxpd154/8-bit-computer/main/RESERT%20CIRCUIT/1.0V/Schematic_Resert%20Circuit%20-%201.0_2021-10-20.png)
+![image](https://raw.githubusercontent.com/aragonxpd154/8-bit-computer/main/PROGRAM%20COUNTER/1.0V/Schematic_Program%20Counter%20-%201.0_2021-10-28.png)
 
 
 3D Visualization and Progress
