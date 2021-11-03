@@ -17,3 +17,9 @@ Annotation
 -------
 
 This version is the final revision of the circuit, there may be differences in the boards in the final prototype development images, don't worry, the update does not differ from the version proposed by the generated file.
+
+
+LAST UPDATES:
+-------
+
+03.11.2021
