@@ -22,4 +22,4 @@ This version is the final revision of the circuit, there may be differences in t
 LAST UPDATES:
 -------
 
-03.11.2021
+06.11.2021
