@@ -8,10 +8,6 @@ No SoC's or microcontrollers, everything will be done like the old days without 
 
 ![image](https://i.imgur.com/ElBRN8j.png)
 
-3D Visualization and Progress
--------
-
-https://skfb.ly/o7ENM
 
 Annotation
 -------
