@@ -14,8 +14,6 @@ This version is the final revision of the circuit, there may be differences in t
 
 ## LAST UPDATES:
 
----
-
 ## REVISION:
 
 Below are some revisions of each latest version of schematics and source code:
