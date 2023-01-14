@@ -22,10 +22,10 @@ No SoC's or microcontrollers, everything will be done like the old days without 
 </p>
 
 <p align="center">
-<a href="#technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#rocket-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a href="#information_source">How To Use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a href="#do-it-yourself">Do It Yourself</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-<a href="#license">License</a>
+<a href="#memo-license">License</a>
 </p>
 
 <p align="center">
@@ -37,14 +37,14 @@ No SoC's or microcontrollers, everything will be done like the old days without 
 This project is still in the development stage and using the following technologies
 
 -  [Hexplorer](https://sourceforge.net/projects/hexplorer/files/)
--  [Visual Studio Core] (https://code.visualstudio.com/)
--  [EasyEDA] (https://easyeda.com/)
--  [LTspice] (https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html)
--  [KiCad] (https://www.kicad.org/)
--  [MultisimLive] (https://www.multisim.com/)
--  [CodeBlocks] (https://www.codeblocks.org/)
+-  [Visual Studio Core](https://code.visualstudio.com/)
+-  [EasyEDA](https://easyeda.com/)
+-  [LTspice](https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html)
+-  [KiCad](https://www.kicad.org/)
+-  [MultisimLive](https://www.multisim.com/)
+-  [CodeBlocks](https://www.codeblocks.org/)
 
-## :license: License
+## :memo: License
 This project is under the GPL v3.0 license. See the [LICENSE](https://github.com/aragonxpd154/8-bits-computer/blob/main/LICENSE) for more information.
 
 ---
