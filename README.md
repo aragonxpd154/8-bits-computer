@@ -74,7 +74,7 @@ $ git clone https://github.com/aragonxpd154/8-bits-computer
 
 As soon as I finish all the branches of this project I will make available a final version of the package with a detailed description for you to be able to assemble your own 8bit computer. Only a pre-release version was available, with the passing of these months I should provide a more complete version.
 
-## 💻 Development Status
+## :status:💻 Development Status
 
 The revision of all the directories of this project has already started, with each commit I will be providing a description of what was changed in each revision. The review process is below:
 
@@ -92,7 +92,7 @@ The revision of all the directories of this project has already started, with ea
 - [ ] Reviewer RAM & MAR
 - [ ] Reviewer RESERT CIRCUIT
 
-Below are the tests of each board (PCB) after production. The review directory is [~REHEARSAL~](https://github.com/aragonxpd154/8-bits-computer/tree/main/~REHEARSAL~)
+Below are the tests of each board (PCB) after production. The review directory is [REHEARSAL](https://github.com/aragonxpd154/8-bits-computer/tree/main/~REHEARSAL~)
 
 - [ ] Reviewer ACC REGISTER 
 - [ ] Reviewer ARITHMETIC LOGIC UNIT
