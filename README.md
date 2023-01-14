@@ -1,4 +1,4 @@
-# **COMPUTER 8 BITS**
+# ** 8 BITS COMPUTER**
 
 ## Description
 
