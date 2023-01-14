@@ -1,5 +1,3 @@
-# ** 8 BITS COMPUTER**
-
 <h1 align="center">
 <img alt="8 Bits Computer" src="https://raw.githubusercontent.com/aragonxpd154/8-bits-computer/main/GITREP/8-BITS-COMPUTER_LOGO.png"/>
 <br>
@@ -24,9 +22,9 @@ No SoC's or microcontrollers, everything will be done like the old days without 
 </p>
 
 <p align="center">
-<a href="#">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-<a href="#">How To Use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-<a href="#">Do It Yourself</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#information_source">How To Use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#do-it-yourself">Do It Yourself</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a href="#license">License</a>
 </p>
 
@@ -34,14 +32,26 @@ No SoC's or microcontrollers, everything will be done like the old days without 
 <img alt="Demo on Photo" src="https://i.imgur.com/ElBRN8j.png">
 </p>
 
-## ANNOTATION
+## :rocket: Technologies
 
-This version is the final revision of the circuit, there may be differences in the boards in the final prototype development images, don't worry, the update does not differ from the version proposed by the generated file.
+This project is still in the development stage and using the following technologies
 
-## LAST UPDATES:
+-  [Hexplorer](https://sourceforge.net/projects/hexplorer/files/)
+-  [Visual Studio Core] (https://code.visualstudio.com/)
+-  [EasyEDA] (https://easyeda.com/)
+-  [LTspice] (https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html)
+-  [KiCad] (https://www.kicad.org/)
+-  [MultisimLive] (https://www.multisim.com/)
+-  [CodeBlocks] (https://www.codeblocks.org/)
+
+## :license: License
+This project is under the GPL v3.0 license. See the [LICENSE](https://github.com/aragonxpd154/8-bits-computer/blob/main/LICENSE) for more information.
 
 ---
 
-## REVISION:
+Made with ♥ by Marcos (Obel) :wave: [Get in touch!](https://www.linkedin.com/in/marcosobel)
 
-Below are some revisions of each latest version of schematics and source code:
+
+
+
+
