@@ -1,7 +1,6 @@
 <h1 align="center">
 <img alt="8 Bits Computer" src="https://raw.githubusercontent.com/aragonxpd154/8-bits-computer/main/GITREP/8-BITS-COMPUTER_LOGO.png"/>
 <br>
-</h1>
 
 <h4 align="center">
 
@@ -38,13 +37,13 @@ No SoC's or microcontrollers, everything will be done like the old days without 
 
 This project is still in the development stage and using the following technologies
 
--  [Hexplorer](https://sourceforge.net/projects/hexplorer/files/)
--  [Visual Studio Code](https://code.visualstudio.com/)
--  [EasyEDA](https://easyeda.com/)
--  [LTspice](https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html)
--  [KiCad](https://www.kicad.org/)
--  [MultisimLive](https://www.multisim.com/)
--  [CodeBlocks](https://www.codeblocks.org/)
+- [Hexplorer](https://sourceforge.net/projects/hexplorer/files/)
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [EasyEDA](https://easyeda.com/)
+- [LTspice](https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html)
+- [KiCad](https://www.kicad.org/)
+- [MultisimLive](https://www.multisim.com/)
+- [CodeBlocks](https://www.codeblocks.org/)
 
 ## :information_source: How To Use
 
@@ -52,23 +51,26 @@ This project directory contains a folder with its respective version (in a subfo
 
 Always check and/or use the highest numbered version or most recent modification described in the commit for example:
 
-Old version: 
+Old version:
+
 ```bash
 ...directory...\1.0V
-````
+```
 
-latest version: 
+latest version:
+
 ```bash
-...directory...\2.1V 
-````
+...directory...\2.1V
+```
 
 To clone and download all project directories you can use [Git](https://git-scm.com), or any other specific program.
 
 To clone the current directory use the command:
+
 ```bash
 # Clone this repository
 $ git clone https://github.com/aragonxpd154/8-bits-computer
-````
+```
 
 ## ☕ Do It Yourself
 
@@ -78,7 +80,7 @@ As soon as I finish all the branches of this project I will make available a fin
 
 The revision of all the directories of this project has already started, with each commit I will be providing a description of what was changed in each revision. The review process is below:
 
-- [ ] Reviewer ACC REGISTER 
+- [ ] Reviewer ACC REGISTER
 - [ ] Reviewer ARITHMETIC LOGIC UNIT
 - [ ] Reviewer ASSEMBLY LAYOUT
 - [ ] Reviewer ASTABLE AND MONOSTABLE CLOCK CIRCUIT
@@ -94,7 +96,7 @@ The revision of all the directories of this project has already started, with ea
 
 Below are the tests of each board (PCB) after production. The review directory is [REHEARSAL](https://github.com/aragonxpd154/8-bits-computer/tree/main/~REHEARSAL~)
 
-- [ ] Reviewer ACC REGISTER 
+- [ ] Reviewer ACC REGISTER
 - [ ] Reviewer ARITHMETIC LOGIC UNIT
 - [ ] Reviewer ASSEMBLY LAYOUT
 - [x] Reviewer ASTABLE AND MONOSTABLE CLOCK CIRCUIT
@@ -109,13 +111,9 @@ Below are the tests of each board (PCB) after production. The review directory i
 - [ ] Reviewer RESERT CIRCUIT
 
 ## :memo: License
+
 This project is under the GPL v3.0 license. See the [LICENSE](https://github.com/aragonxpd154/8-bits-computer/blob/main/LICENSE) for more information.
 
 ---
 
 Made with ♥ by Marcos (Obel) :wave: [Get in touch!](https://www.linkedin.com/in/marcosobel)
-
-
-
-
-
