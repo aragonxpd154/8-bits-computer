@@ -1,17 +1,21 @@
-# Pacote parcial — Computador 8 Bits v3.0 (01/11/2026)
+# Pacote PARCIAL — Computador 8 Bits v3.0
 
-Autor: Marcos Silva dos Santos (MarcosObel)
+Autor: Marcos Silva dos Santos (MarcosObel). Apague este arquivo quando chegar o pacote final.
 
-## Pronto neste pacote
-- Firmware completo: `firmware/` (microcódigo EEPROM0/1/2.bin, DISPLAY.bin, gerador em Python e em C, montador, emulador, 6 programas de exemplo testados)
-- Documentação completa em `docs/` (8 capítulos), lista de materiais, diagrama de blocos, README novo
-- Biblioteca de símbolos KiCad: `hardware/kicad/bibliotecas/`
-- Placas prontas para a fábrica (DRC sem erros): **Reset** e **Contador de Programa (PC)**
-- Gerador de todo o hardware: `tools/gerador-kicad/`
+| Placa | Situação |
+|---|---|
+| Clock Astavel / Monoestavel | ✅ pronta para fabricar |
+| Circuito de Reset | ✅ pronta para fabricar |
+| Contador de Programa (PC) | ✅ pronta para fabricar |
+| Memoria RAM e MAR | ✅ pronta para fabricar |
+| Registrador de Instrucao (IR) | ✅ pronta para fabricar |
+| Decodificador de Controle (microcodigo) | ✅ pronta para fabricar |
+| Contador de Passos (Fetch/Execute) | ✅ pronta para fabricar |
+| Registrador A (Acumulador) | ✅ pronta para fabricar |
+| Registrador B | ✅ pronta para fabricar |
+| Unidade Logica e Aritmetica (ULA) | ⏳ sem PCB roteada — Gerber retirado, NÃO fabricar ainda |
+| Registrador de Saida (OUT) | ✅ pronta para fabricar |
+| Display Decimal | ⏳ 1 erro(s)/ligacao(oes) pendente(s) — Gerber retirado, NÃO fabricar ainda |
+| Backplane / Barramento (Assembly Layout) | ✅ pronta para fabricar |
 
-## Ainda em geração (vêm no pacote final)
-- **Clock**: esquemático pronto; PCB com 1 ligação faltando — **não mande fabricar esta versão** (o Gerber foi retirado deste pacote de propósito)
-- RAM/MAR, IR, Controle, Passos, Registrador A, Registrador B, ULA, Saída, Display e Backplane
-- `hardware/esquema-eletrico-completo.pdf` (PDF único com todos os esquemáticos)
-
-Este arquivo pode ser apagado quando o pacote final chegar.
+Firmware, documentação e ferramentas: completos.

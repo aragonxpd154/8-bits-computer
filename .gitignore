@@ -1,0 +1,16 @@
+# KiCad
+*.kicad_prl
+*-backups/
+fp-info-cache
+_autosave-*
+*.lck
+*.dsn
+*.ses
+# Python / C
+__pycache__/
+*.pyc
+firmware/microcodigo/c/microcodigo
+*.o
+# sistema
+.DS_Store
+Thumbs.db

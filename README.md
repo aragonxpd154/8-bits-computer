@@ -1,5 +1,5 @@
 <h1 align="center">
-<img alt="8 Bits Computer" src="https://raw.githubusercontent.com/aragonxpd154/8-bits-computer/main/GITREP/8-BITS-COMPUTER_LOGO.png"/>
+<img alt="8 Bits Computer" src="docs/imagens/logo.png"/>
 <br>
 </h1>
 
@@ -23,7 +23,7 @@ com esquemas, placas (PCB) e manual para fabricar e montar tudo em casa.
 <a href="#-o-que-é">O que é</a> ·
 <a href="#-status">Status</a> ·
 <a href="#-faça-você-mesmo">Faça você mesmo</a> ·
-<a href="#-estrutura-do-repositório">Estrutura</a> ·
+<a href="#-conteúdo-do-repositório">Conteúdo</a> ·
 <a href="#-ferramentas">Ferramentas</a> ·
 <a href="#-licença">Licença</a>
 </p>
@@ -65,10 +65,10 @@ Detalhes em [docs/01-arquitetura.md](docs/01-arquitetura.md).
 - [x] Microcódigo completo (Python e C), EEPROM do display, montador e emulador
 - [x] Revisão de todos os circuitos — 9 erros corrigidos (veja [docs/02-revisao-e-correcoes.md](docs/02-revisao-e-correcoes.md))
 - [x] Manual completo de fabricação, montagem, gravação e uso
-- [ ] Testes em bancada de cada placa produzida (registrar em `~REHEARSAL~`) — Clock já testado
+- [ ] Testes em bancada de cada placa produzida (o Clock da versão 2.1 já foi testado)
 - [ ] Placa de flags (carry/zero) para `JC`/`JZ`
 
-## ☕ Faça você mesmo
+## ☕ Passo a passo (faça você mesmo)
 
 Siga a documentação em ordem — tudo em português:
 
@@ -85,27 +85,59 @@ Siga a documentação em ordem — tudo em português:
 🧾 **Lista de materiais:** [docs/lista-de-materiais-completa.md](docs/lista-de-materiais-completa.md)
 🛠️ **Placas (imagens, tamanhos, arquivos):** [hardware/README.md](hardware/README.md)
 
-## 📁 Estrutura do repositório
+## 📁 Conteúdo do repositório
 
 ```
 8-bits-computer/
+├── README.md                     este arquivo (visão geral, passo a passo, conteúdo)
+├── CHANGELOG.md                  histórico de versões
+├── LICENSE                       GPL-3.0
+├── docs/                         MANUAL COMPLETO (pt-BR)
+│   ├── 01-arquitetura.md             blocos, instruções, tabela de todos os sinais
+│   ├── 02-revisao-e-correcoes.md     erros corrigidos em relação à versão EasyEDA
+│   ├── 03-fabricacao-das-placas.md   como pedir as PCBs no JLCPCB/PCBWay
+│   ├── 04-montagem-das-placas.md     soldagem e teste de cada placa
+│   ├── 05-interligacao-e-backplane.md os 52 cabos e o arranjo na base
+│   ├── 06-gravacao-das-eeproms.md    gravação com minipro (Zorin/Ubuntu)
+│   ├── 07-programacao-e-uso.md       painel, montador, emulador, exemplos
+│   ├── 08-testes-e-diagnostico.md    subida do sistema e problemas comuns
+│   ├── lista-de-materiais-completa.md
+│   └── imagens/                      diagrama de blocos e imagem de cada placa
 ├── hardware/
-│   ├── kicad/<placa>/            projetos KiCad (.kicad_pro, .kicad_sch, .kicad_pcb) — v3.0
-│   ├── kicad/bibliotecas/        símbolos e footprints próprios do projeto
-│   ├── fabricacao/<placa>/       PDFs de impressão 1:1, Gerber, furação, BOM, DRC
-│   └── esquema-eletrico-completo.pdf
+│   ├── README.md                     tabela das 13 placas (tamanho, imagens, links)
+│   ├── esquema-eletrico-completo.pdf capa + diagrama + interligação + 13 esquemáticos
+│   ├── kicad/<placa>/                projeto KiCad (.kicad_pro / .kicad_sch / .kicad_pcb)
+│   ├── kicad/bibliotecas/            símbolos e footprints do projeto
+│   └── fabricacao/<placa>/           <placa>-gerber.zip (vai para a fábrica), esquemático PDF,
+│                                     guia de montagem 1:1, mapa de furação, BOM, relatório DRC
 ├── firmware/
-│   ├── microcodigo/              EEPROM0/1/2.bin (+ gerador Python e C)
-│   ├── display/                  DISPLAY.bin (+ gerador)
-│   ├── programas/                programas de exemplo (.asm)
-│   └── ferramentas/              montador.py e emulador.py
-├── docs/                         manual completo (pt-BR)
-├── tools/                        geradores (KiCad design-as-code, diagramas, tabelas)
-├── ACC REGISTER/ … RESERT CIRCUIT/   versões anteriores em EasyEDA (1.0V–3.0V), mantidas como histórico
-└── ~REHEARSAL~/                  registros de testes em bancada
+│   ├── microcodigo/                  EEPROM0/1/2.bin + gerador (Python e C)
+│   ├── display/                      DISPLAY.bin + gerador
+│   ├── programas/                    6 programas de exemplo (.asm)
+│   └── ferramentas/                  montador.py e emulador.py
+└── tools/                            geradores: hardware (KiCad), documentação, diagramas, PDF completo
 ```
 
-> As pastas originais (EasyEDA) continuam aqui como histórico. **A versão a fabricar é a de `hardware/`.**
+### As 13 placas
+
+| # | Placa | Pasta |
+|---|---|---|
+| 1 | Backplane / Barramento | `backplane-barramento` |
+| 2 | Clock | `clock-astavel-monoestavel` |
+| 3 | Reset | `reset-circuito` |
+| 4 | Contador de Programa | `pc-contador-programa` |
+| 5 | RAM e MAR | `ram-mar-memoria` |
+| 6 | Registrador de Instrução | `ir-registrador-instrucao` |
+| 7 | Decodificador de Controle | `cd-decodificador-controle` |
+| 8 | Contador de Passos | `fetch-contador-passos` |
+| 9 | Registrador A | `acc-registrador-a` |
+| 10 | Registrador B | `b-registrador-b` |
+| 11 | ULA | `alu-unidade-logica-aritmetica` |
+| 12 | Registrador de Saída | `out-registrador-saida` |
+| 13 | Display Decimal | `display-decimal` |
+
+> As versões antigas em EasyEDA (1.0V–3.0V, 2021) ficam preservadas no histórico do Git, na tag
+> [`v2-easyeda`](https://github.com/aragonxpd154/8-bits-computer/tree/v2-easyeda).
 
 ## 🚀 Ferramentas
 

@@ -599,8 +599,8 @@ class PCBBuilder:
             if os.path.exists(ses) and os.path.getsize(ses) > 100:
                 break
         if not os.path.exists(ses) or os.path.getsize(ses) < 100:
-            print(r.stdout[-3000:], r.stderr[-3000:])
-            raise RuntimeError('freerouting falhou')
+            print('freerouting sem resultado (tempo esgotado?)', file=sys.stderr)
+            return board, 0
         n = self.import_ses(board, ses)
         pcbnew.SaveBoard(pcb_path, board)
         patch_pro(base + '.kicad_pro')

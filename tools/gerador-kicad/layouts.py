@@ -39,6 +39,7 @@ NOTAS = {
 
 # espacamentos especiais (mm) para placas densas
 PARAMS = {
-    'ALU': {'gap_row': 9.0, 'ic_gap': 5.0},
+    'ALU': {'gap_row': 13.0, 'ic_gap': 7.0},
     'RAM': {'gap_row': 8.0, 'ic_gap': 5.0},
+    'DISPLAY': {'gap_row': 9.0, 'ic_gap': 7.0},
 }

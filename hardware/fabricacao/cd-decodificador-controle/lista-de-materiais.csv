@@ -1,0 +1,15 @@
+Quantidade,Valor,Referencias,Footprint
+3,100nF,C1 C2 C3,C_Disc_D5.0mm_W2.5mm_P5.00mm
+1,ALIMENTACAO,J1,PinHeader_1x04_P2.54mm_Vertical
+1,PASSO,J2,PinHeader_1x04_P2.54mm_Vertical
+1,OPCODE,J3,PinHeader_1x04_P2.54mm_Vertical
+1,FLAGS,J4,PinHeader_1x04_P2.54mm_Vertical
+1,CTRL_A,J5,PinHeader_1x04_P2.54mm_Vertical
+1,CTRL_B,J6,PinHeader_1x04_P2.54mm_Vertical
+1,CTRL_C,J7,PinHeader_1x04_P2.54mm_Vertical
+1,CTRL_D,J8,PinHeader_1x04_P2.54mm_Vertical
+1,CTRL_E,J9,PinHeader_1x04_P2.54mm_Vertical
+2,10k,R1 R2,R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal
+1,AT28C16 (EEPROM2),U1,DIP-24_W15.24mm_LongPads
+1,AT28C16 (EEPROM1),U2,DIP-24_W15.24mm_LongPads
+1,AT28C16 (EEPROM0),U3,DIP-24_W15.24mm_LongPads

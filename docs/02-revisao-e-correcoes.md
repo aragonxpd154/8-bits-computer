@@ -3,7 +3,7 @@
 > Projeto de **Marcos Silva dos Santos** (MarcosObel) — GPL-3.0.
 
 A versão 3.0 partiu das últimas versões em EasyEDA de cada módulo (pastas originais `1.0V`, `2.0V`,
-`2.1V`, `3.0V`, mantidas no repositório como histórico). Todas as netlists originais foram lidas e
+`2.1V`, `3.0V`, preservadas no Git na tag `v2-easyeda`). Todas as netlists originais foram lidas e
 comparadas automaticamente, pino a pino, com a nova descrição em KiCad. As placas **A, B, IR, OUT,
 Contador de Passos e Clock** ficaram eletricamente idênticas às originais; nas demais, as únicas
 diferenças são exatamente as correções abaixo.
@@ -62,7 +62,7 @@ diferenças são exatamente as correções abaixo.
 - [x] Reviewer RAM & MAR
 - [x] Reviewer RESERT CIRCUIT
 
-Os testes **em bancada** de cada placa produzida continuam a ser registrados em `~REHEARSAL~`.
+Os testes **em bancada** de cada placa produzida ainda serão registrados (o Clock 2.1V já foi testado).
 
 ---
 Anterior: [1. Arquitetura](01-arquitetura.md) · Próximo: [3. Fabricação das placas](03-fabricacao-das-placas.md)

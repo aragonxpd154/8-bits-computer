@@ -1,0 +1,11 @@
+Quantidade,Valor,Referencias,Footprint
+3,100nF,C1 C2 C3,C_Disc_D5.0mm_W2.5mm_P5.00mm
+1,ALIMENTACAO,J1,PinHeader_1x04_P2.54mm_Vertical
+1,CONTROLE,J2,PinHeader_1x04_P2.54mm_Vertical
+1,BUS_L,J3,PinHeader_1x04_P2.54mm_Vertical
+1,BUS_H,J4,PinHeader_1x04_P2.54mm_Vertical
+1,OPCODE,J5,PinHeader_1x04_P2.54mm_Vertical
+8,LED verde 3mm,LED1 LED2 LED3 LED4 LED5 LED6 LED7 LED8,LED_D3.0mm
+8,470,R1 R2 R3 R4 R5 R6 R7 R8,R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal
+2,74LS173,U1 U2,DIP-16_W7.62mm_LongPads
+1,74LS245,U3,DIP-20_W7.62mm_LongPads
