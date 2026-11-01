@@ -1,0 +1,10 @@
+Quantidade,Valor,Referencias,Footprint
+1,10uF,C1,CP_Radial_D5.0mm_P2.00mm
+1,100nF,C2,C_Disc_D5.0mm_W2.5mm_P5.00mm
+1,ALIMENTACAO,J1,PinHeader_1x04_P2.54mm_Vertical
+1,RESET,J2,PinHeader_1x04_P2.54mm_Vertical
+1,LED vermelho 3mm,LED1,LED_D3.0mm
+2,10k,R1 R2,R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal
+1,1k,R3,R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal
+1,RESET,SW1,SW_PUSH_6mm
+1,74LS132 (ou 74LS00),U1,DIP-14_W7.62mm_LongPads

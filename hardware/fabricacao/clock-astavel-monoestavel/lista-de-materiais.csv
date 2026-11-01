@@ -1,0 +1,19 @@
+Quantidade,Valor,Referencias,Footprint
+1,10uF tantalo,C1,CP_Radial_Tantal_D4.5mm_P2.50mm
+2,10nF,C2 C3,C_Disc_D5.0mm_W2.5mm_P5.00mm
+1,330nF,C4,C_Disc_D5.0mm_W2.5mm_P5.00mm
+3,100nF,C5 C6 C7,C_Disc_D5.0mm_W2.5mm_P5.00mm
+1,ALIMENTACAO,J1,PinHeader_1x04_P2.54mm_Vertical
+1,CLOCK,J2,PinHeader_1x04_P2.54mm_Vertical
+1,LED azul 3mm,LED1,LED_D3.0mm
+1,1k,R1,R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal
+1,10,R2,R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal
+1,10k,R4,R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal
+1,330k,R5,R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal
+1,470,R6,R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal
+1,100k lin,RV1,Potentiometer_Alps_RK09K_Single_Vertical
+1,PASSO,SW1,SW_PUSH_6mm
+1,AUTO/MANUAL,SW2,SW_Slide-03_Wuerth-WS-SLTV_10x2.5x6.4_P2.54mm
+1,NE556,U1,DIP-14_W7.62mm_LongPads
+1,74LS00,U2,DIP-14_W7.62mm_LongPads
+1,74LS04,U3,DIP-14_W7.62mm_LongPads
