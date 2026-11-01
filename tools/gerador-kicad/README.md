@@ -32,6 +32,9 @@ export FREEROUTING_JAR=~/Downloads/freerouting-2.0.1.jar
 /usr/bin/python3 gerar_tudo.py --sem-rotear    # só esquemático + posicionamento
 python3 ../gerar_docs.py                       # tabelas da documentação
 python3 ../diagramas.py                        # diagrama de blocos
+python3 ../diagramas_guia.py                   # diagramas do guia visual
+python3 ../montar_pdf_completo.py              # PDF do esquema elétrico completo
+python3 ../gerar_pdfs.py                       # PDFs do guia visual e do manual (pandoc + playwright)
 ```
 
 Chaves das placas: `CLOCK RESET PC RAM IR CD FETCH ACC B ALU OUT DISPLAY BACKPLANE`.

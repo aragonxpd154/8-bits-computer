@@ -1,0 +1,20 @@
+Quantidade,Valor,Referencias,Footprint
+18,100nF,C1 C2 C3 C4 C5 C6 C7 C8 C9 C10 C11 C12 C13 C14 C15 C16 C17 C18,C_Disc_D5.0mm_W2.5mm_P5.00mm
+1,ALIMENTACAO,J1,PinHeader_1x04_P2.54mm_Vertical
+1,BUS_L,J2,PinHeader_1x04_P2.54mm_Vertical
+1,BUS_H,J3,PinHeader_1x04_P2.54mm_Vertical
+1,ACC_L,J4,PinHeader_1x04_P2.54mm_Vertical
+1,ACC_H,J5,PinHeader_1x04_P2.54mm_Vertical
+1,B_L,J6,PinHeader_1x04_P2.54mm_Vertical
+1,B_H,J7,PinHeader_1x04_P2.54mm_Vertical
+1,CTRL1,J8,PinHeader_1x04_P2.54mm_Vertical
+1,CTRL2,J9,PinHeader_1x04_P2.54mm_Vertical
+8,LED verde 3mm,LED1 LED2 LED3 LED4 LED5 LED6 LED7 LED8,LED_D3.0mm
+8,470,R1 R2 R3 R4 R5 R6 R7 R8,R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal
+2,74LS283,U1 U2,DIP-16_W7.62mm_LongPads
+4,74LS86,U3 U4 U10 U12,DIP-14_W7.62mm_LongPads
+2,74LS08,U5 U6,DIP-14_W7.62mm_LongPads
+4,74LS32,U7 U8 U9 U11,DIP-14_W7.62mm_LongPads
+4,74LS153,U13 U14 U15 U16,DIP-16_W7.62mm_LongPads
+1,74LS245,U17,DIP-20_W7.62mm_LongPads
+1,74LS04,U18,DIP-14_W7.62mm_LongPads

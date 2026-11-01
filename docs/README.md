@@ -2,6 +2,10 @@
 
 > Projeto, esquemas, placas e documentação de **Marcos Silva dos Santos** (MarcosObel) — GPL-3.0.
 
+🖼️ **[Guia visual passo a passo](GUIA-VISUAL-PASSO-A-PASSO.md)** — o caminho completo em diagramas.
+PDFs: [guia visual](pdf/guia-visual-passo-a-passo.pdf) · [manual completo](pdf/manual-completo.pdf) ·
+[esquema elétrico completo](../hardware/esquema-eletrico-completo.pdf)
+
 | # | Documento | Conteúdo |
 |---|---|---|
 | 1 | [Arquitetura](01-arquitetura.md) | diagrama de blocos, módulos, ciclo de instrução, conjunto de instruções, tabela completa de sinais |

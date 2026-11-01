@@ -1,0 +1,691 @@
+** Drc report for /home/claude/repo/hardware/kicad/alu-unidade-logica-aritmetica/alu-unidade-logica-aritmetica.kicad_pcb **
+** Created on 2026-11-01 13:23:52 **
+
+** Found 206 DRC violations **
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(182.7450 mm, 59.9650 mm): Reference 'U5'
+    @(182.1450 mm, 57.3300 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(182.7450 mm, 59.9650 mm): Reference 'U5'
+    @(183.2750 mm, 59.9500 mm): Reference 'C6'
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(150.5950 mm, 59.9650 mm): Reference 'U1'
+    @(151.1250 mm, 59.9500 mm): Reference 'C5'
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(150.5950 mm, 59.9650 mm): Reference 'U1'
+    @(149.9950 mm, 57.3300 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(88.7950 mm, 59.9650 mm): Reference 'U2'
+    @(88.1950 mm, 57.3300 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(88.7950 mm, 59.9650 mm): Reference 'U2'
+    @(89.3250 mm, 59.9500 mm): Reference 'C3'
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(120.9450 mm, 59.9650 mm): Reference 'U3'
+    @(121.4750 mm, 59.9500 mm): Reference 'C4'
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(120.3450 mm, 57.3300 mm): Line on F.Silkscreen
+    @(120.9450 mm, 59.9650 mm): Reference 'U3'
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(135.7700 mm, 83.5650 mm): Reference 'U11'
+    @(136.3000 mm, 83.5500 mm): Reference 'C11'
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(136.7700 mm, 84.5650 mm): Line on F.Silkscreen
+    @(136.3000 mm, 83.5500 mm): Reference 'C11'
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(136.7700 mm, 83.5650 mm): Arc on F.Silkscreen
+    @(136.3000 mm, 83.5500 mm): Reference 'C11'
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(149.8250 mm, 107.1500 mm): Reference 'C17'
+    @(149.2950 mm, 107.1650 mm): Reference 'U16'
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(118.1450 mm, 108.1650 mm): Line on F.Silkscreen
+    @(117.6750 mm, 107.1500 mm): Reference 'C16'
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(118.1450 mm, 104.9150 mm): Line on F.Silkscreen
+    @(117.6750 mm, 107.1500 mm): Reference 'C16'
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(118.1450 mm, 107.1650 mm): Arc on F.Silkscreen
+    @(117.6750 mm, 107.1500 mm): Reference 'C16'
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(149.8250 mm, 107.1500 mm): Reference 'C17'
+    @(150.2950 mm, 107.1650 mm): Arc on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(149.8250 mm, 107.1500 mm): Reference 'C17'
+    @(150.2950 mm, 108.1650 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(149.2950 mm, 107.1650 mm): Reference 'U16'
+    @(148.6950 mm, 104.5300 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(149.8250 mm, 107.1500 mm): Reference 'C17'
+    @(150.2950 mm, 104.9150 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(181.9750 mm, 107.1500 mm): Reference 'C18'
+    @(182.4450 mm, 108.1650 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(181.9750 mm, 107.1500 mm): Reference 'C18'
+    @(182.4450 mm, 107.1650 mm): Arc on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(181.9750 mm, 107.1500 mm): Reference 'C18'
+    @(181.4450 mm, 107.1650 mm): Reference 'U17'
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(181.9750 mm, 107.1500 mm): Reference 'C18'
+    @(182.4450 mm, 104.9150 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(181.4450 mm, 107.1650 mm): Reference 'U17'
+    @(180.8450 mm, 104.5300 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(135.7700 mm, 83.5650 mm): Reference 'U11'
+    @(135.1700 mm, 80.9300 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(136.7700 mm, 81.3150 mm): Line on F.Silkscreen
+    @(136.3000 mm, 83.5500 mm): Reference 'C11'
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(59.1450 mm, 59.9650 mm): Reference 'U4'
+    @(58.5450 mm, 57.3300 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(59.1450 mm, 59.9650 mm): Reference 'U4'
+    @(59.6750 mm, 59.9500 mm): Reference 'C2'
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(46.8200 mm, 83.5650 mm): Reference 'U7'
+    @(46.2200 mm, 80.9300 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(46.8200 mm, 83.5650 mm): Reference 'U7'
+    @(47.3500 mm, 83.5500 mm): Reference 'C8'
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(30.0250 mm, 59.9500 mm): Reference 'C1'
+    @(29.4950 mm, 59.9650 mm): Reference 'U18'
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(29.4950 mm, 59.9650 mm): Reference 'U18'
+    @(28.8950 mm, 57.3300 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(196.0700 mm, 84.5650 mm): Line on F.Silkscreen
+    @(195.6000 mm, 83.5500 mm): Reference 'C13'
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(196.0700 mm, 81.3150 mm): Line on F.Silkscreen
+    @(195.6000 mm, 83.5500 mm): Reference 'C13'
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(196.0700 mm, 83.5650 mm): Arc on F.Silkscreen
+    @(195.6000 mm, 83.5500 mm): Reference 'C13'
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(195.0700 mm, 83.5650 mm): Reference 'U12'
+    @(195.6000 mm, 83.5500 mm): Reference 'C13'
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(195.0700 mm, 83.5650 mm): Reference 'U12'
+    @(194.4700 mm, 80.9300 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(212.3950 mm, 59.9650 mm): Reference 'U6'
+    @(211.7950 mm, 57.3300 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(212.3950 mm, 59.9650 mm): Reference 'U6'
+    @(212.9250 mm, 59.9500 mm): Reference 'C7'
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(165.9500 mm, 83.5500 mm): Reference 'C12'
+    @(166.4200 mm, 84.5650 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(165.9500 mm, 83.5500 mm): Reference 'C12'
+    @(166.4200 mm, 83.5650 mm): Arc on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(165.9500 mm, 83.5500 mm): Reference 'C12'
+    @(165.4200 mm, 83.5650 mm): Reference 'U10'
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(165.9500 mm, 83.5500 mm): Reference 'C12'
+    @(166.4200 mm, 81.3150 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(165.4200 mm, 83.5650 mm): Reference 'U10'
+    @(164.8200 mm, 80.9300 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(53.3750 mm, 107.1500 mm): Reference 'C14'
+    @(52.8450 mm, 107.1650 mm): Reference 'U13'
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(53.3750 mm, 107.1500 mm): Reference 'C14'
+    @(53.8450 mm, 104.9150 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(53.3750 mm, 107.1500 mm): Reference 'C14'
+    @(53.8450 mm, 108.1650 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(53.3750 mm, 107.1500 mm): Reference 'C14'
+    @(53.8450 mm, 107.1650 mm): Arc on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(84.9950 mm, 107.1650 mm): Reference 'U14'
+    @(85.5250 mm, 107.1500 mm): Reference 'C15'
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(84.9950 mm, 107.1650 mm): Reference 'U14'
+    @(84.3950 mm, 104.5300 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(85.5250 mm, 107.1500 mm): Reference 'C15'
+    @(85.9950 mm, 108.1650 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(85.5250 mm, 107.1500 mm): Reference 'C15'
+    @(85.9950 mm, 107.1650 mm): Arc on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(85.9950 mm, 104.9150 mm): Line on F.Silkscreen
+    @(85.5250 mm, 107.1500 mm): Reference 'C15'
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(117.6750 mm, 107.1500 mm): Reference 'C16'
+    @(117.1450 mm, 107.1650 mm): Reference 'U15'
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(116.5450 mm, 104.5300 mm): Line on F.Silkscreen
+    @(117.1450 mm, 107.1650 mm): Reference 'U15'
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(52.2450 mm, 104.5300 mm): Line on F.Silkscreen
+    @(52.8450 mm, 107.1650 mm): Reference 'U13'
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(106.1200 mm, 83.5650 mm): Reference 'U9'
+    @(106.6500 mm, 83.5500 mm): Reference 'C10'
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(106.6500 mm, 83.5500 mm): Reference 'C10'
+    @(107.1200 mm, 81.3150 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(106.6500 mm, 83.5500 mm): Reference 'C10'
+    @(107.1200 mm, 83.5650 mm): Arc on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(107.1200 mm, 84.5650 mm): Line on F.Silkscreen
+    @(106.6500 mm, 83.5500 mm): Reference 'C10'
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(106.1200 mm, 83.5650 mm): Reference 'U9'
+    @(105.5200 mm, 80.9300 mm): Line on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(77.0000 mm, 83.5500 mm): Reference 'C9'
+    @(76.4700 mm, 83.5650 mm): Reference 'U8'
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; Severity: warning
+    @(75.8700 mm, 80.9300 mm): Line on F.Silkscreen
+    @(76.4700 mm, 83.5650 mm): Reference 'U8'
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(109.2500 mm, 133.6150 mm): Line on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(109.2500 mm, 141.6950 mm): Line on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(131.1500 mm, 133.6150 mm): Line on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(131.1500 mm, 141.6950 mm): Line on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(101.9500 mm, 133.6150 mm): Line on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(101.9500 mm, 141.6950 mm): Line on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(123.8500 mm, 133.6150 mm): Line on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(123.8500 mm, 141.6950 mm): Line on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(116.5500 mm, 133.6150 mm): Line on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(116.5500 mm, 141.6950 mm): Line on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(138.4500 mm, 133.6150 mm): Line on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(138.4500 mm, 141.6950 mm): Line on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(145.7500 mm, 133.6150 mm): Line on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(145.7500 mm, 141.6950 mm): Line on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(153.0500 mm, 133.6150 mm): Line on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; Severity: warning
+    @(153.0500 mm, 141.6950 mm): Line on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(149.8450 mm, 39.9700 mm): PCB Text 'NC' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(63.5950 mm, 39.9700 mm): PCB Text 'A3' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(98.0950 mm, 39.9700 mm): PCB Text 'B3' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(58.5150 mm, 39.9700 mm): PCB Text 'A1' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(147.3050 mm, 39.9700 mm): PCB Text 'NC' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(142.2250 mm, 40.3300 mm): PCB Text 'NOT' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(184.3450 mm, 39.9700 mm): PCB Text 'D3' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(115.3450 mm, 39.9700 mm): PCB Text 'B7' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(107.7250 mm, 39.9700 mm): PCB Text 'B4' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(124.9750 mm, 41.0500 mm): PCB Text '/ALUO' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(179.2650 mm, 39.9700 mm): PCB Text 'D1' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(61.0550 mm, 39.9700 mm): PCB Text 'A2' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(159.4750 mm, 40.3300 mm): PCB Text '+5V' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(193.9750 mm, 39.9700 mm): PCB Text 'D4' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(181.8050 mm, 39.9700 mm): PCB Text 'D2' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(201.5950 mm, 39.9700 mm): PCB Text 'D7' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(112.8050 mm, 39.9700 mm): PCB Text 'B6' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(73.2250 mm, 39.9700 mm): PCB Text 'A4' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(110.2650 mm, 39.9700 mm): PCB Text 'B5' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(199.0550 mm, 39.9700 mm): PCB Text 'D6' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(176.7250 mm, 39.9700 mm): PCB Text 'D0' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(162.0150 mm, 40.3300 mm): PCB Text '+5V' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(144.7650 mm, 41.0500 mm): PCB Text 'CARRY' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(78.3050 mm, 39.9700 mm): PCB Text 'A6' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(93.0150 mm, 39.9700 mm): PCB Text 'B1' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(167.0950 mm, 40.3300 mm): PCB Text 'GND' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(130.0550 mm, 40.3300 mm): PCB Text 'AL0' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(80.8450 mm, 39.9700 mm): PCB Text 'A7' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(90.4750 mm, 39.9700 mm): PCB Text 'B0' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(164.5550 mm, 40.3300 mm): PCB Text 'GND' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(132.5950 mm, 40.3300 mm): PCB Text 'AL1' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(75.7650 mm, 39.9700 mm): PCB Text 'A5' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(127.5150 mm, 40.3300 mm): PCB Text 'SUB' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(196.5150 mm, 39.9700 mm): PCB Text 'D5' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(95.5550 mm, 39.9700 mm): PCB Text 'B2' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(55.9750 mm, 39.9700 mm): PCB Text 'A0' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(48.3750 mm, 107.1500 mm): Value '100nF' of C14
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(144.8250 mm, 107.1500 mm): Value '100nF' of C17
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(176.9750 mm, 107.1500 mm): Value '100nF' of C18
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(106.8800 mm, 137.6550 mm): Value '470' of R2
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(128.7800 mm, 137.6550 mm): Value '470' of R5
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(116.4750 mm, 59.9500 mm): Value '100nF' of C4
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(25.0250 mm, 59.9500 mm): Value '100nF' of C1
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(72.0000 mm, 83.5500 mm): Value '100nF' of C9
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(112.6750 mm, 107.1500 mm): Value '100nF' of C16
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(99.5800 mm, 137.6550 mm): Value '470' of R1
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(160.9500 mm, 83.5500 mm): Value '100nF' of C12
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(190.6000 mm, 83.5500 mm): Value '100nF' of C13
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(178.2750 mm, 59.9500 mm): Value '100nF' of C6
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(121.4800 mm, 137.6550 mm): Value '470' of R4
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(101.6500 mm, 83.5500 mm): Value '100nF' of C10
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(207.9250 mm, 59.9500 mm): Value '100nF' of C7
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(42.3500 mm, 83.5500 mm): Value '100nF' of C8
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(80.5250 mm, 107.1500 mm): Value '100nF' of C15
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(114.1800 mm, 137.6550 mm): Value '470' of R3
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(131.3000 mm, 83.5500 mm): Value '100nF' of C11
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(136.0800 mm, 137.6550 mm): Value '470' of R6
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(143.3800 mm, 137.6550 mm): Value '470' of R7
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(54.6750 mm, 59.9500 mm): Value '100nF' of C2
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(150.6800 mm, 137.6550 mm): Value '470' of R8
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(146.1250 mm, 59.9500 mm): Value '100nF' of C5
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; Severity: warning
+    @(84.3250 mm, 59.9500 mm): Value '100nF' of C3
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(138.1000 mm, 87.3750 mm): Footprint U11
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(50.8750 mm, 104.6500 mm): Footprint C14
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(87.3250 mm, 110.9750 mm): Footprint U14
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(197.4000 mm, 87.3750 mm): Footprint U12
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(142.2250 mm, 36.8250 mm): Footprint J9
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(55.9750 mm, 36.8250 mm): Footprint J4
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(234.0500 mm, 28.5000 mm): Footprint H2
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(185.0750 mm, 63.7750 mm): Footprint U5
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(116.5500 mm, 127.7250 mm): Footprint LED3
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(101.9500 mm, 127.7250 mm): Footprint LED1
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(147.3250 mm, 104.6500 mm): Footprint C17
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(109.2500 mm, 127.7250 mm): Footprint LED2
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(179.4750 mm, 104.6500 mm): Footprint C18
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(183.7750 mm, 110.9750 mm): Footprint U17
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(153.0500 mm, 127.7250 mm): Footprint LED8
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(109.2500 mm, 132.5750 mm): Footprint R2
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(214.7250 mm, 63.7750 mm): Footprint U6
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(23.5000 mm, 28.5000 mm): Footprint H1
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(124.9750 mm, 36.8250 mm): Footprint J8
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(55.1750 mm, 110.9750 mm): Footprint U13
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(131.1500 mm, 132.5750 mm): Footprint R5
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(123.2750 mm, 63.7750 mm): Footprint U3
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(118.9750 mm, 57.4500 mm): Footprint C4
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(27.5250 mm, 57.4500 mm): Footprint C1
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(74.5000 mm, 81.0500 mm): Footprint C9
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(91.1250 mm, 63.7750 mm): Footprint U2
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(90.4750 mm, 36.8250 mm): Footprint J6
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(234.0500 mm, 149.3100 mm): Footprint H4
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(115.1750 mm, 104.6500 mm): Footprint C16
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(119.4750 mm, 110.9750 mm): Footprint U15
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(101.9500 mm, 132.5750 mm): Footprint R1
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(163.4500 mm, 81.0500 mm): Footprint C12
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(152.9250 mm, 63.7750 mm): Footprint U1
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(151.6250 mm, 110.9750 mm): Footprint U16
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(49.1500 mm, 87.3750 mm): Footprint U7
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(193.1000 mm, 81.0500 mm): Footprint C13
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(167.7500 mm, 87.3750 mm): Footprint U10
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(180.7750 mm, 57.4500 mm): Footprint C6
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(123.8500 mm, 132.5750 mm): Footprint R4
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(104.1500 mm, 81.0500 mm): Footprint C10
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(210.4250 mm, 57.4500 mm): Footprint C7
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(44.8500 mm, 81.0500 mm): Footprint C8
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(83.0250 mm, 104.6500 mm): Footprint C15
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(61.4750 mm, 63.7750 mm): Footprint U4
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(145.7500 mm, 127.7250 mm): Footprint LED7
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(138.4500 mm, 127.7250 mm): Footprint LED6
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(116.5500 mm, 132.5750 mm): Footprint R3
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(23.5000 mm, 149.3100 mm): Footprint H3
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(133.8000 mm, 81.0500 mm): Footprint C11
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(193.9750 mm, 36.8250 mm): Footprint J3
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(138.4500 mm, 132.5750 mm): Footprint R6
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(131.1500 mm, 127.7250 mm): Footprint LED5
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(145.7500 mm, 132.5750 mm): Footprint R7
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(123.8500 mm, 127.7250 mm): Footprint LED4
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(73.2250 mm, 36.8250 mm): Footprint J5
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(107.7250 mm, 36.8250 mm): Footprint J7
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(57.1750 mm, 57.4500 mm): Footprint C2
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(153.0500 mm, 132.5750 mm): Footprint R8
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(78.8000 mm, 87.3750 mm): Footprint U8
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(31.8250 mm, 63.7750 mm): Footprint U18
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(148.6250 mm, 57.4500 mm): Footprint C5
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(176.7250 mm, 36.8250 mm): Footprint J2
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(108.4500 mm, 87.3750 mm): Footprint U9
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(86.8250 mm, 57.4500 mm): Footprint C3
+[lib_footprint_issues]: The current configuration does not include the library ''.
+    Local override; Severity: warning
+    @(159.4750 mm, 36.8250 mm): Footprint J1
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** End of Report **

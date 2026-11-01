@@ -19,8 +19,9 @@ Todas: 2 camadas, furo metalizado, trilha 0,5 mm (alimentação 0,9 mm), isolaç
 | **Contador de Passos (Fetch/Execute)** | 70 × 69 | 2 | 86 segmentos | [PDF](fabricacao/fetch-contador-passos/0-esquematico.pdf) | [arquivos](fabricacao/fetch-contador-passos/) |
 | **Registrador A (Acumulador)** | 110 × 69 | 4 | 174 segmentos | [PDF](fabricacao/acc-registrador-a/0-esquematico.pdf) | [arquivos](fabricacao/acc-registrador-a/) |
 | **Registrador B** | 110 × 69 | 8 | 160 segmentos | [PDF](fabricacao/b-registrador-b/0-esquematico.pdf) | [arquivos](fabricacao/b-registrador-b/) |
+| **Unidade Logica e Aritmetica (ULA)** | 218 × 128 | 145 | 837 segmentos | [PDF](fabricacao/alu-unidade-logica-aritmetica/0-esquematico.pdf) | [arquivos](fabricacao/alu-unidade-logica-aritmetica/) |
 | **Registrador de Saida (OUT)** | 110 × 69 | 0 | 95 segmentos | [PDF](fabricacao/out-registrador-saida/0-esquematico.pdf) | [arquivos](fabricacao/out-registrador-saida/) |
-| **Display Decimal** | 126 × 104 | 5 | 150 segmentos | [PDF](fabricacao/display-decimal/0-esquematico.pdf) | [arquivos](fabricacao/display-decimal/) |
+| **Display Decimal** | 134 × 112 | 11 | 174 segmentos | [PDF](fabricacao/display-decimal/0-esquematico.pdf) | [arquivos](fabricacao/display-decimal/) |
 | **Backplane / Barramento (Assembly Layout)** | 204 × 153 | 14 | 202 segmentos | [PDF](fabricacao/backplane-barramento/0-esquematico.pdf) | [arquivos](fabricacao/backplane-barramento/) |
 
 Vermelho = cobre da face de cima (componentes) · azul = cobre da face de baixo (solda) · amarelo = serigrafia.
@@ -78,6 +79,12 @@ Registrador A de 8 bits (2x 74LS173) com saida para o barramento (74LS245) e sai
 Registrador B de 8 bits; alimenta a entrada B da ULA.
 
 ![Registrador B](../docs/imagens/placas/b-registrador-b.png)
+
+## Unidade Logica e Aritmetica (ULA)
+
+Soma/subtracao (2x 74LS283 + 74LS86), AND, OR, XOR e NOT, selecionados por AL1:AL0 em 4x 74LS153.
+
+![Unidade Logica e Aritmetica (ULA)](../docs/imagens/placas/alu-unidade-logica-aritmetica.png)
 
 ## Registrador de Saida (OUT)
 

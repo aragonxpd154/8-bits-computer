@@ -70,7 +70,14 @@ Detalhes em [docs/01-arquitetura.md](docs/01-arquitetura.md).
 
 ## ☕ Passo a passo (faça você mesmo)
 
-Siga a documentação em ordem — tudo em português:
+> 🖼️ **Comece pelo [Guia visual passo a passo](docs/GUIA-VISUAL-PASSO-A-PASSO.md)** — todo o caminho em diagramas,
+> do arquivo ao computador funcionando. Também em PDF:
+> 📕 [Guia visual (PDF)](docs/pdf/guia-visual-passo-a-passo.pdf) · 📘 [Manual completo (PDF)](docs/pdf/manual-completo.pdf) ·
+> 📄 [Esquema elétrico completo (PDF)](hardware/esquema-eletrico-completo.pdf)
+
+<p align="center"><img alt="Roteiro" src="docs/imagens/guia/01-roteiro.png" width="820"></p>
+
+Manual detalhado, capítulo por capítulo — tudo em português:
 
 1. [Arquitetura](docs/01-arquitetura.md) — entenda o computador
 2. [Revisão e correções](docs/02-revisao-e-correcoes.md) — o que mudou desde a versão EasyEDA
@@ -93,6 +100,8 @@ Siga a documentação em ordem — tudo em português:
 ├── CHANGELOG.md                  histórico de versões
 ├── LICENSE                       GPL-3.0
 ├── docs/                         MANUAL COMPLETO (pt-BR)
+│   ├── GUIA-VISUAL-PASSO-A-PASSO.md  o projeto inteiro em diagramas, etapa por etapa
+│   ├── pdf/                          guia visual e manual completo em PDF
 │   ├── 01-arquitetura.md             blocos, instruções, tabela de todos os sinais
 │   ├── 02-revisao-e-correcoes.md     erros corrigidos em relação à versão EasyEDA
 │   ├── 03-fabricacao-das-placas.md   como pedir as PCBs no JLCPCB/PCBWay
@@ -102,7 +111,7 @@ Siga a documentação em ordem — tudo em português:
 │   ├── 07-programacao-e-uso.md       painel, montador, emulador, exemplos
 │   ├── 08-testes-e-diagnostico.md    subida do sistema e problemas comuns
 │   ├── lista-de-materiais-completa.md
-│   └── imagens/                      diagrama de blocos e imagem de cada placa
+│   └── imagens/                      diagrama de blocos, diagramas do guia, imagem de cada placa
 ├── hardware/
 │   ├── README.md                     tabela das 13 placas (tamanho, imagens, links)
 │   ├── esquema-eletrico-completo.pdf capa + diagrama + interligação + 13 esquemáticos

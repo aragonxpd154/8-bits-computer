@@ -55,7 +55,7 @@ padrão (as mais baratas) dos fabricantes.
 3. *Save to cart* e repita para as 13 placas. Fazer **um único pedido** com todas sai mais barato no frete.
 4. Pague e acompanhe. Prazo típico: alguns dias de produção + o frete escolhido.
 
-> Dica: o backplane (≈ 205 × 150 mm) e a ULA (≈ 200 × 130 mm) passam de 100 × 100 mm, faixa em que
+> Dica: o backplane (≈ 205 × 150 mm) e a ULA (≈ 220 × 130 mm) passam de 100 × 100 mm, faixa em que
 > alguns fabricantes cobram mais. As demais placas são pequenas.
 
 ### Conferência antes de pedir (opcional)
