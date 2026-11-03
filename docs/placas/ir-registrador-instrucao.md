@@ -6,6 +6,8 @@
 
 <p align="center"><img alt="Registrador de Instrução (IR) em 3D" src="../imagens/3d/ir-registrador-instrucao.png" width="760"></p>
 
+<p align="center"><a href="https://aragonxpd154.github.io/8-bits-computer/docs/3d/visualizador.html#ir-registrador-instrucao"><img alt="Abrir o 3D Viewer" src="https://img.shields.io/badge/%E2%96%B6%20Abrir%20o%203D%20Viewer-as%2013%20placas%20em%203D-1d5c34?style=for-the-badge&logo=threedotjs&logoColor=white&labelColor=0f3a20" height="36"></a></p>
+
 | | |
 |---|---|
 | Tamanho | **101,55 × 68,61 mm**, 2 camadas, furo metalizado |
@@ -14,7 +16,7 @@
 | Projeto KiCad | [`hardware/kicad/ir-registrador-instrucao/`](../../hardware/kicad/ir-registrador-instrucao/) |
 | Para a fábrica | [`ir-registrador-instrucao-gerber.zip`](../../hardware/fabricacao/ir-registrador-instrucao/ir-registrador-instrucao-gerber.zip) · [lista de materiais (CSV)](../../hardware/fabricacao/ir-registrador-instrucao/lista-de-materiais.csv) · [relatório DRC](../../hardware/fabricacao/ir-registrador-instrucao/relatorio-drc.txt) |
 | Esquemático | [PDF](../../hardware/fabricacao/ir-registrador-instrucao/0-esquematico.pdf) · [imagem](../imagens/esquemas/ir-registrador-instrucao.png) |
-| Modelo 3D | [visualizador interativo](../3d/visualizador.html#ir-registrador-instrucao) · [STL (abre em 3D no GitHub)](../3d/stl/ir-registrador-instrucao.stl) · [GLB](../3d/modelos/ir-registrador-instrucao.glb) · [STEP (FreeCAD/Fusion)](../../hardware/fabricacao/ir-registrador-instrucao/ir-registrador-instrucao.step) |
+| Modelo 3D | [**3D Viewer** (abre no navegador)](https://aragonxpd154.github.io/8-bits-computer/docs/3d/visualizador.html#ir-registrador-instrucao) · [STL (abre em 3D no GitHub)](../3d/stl/ir-registrador-instrucao.stl) · [GLB](../3d/modelos/ir-registrador-instrucao.glb) · [STEP (FreeCAD/Fusion)](../../hardware/fabricacao/ir-registrador-instrucao/ir-registrador-instrucao.step) |
 
 ## Função
 

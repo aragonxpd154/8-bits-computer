@@ -4,7 +4,9 @@
 
 Cada placa tem uma página com: a função dela no computador, como o circuito funciona, o papel de cada CI, o significado dos LEDs, o esquemático, a placa em 3D, a pinagem dos conectores, a lista de componentes e como testar.
 
-🧊 **[Visualizador 3D interativo](../3d/visualizador.html)** — gire, aproxime e veja a placa por cima e por baixo (instruções em [docs/3d](../3d/README.md)). Os arquivos `.stl` abrem em 3D direto no GitHub.
+<p align="center"><a href="https://aragonxpd154.github.io/8-bits-computer/docs/3d/visualizador.html"><img alt="Abrir o 3D Viewer" src="https://img.shields.io/badge/%E2%96%B6%20Abrir%20o%203D%20Viewer-as%2013%20placas%20em%203D-1d5c34?style=for-the-badge&logo=threedotjs&logoColor=white&labelColor=0f3a20" height="36"></a></p>
+
+🧊 **[3D Viewer](https://aragonxpd154.github.io/8-bits-computer/docs/3d/visualizador.html)** — gire, aproxime e veja a placa por cima e por baixo (instruções em [docs/3d](../3d/README.md)). Os arquivos `.stl` também abrem em 3D direto no GitHub.
 
 | # | Placa | Função | Tamanho | 3D |
 |---:|---|---|---|---|

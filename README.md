@@ -20,6 +20,10 @@ com esquemas, placas (PCB) e manual para fabricar e montar tudo em casa.
 </p>
 
 <p align="center">
+<a href="https://aragonxpd154.github.io/8-bits-computer/docs/3d/visualizador.html"><img alt="Abrir o 3D Viewer" src="https://img.shields.io/badge/%E2%96%B6%20Abrir%20o%203D%20Viewer-as%2013%20placas%20em%203D-1d5c34?style=for-the-badge&logo=threedotjs&logoColor=white&labelColor=0f3a20" height="36"></a>
+</p>
+
+<p align="center">
 <a href="#-o-que-é">O que é</a> ·
 <a href="#-status">Status</a> ·
 <a href="#-as-placas-em-3d">Placas em 3D</a> ·
@@ -61,7 +65,9 @@ Cada placa tem uma **página própria** explicando a função dela no computador
 de cada CI, o que cada LED mostra, o esquemático, a pinagem dos conectores, a lista de componentes e como testar —
 além do **modelo 3D** (STL que o GitHub mostra girando no navegador, GLB com as cores reais e STEP para CAD).
 
-➡️ **[Guia das 13 placas](docs/placas/README.md)** · 🧊 **[Visualizador 3D interativo](docs/3d/README.md)**
+<p align="center"><a href="https://aragonxpd154.github.io/8-bits-computer/docs/3d/visualizador.html"><img alt="Abrir o 3D Viewer" src="https://img.shields.io/badge/%E2%96%B6%20Abrir%20o%203D%20Viewer-as%2013%20placas%20em%203D-1d5c34?style=for-the-badge&logo=threedotjs&logoColor=white&labelColor=0f3a20" height="36"></a></p>
+
+➡️ **[Guia das 13 placas](docs/placas/README.md)** · 🧊 **[3D Viewer (GitHub Pages)](https://aragonxpd154.github.io/8-bits-computer/docs/3d/visualizador.html)** · [como usar e arquivos 3D](docs/3d/README.md)
 
 <table>
 <tr>

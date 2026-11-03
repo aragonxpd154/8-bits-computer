@@ -6,6 +6,8 @@
 
 <p align="center"><img alt="Registrador A (Acumulador) em 3D" src="../imagens/3d/acc-registrador-a.png" width="760"></p>
 
+<p align="center"><a href="https://aragonxpd154.github.io/8-bits-computer/docs/3d/visualizador.html#acc-registrador-a"><img alt="Abrir o 3D Viewer" src="https://img.shields.io/badge/%E2%96%B6%20Abrir%20o%203D%20Viewer-as%2013%20placas%20em%203D-1d5c34?style=for-the-badge&logo=threedotjs&logoColor=white&labelColor=0f3a20" height="36"></a></p>
+
 | | |
 |---|---|
 | Tamanho | **109,5 × 68,61 mm**, 2 camadas, furo metalizado |
@@ -14,7 +16,7 @@
 | Projeto KiCad | [`hardware/kicad/acc-registrador-a/`](../../hardware/kicad/acc-registrador-a/) |
 | Para a fábrica | [`acc-registrador-a-gerber.zip`](../../hardware/fabricacao/acc-registrador-a/acc-registrador-a-gerber.zip) · [lista de materiais (CSV)](../../hardware/fabricacao/acc-registrador-a/lista-de-materiais.csv) · [relatório DRC](../../hardware/fabricacao/acc-registrador-a/relatorio-drc.txt) |
 | Esquemático | [PDF](../../hardware/fabricacao/acc-registrador-a/0-esquematico.pdf) · [imagem](../imagens/esquemas/acc-registrador-a.png) |
-| Modelo 3D | [visualizador interativo](../3d/visualizador.html#acc-registrador-a) · [STL (abre em 3D no GitHub)](../3d/stl/acc-registrador-a.stl) · [GLB](../3d/modelos/acc-registrador-a.glb) · [STEP (FreeCAD/Fusion)](../../hardware/fabricacao/acc-registrador-a/acc-registrador-a.step) |
+| Modelo 3D | [**3D Viewer** (abre no navegador)](https://aragonxpd154.github.io/8-bits-computer/docs/3d/visualizador.html#acc-registrador-a) · [STL (abre em 3D no GitHub)](../3d/stl/acc-registrador-a.stl) · [GLB](../3d/modelos/acc-registrador-a.glb) · [STEP (FreeCAD/Fusion)](../../hardware/fabricacao/acc-registrador-a/acc-registrador-a.step) |
 
 ## Função
 

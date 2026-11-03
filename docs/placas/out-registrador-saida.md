@@ -6,6 +6,8 @@
 
 <p align="center"><img alt="Registrador de Saída em 3D" src="../imagens/3d/out-registrador-saida.png" width="760"></p>
 
+<p align="center"><a href="https://aragonxpd154.github.io/8-bits-computer/docs/3d/visualizador.html#out-registrador-saida"><img alt="Abrir o 3D Viewer" src="https://img.shields.io/badge/%E2%96%B6%20Abrir%20o%203D%20Viewer-as%2013%20placas%20em%203D-1d5c34?style=for-the-badge&logo=threedotjs&logoColor=white&labelColor=0f3a20" height="36"></a></p>
+
 | | |
 |---|---|
 | Tamanho | **109,5 × 68,61 mm**, 2 camadas, furo metalizado |
@@ -14,7 +16,7 @@
 | Projeto KiCad | [`hardware/kicad/out-registrador-saida/`](../../hardware/kicad/out-registrador-saida/) |
 | Para a fábrica | [`out-registrador-saida-gerber.zip`](../../hardware/fabricacao/out-registrador-saida/out-registrador-saida-gerber.zip) · [lista de materiais (CSV)](../../hardware/fabricacao/out-registrador-saida/lista-de-materiais.csv) · [relatório DRC](../../hardware/fabricacao/out-registrador-saida/relatorio-drc.txt) |
 | Esquemático | [PDF](../../hardware/fabricacao/out-registrador-saida/0-esquematico.pdf) · [imagem](../imagens/esquemas/out-registrador-saida.png) |
-| Modelo 3D | [visualizador interativo](../3d/visualizador.html#out-registrador-saida) · [STL (abre em 3D no GitHub)](../3d/stl/out-registrador-saida.stl) · [GLB](../3d/modelos/out-registrador-saida.glb) · [STEP (FreeCAD/Fusion)](../../hardware/fabricacao/out-registrador-saida/out-registrador-saida.step) |
+| Modelo 3D | [**3D Viewer** (abre no navegador)](https://aragonxpd154.github.io/8-bits-computer/docs/3d/visualizador.html#out-registrador-saida) · [STL (abre em 3D no GitHub)](../3d/stl/out-registrador-saida.stl) · [GLB](../3d/modelos/out-registrador-saida.glb) · [STEP (FreeCAD/Fusion)](../../hardware/fabricacao/out-registrador-saida/out-registrador-saida.step) |
 
 ## Função
 

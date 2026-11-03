@@ -6,6 +6,8 @@
 
 <p align="center"><img alt="Contador de Programa (PC) em 3D" src="../imagens/3d/pc-contador-programa.png" width="760"></p>
 
+<p align="center"><a href="https://aragonxpd154.github.io/8-bits-computer/docs/3d/visualizador.html#pc-contador-programa"><img alt="Abrir o 3D Viewer" src="https://img.shields.io/badge/%E2%96%B6%20Abrir%20o%203D%20Viewer-as%2013%20placas%20em%203D-1d5c34?style=for-the-badge&logo=threedotjs&logoColor=white&labelColor=0f3a20" height="36"></a></p>
+
 | | |
 |---|---|
 | Tamanho | **92,25 × 68,61 mm**, 2 camadas, furo metalizado |
@@ -14,7 +16,7 @@
 | Projeto KiCad | [`hardware/kicad/pc-contador-programa/`](../../hardware/kicad/pc-contador-programa/) |
 | Para a fábrica | [`pc-contador-programa-gerber.zip`](../../hardware/fabricacao/pc-contador-programa/pc-contador-programa-gerber.zip) · [lista de materiais (CSV)](../../hardware/fabricacao/pc-contador-programa/lista-de-materiais.csv) · [relatório DRC](../../hardware/fabricacao/pc-contador-programa/relatorio-drc.txt) |
 | Esquemático | [PDF](../../hardware/fabricacao/pc-contador-programa/0-esquematico.pdf) · [imagem](../imagens/esquemas/pc-contador-programa.png) |
-| Modelo 3D | [visualizador interativo](../3d/visualizador.html#pc-contador-programa) · [STL (abre em 3D no GitHub)](../3d/stl/pc-contador-programa.stl) · [GLB](../3d/modelos/pc-contador-programa.glb) · [STEP (FreeCAD/Fusion)](../../hardware/fabricacao/pc-contador-programa/pc-contador-programa.step) |
+| Modelo 3D | [**3D Viewer** (abre no navegador)](https://aragonxpd154.github.io/8-bits-computer/docs/3d/visualizador.html#pc-contador-programa) · [STL (abre em 3D no GitHub)](../3d/stl/pc-contador-programa.stl) · [GLB](../3d/modelos/pc-contador-programa.glb) · [STEP (FreeCAD/Fusion)](../../hardware/fabricacao/pc-contador-programa/pc-contador-programa.step) |
 
 ## Função
 

@@ -6,6 +6,8 @@
 
 <p align="center"><img alt="RAM e MAR em 3D" src="../imagens/3d/ram-mar-memoria.png" width="760"></p>
 
+<p align="center"><a href="https://aragonxpd154.github.io/8-bits-computer/docs/3d/visualizador.html#ram-mar-memoria"><img alt="Abrir o 3D Viewer" src="https://img.shields.io/badge/%E2%96%B6%20Abrir%20o%203D%20Viewer-as%2013%20placas%20em%203D-1d5c34?style=for-the-badge&logo=threedotjs&logoColor=white&labelColor=0f3a20" height="36"></a></p>
+
 | | |
 |---|---|
 | Tamanho | **145,1 × 139,47 mm**, 2 camadas, furo metalizado |
@@ -14,7 +16,7 @@
 | Projeto KiCad | [`hardware/kicad/ram-mar-memoria/`](../../hardware/kicad/ram-mar-memoria/) |
 | Para a fábrica | [`ram-mar-memoria-gerber.zip`](../../hardware/fabricacao/ram-mar-memoria/ram-mar-memoria-gerber.zip) · [lista de materiais (CSV)](../../hardware/fabricacao/ram-mar-memoria/lista-de-materiais.csv) · [relatório DRC](../../hardware/fabricacao/ram-mar-memoria/relatorio-drc.txt) |
 | Esquemático | [PDF](../../hardware/fabricacao/ram-mar-memoria/0-esquematico.pdf) · [imagem](../imagens/esquemas/ram-mar-memoria.png) |
-| Modelo 3D | [visualizador interativo](../3d/visualizador.html#ram-mar-memoria) · [STL (abre em 3D no GitHub)](../3d/stl/ram-mar-memoria.stl) · [GLB](../3d/modelos/ram-mar-memoria.glb) · [STEP (FreeCAD/Fusion)](../../hardware/fabricacao/ram-mar-memoria/ram-mar-memoria.step) |
+| Modelo 3D | [**3D Viewer** (abre no navegador)](https://aragonxpd154.github.io/8-bits-computer/docs/3d/visualizador.html#ram-mar-memoria) · [STL (abre em 3D no GitHub)](../3d/stl/ram-mar-memoria.stl) · [GLB](../3d/modelos/ram-mar-memoria.glb) · [STEP (FreeCAD/Fusion)](../../hardware/fabricacao/ram-mar-memoria/ram-mar-memoria.step) |
 
 ## Função
 

@@ -45,6 +45,9 @@ def capa(titulo, sub, imagem):
 
 def md_para_html(arquivos, titulo, capa_html, toc=False, primeiro_h2_sem_quebra=False, base=DOCS, css_extra=''):
     md = '\n\n'.join(open(os.path.join(base, a), encoding='utf-8').read() for a in arquivos)
+    # o botao do 3D Viewer (imagem do shields.io) vira um link de texto no PDF
+    md = re.sub(r'<a href="([^"]+)"><img alt="Abrir o 3D Viewer"[^>]*></a>',
+                lambda m: f'<b>🧊 3D Viewer online: <a href="{m.group(1)}">{m.group(1)}</a></b>', md)
     md = re.sub(r'^← .*$|^.*\[todas as placas\]\(README\.md\).*$|^Voltar para a .*$', '', md, flags=re.M)
     # nos PDFs, cada capitulo (titulo nivel 1) comeca em pagina nova
     md = re.sub(r'^---\s*\nAnterior:.*$', '', md, flags=re.M)

@@ -25,6 +25,9 @@ from gerar_visualizador import destinos, nome_sinal  # noqa: E402
 SAIDA = os.path.join(RAIZ, 'docs', 'placas')
 ESQ = os.path.join(RAIZ, 'docs', 'imagens', 'esquemas')
 
+VIEWER = 'https://aragonxpd154.github.io/8-bits-computer/docs/3d/visualizador.html'
+BOTAO = '<a href="https://aragonxpd154.github.io/8-bits-computer/docs/3d/visualizador.html"><img alt="Abrir o 3D Viewer" src="https://img.shields.io/badge/%E2%96%B6%20Abrir%20o%203D%20Viewer-as%2013%20placas%20em%203D-1d5c34?style=for-the-badge&logo=threedotjs&logoColor=white&labelColor=0f3a20" height="36"></a>'
+
 GRUPOS = OrderedDict([('IC', 'Circuitos integrados'), ('R', 'Resistores'), ('C', 'Capacitores'), ('LED', 'LEDs'),
                       ('SW', 'Chaves e botões'), ('J', 'Conectores'), ('PWRIN', 'Entrada de energia')])
 
@@ -103,6 +106,7 @@ def pagina(b, meta, dest, ordem):
          f'> Placa do **Computador 8 Bits v3.0** — projeto de **Marcos Silva dos Santos** (MarcosObel) — GPL-3.0.', '',
          f'**{info["resumo"]}**', '',
          f'<p align="center"><img alt="{info["nome"]} em 3D" src="../imagens/3d/{p}.png" width="760"></p>', '',
+         f'<p align="center">' + BOTAO.replace(VIEWER, VIEWER + '#' + p) + '</p>', '',
          '| | |', '|---|---|',
          f'| Tamanho | **{br(m.get("largura_mm"))} × {br(m.get("altura_mm"))} mm**, 2 camadas, furo metalizado |',
          f'| Componentes | {len(b.comps)} ({nci} {"CI" if nci == 1 else "CIs"}) |',
@@ -110,7 +114,7 @@ def pagina(b, meta, dest, ordem):
          f'| Projeto KiCad | [`hardware/kicad/{p}/`](../../hardware/kicad/{p}/) |',
          f'| Para a fábrica | [`{p}-gerber.zip`]({fab}/{p}-gerber.zip) · [lista de materiais (CSV)]({fab}/lista-de-materiais.csv) · [relatório DRC]({fab}/relatorio-drc.txt) |',
          f'| Esquemático | [PDF]({fab}/0-esquematico.pdf) · [imagem](../imagens/esquemas/{p}.png) |',
-         f'| Modelo 3D | [visualizador interativo](../3d/visualizador.html#{p}) · [STL (abre em 3D no GitHub)](../3d/stl/{p}.stl) · [GLB](../3d/modelos/{p}.glb) · [STEP (FreeCAD/Fusion)]({fab}/{p}.step) |',
+         f'| Modelo 3D | [**3D Viewer** (abre no navegador)]({VIEWER}#{p}) · [STL (abre em 3D no GitHub)](../3d/stl/{p}.stl) · [GLB](../3d/modelos/{p}.glb) · [STEP (FreeCAD/Fusion)]({fab}/{p}.step) |',
          '', '## Função', '', info['funcao'], '']
     if viz:
         o += [f'Liga-se diretamente (cabo próprio) a: ' + ', '.join(f'[{PLACAS[k]["nome"]}]({PASTAS[k]}.md)' for k in viz)
@@ -163,8 +167,9 @@ def indice(bs, meta, ordem):
          'Cada placa tem uma página com: a função dela no computador, como o circuito funciona, o papel de cada CI, '
          'o significado dos LEDs, o esquemático, a placa em 3D, a pinagem dos conectores, a lista de componentes e '
          'como testar.', '',
-         '🧊 **[Visualizador 3D interativo](../3d/visualizador.html)** — gire, aproxime e veja a placa por cima e por baixo '
-         '(instruções em [docs/3d](../3d/README.md)). Os arquivos `.stl` abrem em 3D direto no GitHub.', '',
+         f'<p align="center">{BOTAO}</p>', '',
+         f'🧊 **[3D Viewer]({VIEWER})** — gire, aproxime e veja a placa por cima e por baixo '
+         '(instruções em [docs/3d](../3d/README.md)). Os arquivos `.stl` também abrem em 3D direto no GitHub.', '',
          '| # | Placa | Função | Tamanho | 3D |', '|---:|---|---|---|---|']
     for k in ordem:
         b = bs[k]

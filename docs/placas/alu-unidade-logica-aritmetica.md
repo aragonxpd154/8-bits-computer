@@ -6,6 +6,8 @@
 
 <p align="center"><img alt="ULA (Unidade Lógica e Aritmética) em 3D" src="../imagens/3d/alu-unidade-logica-aritmetica.png" width="760"></p>
 
+<p align="center"><a href="https://aragonxpd154.github.io/8-bits-computer/docs/3d/visualizador.html#alu-unidade-logica-aritmetica"><img alt="Abrir o 3D Viewer" src="https://img.shields.io/badge/%E2%96%B6%20Abrir%20o%203D%20Viewer-as%2013%20placas%20em%203D-1d5c34?style=for-the-badge&logo=threedotjs&logoColor=white&labelColor=0f3a20" height="36"></a></p>
+
 | | |
 |---|---|
 | Tamanho | **217,55 × 127,81 mm**, 2 camadas, furo metalizado |
@@ -14,7 +16,7 @@
 | Projeto KiCad | [`hardware/kicad/alu-unidade-logica-aritmetica/`](../../hardware/kicad/alu-unidade-logica-aritmetica/) |
 | Para a fábrica | [`alu-unidade-logica-aritmetica-gerber.zip`](../../hardware/fabricacao/alu-unidade-logica-aritmetica/alu-unidade-logica-aritmetica-gerber.zip) · [lista de materiais (CSV)](../../hardware/fabricacao/alu-unidade-logica-aritmetica/lista-de-materiais.csv) · [relatório DRC](../../hardware/fabricacao/alu-unidade-logica-aritmetica/relatorio-drc.txt) |
 | Esquemático | [PDF](../../hardware/fabricacao/alu-unidade-logica-aritmetica/0-esquematico.pdf) · [imagem](../imagens/esquemas/alu-unidade-logica-aritmetica.png) |
-| Modelo 3D | [visualizador interativo](../3d/visualizador.html#alu-unidade-logica-aritmetica) · [STL (abre em 3D no GitHub)](../3d/stl/alu-unidade-logica-aritmetica.stl) · [GLB](../3d/modelos/alu-unidade-logica-aritmetica.glb) · [STEP (FreeCAD/Fusion)](../../hardware/fabricacao/alu-unidade-logica-aritmetica/alu-unidade-logica-aritmetica.step) |
+| Modelo 3D | [**3D Viewer** (abre no navegador)](https://aragonxpd154.github.io/8-bits-computer/docs/3d/visualizador.html#alu-unidade-logica-aritmetica) · [STL (abre em 3D no GitHub)](../3d/stl/alu-unidade-logica-aritmetica.stl) · [GLB](../3d/modelos/alu-unidade-logica-aritmetica.glb) · [STEP (FreeCAD/Fusion)](../../hardware/fabricacao/alu-unidade-logica-aritmetica/alu-unidade-logica-aritmetica.step) |
 
 ## Função
 

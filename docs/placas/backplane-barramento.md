@@ -6,6 +6,8 @@
 
 <p align="center"><img alt="Backplane / Barramento em 3D" src="../imagens/3d/backplane-barramento.png" width="760"></p>
 
+<p align="center"><a href="https://aragonxpd154.github.io/8-bits-computer/docs/3d/visualizador.html#backplane-barramento"><img alt="Abrir o 3D Viewer" src="https://img.shields.io/badge/%E2%96%B6%20Abrir%20o%203D%20Viewer-as%2013%20placas%20em%203D-1d5c34?style=for-the-badge&logo=threedotjs&logoColor=white&labelColor=0f3a20" height="36"></a></p>
+
 | | |
 |---|---|
 | Tamanho | **204,5 × 153 mm**, 2 camadas, furo metalizado |
@@ -14,7 +16,7 @@
 | Projeto KiCad | [`hardware/kicad/backplane-barramento/`](../../hardware/kicad/backplane-barramento/) |
 | Para a fábrica | [`backplane-barramento-gerber.zip`](../../hardware/fabricacao/backplane-barramento/backplane-barramento-gerber.zip) · [lista de materiais (CSV)](../../hardware/fabricacao/backplane-barramento/lista-de-materiais.csv) · [relatório DRC](../../hardware/fabricacao/backplane-barramento/relatorio-drc.txt) |
 | Esquemático | [PDF](../../hardware/fabricacao/backplane-barramento/0-esquematico.pdf) · [imagem](../imagens/esquemas/backplane-barramento.png) |
-| Modelo 3D | [visualizador interativo](../3d/visualizador.html#backplane-barramento) · [STL (abre em 3D no GitHub)](../3d/stl/backplane-barramento.stl) · [GLB](../3d/modelos/backplane-barramento.glb) · [STEP (FreeCAD/Fusion)](../../hardware/fabricacao/backplane-barramento/backplane-barramento.step) |
+| Modelo 3D | [**3D Viewer** (abre no navegador)](https://aragonxpd154.github.io/8-bits-computer/docs/3d/visualizador.html#backplane-barramento) · [STL (abre em 3D no GitHub)](../3d/stl/backplane-barramento.stl) · [GLB](../3d/modelos/backplane-barramento.glb) · [STEP (FreeCAD/Fusion)](../../hardware/fabricacao/backplane-barramento/backplane-barramento.step) |
 
 ## Função
 

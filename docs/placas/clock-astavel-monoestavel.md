@@ -6,6 +6,8 @@
 
 <p align="center"><img alt="Clock em 3D" src="../imagens/3d/clock-astavel-monoestavel.png" width="760"></p>
 
+<p align="center"><a href="https://aragonxpd154.github.io/8-bits-computer/docs/3d/visualizador.html#clock-astavel-monoestavel"><img alt="Abrir o 3D Viewer" src="https://img.shields.io/badge/%E2%96%B6%20Abrir%20o%203D%20Viewer-as%2013%20placas%20em%203D-1d5c34?style=for-the-badge&logo=threedotjs&logoColor=white&labelColor=0f3a20" height="36"></a></p>
+
 | | |
 |---|---|
 | Tamanho | **105,34 × 85,76 mm**, 2 camadas, furo metalizado |
@@ -14,7 +16,7 @@
 | Projeto KiCad | [`hardware/kicad/clock-astavel-monoestavel/`](../../hardware/kicad/clock-astavel-monoestavel/) |
 | Para a fábrica | [`clock-astavel-monoestavel-gerber.zip`](../../hardware/fabricacao/clock-astavel-monoestavel/clock-astavel-monoestavel-gerber.zip) · [lista de materiais (CSV)](../../hardware/fabricacao/clock-astavel-monoestavel/lista-de-materiais.csv) · [relatório DRC](../../hardware/fabricacao/clock-astavel-monoestavel/relatorio-drc.txt) |
 | Esquemático | [PDF](../../hardware/fabricacao/clock-astavel-monoestavel/0-esquematico.pdf) · [imagem](../imagens/esquemas/clock-astavel-monoestavel.png) |
-| Modelo 3D | [visualizador interativo](../3d/visualizador.html#clock-astavel-monoestavel) · [STL (abre em 3D no GitHub)](../3d/stl/clock-astavel-monoestavel.stl) · [GLB](../3d/modelos/clock-astavel-monoestavel.glb) · [STEP (FreeCAD/Fusion)](../../hardware/fabricacao/clock-astavel-monoestavel/clock-astavel-monoestavel.step) |
+| Modelo 3D | [**3D Viewer** (abre no navegador)](https://aragonxpd154.github.io/8-bits-computer/docs/3d/visualizador.html#clock-astavel-monoestavel) · [STL (abre em 3D no GitHub)](../3d/stl/clock-astavel-monoestavel.stl) · [GLB](../3d/modelos/clock-astavel-monoestavel.glb) · [STEP (FreeCAD/Fusion)](../../hardware/fabricacao/clock-astavel-monoestavel/clock-astavel-monoestavel.step) |
 
 ## Função
 

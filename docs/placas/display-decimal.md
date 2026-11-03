@@ -6,6 +6,8 @@
 
 <p align="center"><img alt="Display Decimal em 3D" src="../imagens/3d/display-decimal.png" width="760"></p>
 
+<p align="center"><a href="https://aragonxpd154.github.io/8-bits-computer/docs/3d/visualizador.html#display-decimal"><img alt="Abrir o 3D Viewer" src="https://img.shields.io/badge/%E2%96%B6%20Abrir%20o%203D%20Viewer-as%2013%20placas%20em%203D-1d5c34?style=for-the-badge&logo=threedotjs&logoColor=white&labelColor=0f3a20" height="36"></a></p>
+
 | | |
 |---|---|
 | Tamanho | **133,65 × 111,88 mm**, 2 camadas, furo metalizado |
@@ -14,7 +16,7 @@
 | Projeto KiCad | [`hardware/kicad/display-decimal/`](../../hardware/kicad/display-decimal/) |
 | Para a fábrica | [`display-decimal-gerber.zip`](../../hardware/fabricacao/display-decimal/display-decimal-gerber.zip) · [lista de materiais (CSV)](../../hardware/fabricacao/display-decimal/lista-de-materiais.csv) · [relatório DRC](../../hardware/fabricacao/display-decimal/relatorio-drc.txt) |
 | Esquemático | [PDF](../../hardware/fabricacao/display-decimal/0-esquematico.pdf) · [imagem](../imagens/esquemas/display-decimal.png) |
-| Modelo 3D | [visualizador interativo](../3d/visualizador.html#display-decimal) · [STL (abre em 3D no GitHub)](../3d/stl/display-decimal.stl) · [GLB](../3d/modelos/display-decimal.glb) · [STEP (FreeCAD/Fusion)](../../hardware/fabricacao/display-decimal/display-decimal.step) |
+| Modelo 3D | [**3D Viewer** (abre no navegador)](https://aragonxpd154.github.io/8-bits-computer/docs/3d/visualizador.html#display-decimal) · [STL (abre em 3D no GitHub)](../3d/stl/display-decimal.stl) · [GLB](../3d/modelos/display-decimal.glb) · [STEP (FreeCAD/Fusion)](../../hardware/fabricacao/display-decimal/display-decimal.step) |
 
 ## Função
 
