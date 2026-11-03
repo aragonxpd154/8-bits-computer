@@ -151,60 +151,72 @@ Cores das imagens: **vermelho** = cobre de cima, **azul** = cobre de baixo, **am
 
 #### ① Backplane / Barramento
 ![Backplane](imagens/placas/backplane-barramento.png)
+🧊 **[Página completa desta placa](placas/backplane-barramento.md)** — função, diagrama de funcionamento, 3D, esquemático e conectores.
 - **Tem:** entrada 5 V protegida (jack, PTC, diodo), LED de energia, 8 LEDs do barramento, 45 conectores agrupados por módulo.
 - **Teste:** LED de energia acende; 5 V em todos os conectores `P_xxx`.
 
 #### ② Clock
 ![Clock](imagens/placas/clock-astavel-monoestavel.png)
+🧊 **[Página completa desta placa](placas/clock-astavel-monoestavel.md)** — função, diagrama de funcionamento, 3D, esquemático e conectores.
 - **CIs:** NE556, 74LS00, 74LS04 · **Atenção:** C1 é tântalo (marca = +).
 - **Teste:** HLT (J2 pino 3) no GND → LED pisca; potenciômetro muda a velocidade; MANUAL + botão PASSO = 1 pulso.
 
 #### ③ Reset
 ![Reset](imagens/placas/reset-circuito.png)
+🧊 **[Página completa desta placa](placas/reset-circuito.md)** — função, diagrama de funcionamento, 3D, esquemático e conectores.
 - **CI:** 74LS132 (ou 74LS00) · **Teste:** ao ligar o LED pisca; botão RESET → RST = 5 V, /RST = 0 V.
 
 #### ④ Contador de Passos
 ![Passos](imagens/placas/fetch-contador-passos.png)
+🧊 **[Página completa desta placa](placas/fetch-contador-passos.md)** — função, diagrama de funcionamento, 3D, esquemático e conectores.
 - **CIs:** 74LS161, 74LS138 · **Teste:** pulsos em /CLK fazem os LEDs T0…T4 andarem.
 
 #### ⑤ Contador de Programa (PC)
 ![PC](imagens/placas/pc-contador-programa.png)
+🧊 **[Página completa desta placa](placas/pc-contador-programa.md)** — função, diagrama de funcionamento, 3D, esquemático e conectores.
 - **CIs:** 74LS161, 74LS245 · **Teste:** PCI = 1 e pulsos em CLK → LEDs contam 0…15.
 
 #### ⑥ RAM e MAR
 ![RAM](imagens/placas/ram-mar-memoria.png)
+🧊 **[Página completa desta placa](placas/ram-mar-memoria.md)** — função, diagrama de funcionamento, 3D, esquemático e conectores.
 - **CIs:** 2× 74S189, 2× 74LS04, 74LS245, 74LS173, 4× 74LS157, 74LS00, NE555.
 - **Atenção:** redes resistivas RN1/RN2 com o pino 1 (comum) no pad quadrado; chave DIP **ligada = 1**.
 - **Teste:** em PROG, grave um valor e confira nos LEDs verdes.
 
 #### ⑦ Registrador de Instrução (IR)
 ![IR](imagens/placas/ir-registrador-instrucao.png)
+🧊 **[Página completa desta placa](placas/ir-registrador-instrucao.md)** — função, diagrama de funcionamento, 3D, esquemático e conectores.
 - **CIs:** 2× 74LS173, 74LS245 · **Teste:** carrega com /IRI + CLK; /IRO devolve só o nibble baixo.
 
 #### ⑧ Decodificador de Controle
 ![Controle](imagens/placas/cd-decodificador-controle.png)
+🧊 **[Página completa desta placa](placas/cd-decodificador-controle.md)** — função, diagrama de funcionamento, 3D, esquemático e conectores.
 - **CIs:** 3× 28C16 já gravadas (U1 = EEPROM2, U2 = EEPROM1, U3 = EEPROM0), soquetes **largos** de 24 pinos.
 - **Teste:** passo e opcode em 0 → só /PCO e /MAI em nível baixo.
 
 #### ⑨ Registrador A e ⑩ Registrador B
 ![Registrador A](imagens/placas/acc-registrador-a.png)
+🧊 **[Página completa desta placa](placas/acc-registrador-a.md)** (Registrador A) · **[Registrador B](placas/b-registrador-b.md)** — função, diagrama de funcionamento, 3D, esquemático e conectores.
 - **CIs:** 2× 74LS173, 74LS245 (as duas placas são iguais) · **Teste:** carrega com /ACI (/BRI) + CLK; RST apaga.
 
 #### ⑪ ULA
 ![ULA](imagens/placas/alu-unidade-logica-aritmetica.png)
+🧊 **[Página completa desta placa](placas/alu-unidade-logica-aritmetica.md)** — função, diagrama de funcionamento, 3D, esquemático e conectores.
 - **CIs:** 18 (74LS283, 86, 08, 32, 153, 245, 04) · **Atenção:** 74LS08/32/86 têm a mesma pinagem — confira duas vezes.
 - **Teste:** AL1 AL0 = 00 soma, 01 AND, 10 OR, 11 XOR; SUB = 1 subtrai; NOT = 1 (com AL = 11) inverte A.
 
 #### ⑫ Registrador de Saída
 ![Saída](imagens/placas/out-registrador-saida.png)
+🧊 **[Página completa desta placa](placas/out-registrador-saida.md)** — função, diagrama de funcionamento, 3D, esquemático e conectores.
 - **CIs:** 2× 74LS173 · **Teste:** carrega com /ORI + CLK.
 
 #### ⑬ Display Decimal
 ![Display](imagens/placas/display-decimal.png)
+🧊 **[Página completa desta placa](placas/display-decimal.md)** — função, diagrama de funcionamento, 3D, esquemático e conectores.
 - **CIs:** 28C16 (DISPLAY.bin), NE555, 74LS161, 74LS139 · display **cátodo comum**.
 - **Teste:** entradas em 0 → mostra `0`; entradas soltas → `255` (sem sinal) ou `-1` (com sinal).
 
-📖 Detalhes de cada placa: [04-montagem-das-placas.md](04-montagem-das-placas.md)
+📖 Montagem passo a passo: [04-montagem-das-placas.md](04-montagem-das-placas.md) · 🧊 Todas as placas explicadas, em 3D: [placas/README.md](placas/README.md) · [visualizador 3D](3d/visualizador.html)
 
 ---
 

@@ -7,6 +7,10 @@ Antes de começar, tenha em mãos, para a placa que vai montar:
 - a **lista de materiais** da placa (`lista-de-materiais.csv` na mesma pasta, ou [lista completa](lista-de-materiais-completa.md));
 - o **esquemático** (`0-esquematico.pdf`).
 
+> 🧊 Para entender **o que cada placa faz** antes de montar — função, diagrama de funcionamento, papel de cada CI,
+> significado dos LEDs, imagem 3D e pinagem — veja o [guia das placas](placas/README.md) e o
+> [visualizador 3D](3d/README.md).
+
 ## 4.1 Regras gerais (valem para todas as placas)
 
 ### Como identificar a orientação
@@ -22,6 +26,7 @@ Antes de começar, tenha em mãos, para a placa que vai montar:
 
 ### Ordem de soldagem (do mais baixo para o mais alto)
 1. **Resistores** e **redes resistivas** (SIP).
+2. **Diodo** (só o 1N5822 do backplane — faixa = cátodo).
 3. **Soquetes de CI** — **use soquete em todos os CIs** (principalmente nas EEPROMs, que você vai regravar). Respeite o chanfro.
 4. **Capacitores cerâmicos/poliéster** (100 nF de desacoplamento ao lado de cada CI).
 5. **LEDs** (deixe-os todos na mesma altura: solde uma perna, ajuste, depois a outra).

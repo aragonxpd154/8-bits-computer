@@ -1,0 +1,3476 @@
+{
+ "acc-registrador-a": {
+  "placa": "acc-registrador-a",
+  "largura_mm": 109.5,
+  "altura_mm": 68.61,
+  "furos": 122,
+  "vias": 4,
+  "componentes": [
+   {
+    "ref": "R5",
+    "valor": "470",
+    "x": 57.13,
+    "y": 48.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED8",
+    "valor": "LED verde 3mm",
+    "x": 79.02,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "R4",
+    "valor": "470",
+    "x": 49.83,
+    "y": 48.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "R2",
+    "valor": "470",
+    "x": 35.23,
+    "y": 48.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "U1",
+    "valor": "74LS173",
+    "x": 15.8,
+    "y": 32.77,
+    "lado": "topo"
+   },
+   {
+    "ref": "C2",
+    "valor": "100nF",
+    "x": 41.15,
+    "y": 26.45,
+    "lado": "topo"
+   },
+   {
+    "ref": "H2",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 106.0,
+    "y": 3.5,
+    "lado": "topo"
+   },
+   {
+    "ref": "J5",
+    "valor": "ALU_L",
+    "x": 76.83,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "J4",
+    "valor": "BUS_H",
+    "x": 59.58,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "R7",
+    "valor": "470",
+    "x": 71.72,
+    "y": 48.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED3",
+    "valor": "LED verde 3mm",
+    "x": 42.53,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "R6",
+    "valor": "470",
+    "x": 64.43,
+    "y": 48.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "U3",
+    "valor": "74LS245",
+    "x": 75.1,
+    "y": 32.77,
+    "lado": "topo"
+   },
+   {
+    "ref": "J3",
+    "valor": "BUS_L",
+    "x": 42.33,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "U2",
+    "valor": "74LS173",
+    "x": 45.45,
+    "y": 32.77,
+    "lado": "topo"
+   },
+   {
+    "ref": "J1",
+    "valor": "ALIMENTACAO",
+    "x": 7.82,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "C3",
+    "valor": "100nF",
+    "x": 70.8,
+    "y": 26.45,
+    "lado": "topo"
+   },
+   {
+    "ref": "R3",
+    "valor": "470",
+    "x": 42.53,
+    "y": 48.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED7",
+    "valor": "LED verde 3mm",
+    "x": 71.72,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED6",
+    "valor": "LED verde 3mm",
+    "x": 64.43,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED2",
+    "valor": "LED verde 3mm",
+    "x": 35.23,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "C1",
+    "valor": "100nF",
+    "x": 11.5,
+    "y": 26.45,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED5",
+    "valor": "LED verde 3mm",
+    "x": 57.13,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED1",
+    "valor": "LED verde 3mm",
+    "x": 27.93,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "R8",
+    "valor": "470",
+    "x": 79.02,
+    "y": 48.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "R1",
+    "valor": "470",
+    "x": 27.93,
+    "y": 48.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "H3",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 3.5,
+    "y": 65.11,
+    "lado": "topo"
+   },
+   {
+    "ref": "J6",
+    "valor": "ALU_H",
+    "x": 94.08,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "H1",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 3.5,
+    "y": 3.5,
+    "lado": "topo"
+   },
+   {
+    "ref": "H4",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 106.0,
+    "y": 65.11,
+    "lado": "topo"
+   },
+   {
+    "ref": "J2",
+    "valor": "CONTROLE",
+    "x": 25.08,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED4",
+    "valor": "LED verde 3mm",
+    "x": 49.83,
+    "y": 43.53,
+    "lado": "topo"
+   }
+  ],
+  "glb_kb": 1008,
+  "stl_kb": 2075,
+  "step_kb": 3837
+ },
+ "alu-unidade-logica-aritmetica": {
+  "placa": "alu-unidade-logica-aritmetica",
+  "largura_mm": 217.55,
+  "altura_mm": 127.81,
+  "furos": 523,
+  "vias": 145,
+  "componentes": [
+   {
+    "ref": "U11",
+    "valor": "74LS32",
+    "x": 118.1,
+    "y": 62.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "C14",
+    "valor": "100nF",
+    "x": 30.87,
+    "y": 79.65,
+    "lado": "topo"
+   },
+   {
+    "ref": "U14",
+    "valor": "74LS153",
+    "x": 67.32,
+    "y": 85.97,
+    "lado": "topo"
+   },
+   {
+    "ref": "U12",
+    "valor": "74LS86",
+    "x": 177.4,
+    "y": 62.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "J9",
+    "valor": "CTRL2",
+    "x": 122.22,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "J4",
+    "valor": "ACC_L",
+    "x": 35.97,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "H2",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 214.05,
+    "y": 3.5,
+    "lado": "topo"
+   },
+   {
+    "ref": "U5",
+    "valor": "74LS08",
+    "x": 165.07,
+    "y": 38.77,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED3",
+    "valor": "LED verde 3mm",
+    "x": 96.55,
+    "y": 102.72,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED1",
+    "valor": "LED verde 3mm",
+    "x": 81.95,
+    "y": 102.72,
+    "lado": "topo"
+   },
+   {
+    "ref": "C17",
+    "valor": "100nF",
+    "x": 127.32,
+    "y": 79.65,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED2",
+    "valor": "LED verde 3mm",
+    "x": 89.25,
+    "y": 102.72,
+    "lado": "topo"
+   },
+   {
+    "ref": "C18",
+    "valor": "100nF",
+    "x": 159.47,
+    "y": 79.65,
+    "lado": "topo"
+   },
+   {
+    "ref": "U17",
+    "valor": "74LS245",
+    "x": 163.77,
+    "y": 85.97,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED8",
+    "valor": "LED verde 3mm",
+    "x": 133.05,
+    "y": 102.72,
+    "lado": "topo"
+   },
+   {
+    "ref": "R2",
+    "valor": "470",
+    "x": 89.25,
+    "y": 107.57,
+    "lado": "topo"
+   },
+   {
+    "ref": "U6",
+    "valor": "74LS08",
+    "x": 194.72,
+    "y": 38.77,
+    "lado": "topo"
+   },
+   {
+    "ref": "H1",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 3.5,
+    "y": 3.5,
+    "lado": "topo"
+   },
+   {
+    "ref": "J8",
+    "valor": "CTRL1",
+    "x": 104.97,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "U13",
+    "valor": "74LS153",
+    "x": 35.17,
+    "y": 85.97,
+    "lado": "topo"
+   },
+   {
+    "ref": "R5",
+    "valor": "470",
+    "x": 111.15,
+    "y": 107.57,
+    "lado": "topo"
+   },
+   {
+    "ref": "U3",
+    "valor": "74LS86",
+    "x": 103.27,
+    "y": 38.77,
+    "lado": "topo"
+   },
+   {
+    "ref": "C4",
+    "valor": "100nF",
+    "x": 98.97,
+    "y": 32.45,
+    "lado": "topo"
+   },
+   {
+    "ref": "C1",
+    "valor": "100nF",
+    "x": 7.52,
+    "y": 32.45,
+    "lado": "topo"
+   },
+   {
+    "ref": "C9",
+    "valor": "100nF",
+    "x": 54.5,
+    "y": 56.05,
+    "lado": "topo"
+   },
+   {
+    "ref": "U2",
+    "valor": "74LS283",
+    "x": 71.12,
+    "y": 38.77,
+    "lado": "topo"
+   },
+   {
+    "ref": "J6",
+    "valor": "B_L",
+    "x": 70.47,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "H4",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 214.05,
+    "y": 124.31,
+    "lado": "topo"
+   },
+   {
+    "ref": "C16",
+    "valor": "100nF",
+    "x": 95.17,
+    "y": 79.65,
+    "lado": "topo"
+   },
+   {
+    "ref": "U15",
+    "valor": "74LS153",
+    "x": 99.47,
+    "y": 85.97,
+    "lado": "topo"
+   },
+   {
+    "ref": "R1",
+    "valor": "470",
+    "x": 81.95,
+    "y": 107.57,
+    "lado": "topo"
+   },
+   {
+    "ref": "C12",
+    "valor": "100nF",
+    "x": 143.45,
+    "y": 56.05,
+    "lado": "topo"
+   },
+   {
+    "ref": "U1",
+    "valor": "74LS283",
+    "x": 132.92,
+    "y": 38.77,
+    "lado": "topo"
+   },
+   {
+    "ref": "U16",
+    "valor": "74LS153",
+    "x": 131.62,
+    "y": 85.97,
+    "lado": "topo"
+   },
+   {
+    "ref": "U7",
+    "valor": "74LS32",
+    "x": 29.15,
+    "y": 62.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "C13",
+    "valor": "100nF",
+    "x": 173.1,
+    "y": 56.05,
+    "lado": "topo"
+   },
+   {
+    "ref": "U10",
+    "valor": "74LS86",
+    "x": 147.75,
+    "y": 62.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "C6",
+    "valor": "100nF",
+    "x": 160.77,
+    "y": 32.45,
+    "lado": "topo"
+   },
+   {
+    "ref": "R4",
+    "valor": "470",
+    "x": 103.85,
+    "y": 107.57,
+    "lado": "topo"
+   },
+   {
+    "ref": "C10",
+    "valor": "100nF",
+    "x": 84.15,
+    "y": 56.05,
+    "lado": "topo"
+   },
+   {
+    "ref": "C7",
+    "valor": "100nF",
+    "x": 190.42,
+    "y": 32.45,
+    "lado": "topo"
+   },
+   {
+    "ref": "C8",
+    "valor": "100nF",
+    "x": 24.85,
+    "y": 56.05,
+    "lado": "topo"
+   },
+   {
+    "ref": "C15",
+    "valor": "100nF",
+    "x": 63.02,
+    "y": 79.65,
+    "lado": "topo"
+   },
+   {
+    "ref": "U4",
+    "valor": "74LS86",
+    "x": 41.47,
+    "y": 38.77,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED7",
+    "valor": "LED verde 3mm",
+    "x": 125.75,
+    "y": 102.72,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED6",
+    "valor": "LED verde 3mm",
+    "x": 118.45,
+    "y": 102.72,
+    "lado": "topo"
+   },
+   {
+    "ref": "R3",
+    "valor": "470",
+    "x": 96.55,
+    "y": 107.57,
+    "lado": "topo"
+   },
+   {
+    "ref": "H3",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 3.5,
+    "y": 124.31,
+    "lado": "topo"
+   },
+   {
+    "ref": "C11",
+    "valor": "100nF",
+    "x": 113.8,
+    "y": 56.05,
+    "lado": "topo"
+   },
+   {
+    "ref": "J3",
+    "valor": "BUS_H",
+    "x": 173.97,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "R6",
+    "valor": "470",
+    "x": 118.45,
+    "y": 107.57,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED5",
+    "valor": "LED verde 3mm",
+    "x": 111.15,
+    "y": 102.72,
+    "lado": "topo"
+   },
+   {
+    "ref": "R7",
+    "valor": "470",
+    "x": 125.75,
+    "y": 107.57,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED4",
+    "valor": "LED verde 3mm",
+    "x": 103.85,
+    "y": 102.72,
+    "lado": "topo"
+   },
+   {
+    "ref": "J5",
+    "valor": "ACC_H",
+    "x": 53.22,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "J7",
+    "valor": "B_H",
+    "x": 87.72,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "C2",
+    "valor": "100nF",
+    "x": 37.17,
+    "y": 32.45,
+    "lado": "topo"
+   },
+   {
+    "ref": "R8",
+    "valor": "470",
+    "x": 133.05,
+    "y": 107.57,
+    "lado": "topo"
+   },
+   {
+    "ref": "U8",
+    "valor": "74LS32",
+    "x": 58.8,
+    "y": 62.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "U18",
+    "valor": "74LS04",
+    "x": 11.82,
+    "y": 38.77,
+    "lado": "topo"
+   },
+   {
+    "ref": "C5",
+    "valor": "100nF",
+    "x": 128.62,
+    "y": 32.45,
+    "lado": "topo"
+   },
+   {
+    "ref": "J2",
+    "valor": "BUS_L",
+    "x": 156.72,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "U9",
+    "valor": "74LS32",
+    "x": 88.45,
+    "y": 62.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "C3",
+    "valor": "100nF",
+    "x": 66.82,
+    "y": 32.45,
+    "lado": "topo"
+   },
+   {
+    "ref": "J1",
+    "valor": "ALIMENTACAO",
+    "x": 139.47,
+    "y": 11.83,
+    "lado": "topo"
+   }
+  ],
+  "glb_kb": 2778,
+  "stl_kb": 5321,
+  "step_kb": 6293
+ },
+ "b-registrador-b": {
+  "placa": "b-registrador-b",
+  "largura_mm": 109.5,
+  "altura_mm": 68.61,
+  "furos": 126,
+  "vias": 8,
+  "componentes": [
+   {
+    "ref": "LED7",
+    "valor": "LED verde 3mm",
+    "x": 71.72,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED4",
+    "valor": "LED verde 3mm",
+    "x": 49.83,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "R4",
+    "valor": "470",
+    "x": 49.83,
+    "y": 48.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "R8",
+    "valor": "470",
+    "x": 79.02,
+    "y": 48.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "H3",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 3.5,
+    "y": 65.11,
+    "lado": "topo"
+   },
+   {
+    "ref": "R6",
+    "valor": "470",
+    "x": 64.43,
+    "y": 48.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED1",
+    "valor": "LED verde 3mm",
+    "x": 27.93,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "C2",
+    "valor": "100nF",
+    "x": 41.15,
+    "y": 26.45,
+    "lado": "topo"
+   },
+   {
+    "ref": "J1",
+    "valor": "ALIMENTACAO",
+    "x": 7.82,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED6",
+    "valor": "LED verde 3mm",
+    "x": 64.43,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "H2",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 106.0,
+    "y": 3.5,
+    "lado": "topo"
+   },
+   {
+    "ref": "C1",
+    "valor": "100nF",
+    "x": 11.5,
+    "y": 26.45,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED8",
+    "valor": "LED verde 3mm",
+    "x": 79.02,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "J5",
+    "valor": "ALU_L",
+    "x": 76.83,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "R2",
+    "valor": "470",
+    "x": 35.23,
+    "y": 48.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "H4",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 106.0,
+    "y": 65.11,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED5",
+    "valor": "LED verde 3mm",
+    "x": 57.13,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED2",
+    "valor": "LED verde 3mm",
+    "x": 35.23,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "U1",
+    "valor": "74LS173",
+    "x": 15.8,
+    "y": 32.77,
+    "lado": "topo"
+   },
+   {
+    "ref": "J3",
+    "valor": "BUS_L",
+    "x": 42.33,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "R3",
+    "valor": "470",
+    "x": 42.53,
+    "y": 48.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "U2",
+    "valor": "74LS173",
+    "x": 45.45,
+    "y": 32.77,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED3",
+    "valor": "LED verde 3mm",
+    "x": 42.53,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "J4",
+    "valor": "BUS_H",
+    "x": 59.58,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "C3",
+    "valor": "100nF",
+    "x": 70.8,
+    "y": 26.45,
+    "lado": "topo"
+   },
+   {
+    "ref": "R1",
+    "valor": "470",
+    "x": 27.93,
+    "y": 48.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "H1",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 3.5,
+    "y": 3.5,
+    "lado": "topo"
+   },
+   {
+    "ref": "J2",
+    "valor": "CONTROLE",
+    "x": 25.08,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "R5",
+    "valor": "470",
+    "x": 57.13,
+    "y": 48.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "U3",
+    "valor": "74LS245",
+    "x": 75.1,
+    "y": 32.77,
+    "lado": "topo"
+   },
+   {
+    "ref": "J6",
+    "valor": "ALU_H",
+    "x": 94.08,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "R7",
+    "valor": "470",
+    "x": 71.72,
+    "y": 48.38,
+    "lado": "topo"
+   }
+  ],
+  "glb_kb": 1004,
+  "stl_kb": 2075,
+  "step_kb": 3837
+ },
+ "backplane-barramento": {
+  "placa": "backplane-barramento",
+  "largura_mm": 204.5,
+  "altura_mm": 153.0,
+  "furos": 250,
+  "vias": 14,
+  "componentes": [
+   {
+    "ref": "J30",
+    "valor": "C_B",
+    "x": 171.32,
+    "y": 70.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "J21",
+    "valor": "BL_RAM",
+    "x": 40.33,
+    "y": 86.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "J43",
+    "valor": "CD_E",
+    "x": 94.33,
+    "y": 118.82,
+    "lado": "topo"
+   },
+   {
+    "ref": "J40",
+    "valor": "CD_B",
+    "x": 53.83,
+    "y": 118.82,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED4",
+    "valor": "LED vermelho 3mm",
+    "x": 152.8,
+    "y": 14.27,
+    "lado": "topo"
+   },
+   {
+    "ref": "J28",
+    "valor": "BH_RAM",
+    "x": 53.83,
+    "y": 86.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "J27",
+    "valor": "BH_PC",
+    "x": 53.83,
+    "y": 70.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED5",
+    "valor": "LED vermelho 3mm",
+    "x": 157.88,
+    "y": 14.27,
+    "lado": "topo"
+   },
+   {
+    "ref": "R3",
+    "valor": "1k",
+    "x": 147.72,
+    "y": 19.12,
+    "lado": "topo"
+   },
+   {
+    "ref": "J10",
+    "valor": "P_CD",
+    "x": 26.83,
+    "y": 118.82,
+    "lado": "topo"
+   },
+   {
+    "ref": "J33",
+    "valor": "C_PC1",
+    "x": 67.33,
+    "y": 70.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "J9",
+    "valor": "P_RAM",
+    "x": 26.83,
+    "y": 86.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "J22",
+    "valor": "BH_ACC",
+    "x": 157.82,
+    "y": 38.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "J12",
+    "valor": "P_CLOCK",
+    "x": 26.83,
+    "y": 38.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "J2",
+    "valor": "Borne 5 V",
+    "x": 30.28,
+    "y": 16.02,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED9",
+    "valor": "LED vermelho 3mm",
+    "x": 178.2,
+    "y": 14.27,
+    "lado": "topo"
+   },
+   {
+    "ref": "H2",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 201.0,
+    "y": 3.5,
+    "lado": "topo"
+   },
+   {
+    "ref": "J3",
+    "valor": "P_ACC",
+    "x": 130.82,
+    "y": 38.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "H1",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 3.5,
+    "y": 3.5,
+    "lado": "topo"
+   },
+   {
+    "ref": "J42",
+    "valor": "CD_D",
+    "x": 80.83,
+    "y": 118.82,
+    "lado": "topo"
+   },
+   {
+    "ref": "J38",
+    "valor": "C_ALU2",
+    "x": 184.82,
+    "y": 54.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "J19",
+    "valor": "BL_OUT",
+    "x": 144.32,
+    "y": 86.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "J15",
+    "valor": "BL_ACC",
+    "x": 144.32,
+    "y": 38.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "R4",
+    "valor": "1k",
+    "x": 152.8,
+    "y": 19.12,
+    "lado": "topo"
+   },
+   {
+    "ref": "J31",
+    "valor": "C_IR",
+    "x": 67.33,
+    "y": 102.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "J13",
+    "valor": "P_RESET",
+    "x": 26.83,
+    "y": 54.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "J36",
+    "valor": "C_RAM2",
+    "x": 80.83,
+    "y": 86.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "J39",
+    "valor": "CD_A",
+    "x": 40.33,
+    "y": 118.82,
+    "lado": "topo"
+   },
+   {
+    "ref": "J37",
+    "valor": "C_ALU1",
+    "x": 171.32,
+    "y": 54.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "J41",
+    "valor": "CD_C",
+    "x": 67.33,
+    "y": 118.82,
+    "lado": "topo"
+   },
+   {
+    "ref": "J7",
+    "valor": "P_OUT",
+    "x": 130.82,
+    "y": 86.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "J35",
+    "valor": "C_RAM1",
+    "x": 67.33,
+    "y": 86.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "H3",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 3.5,
+    "y": 149.5,
+    "lado": "topo"
+   },
+   {
+    "ref": "D1",
+    "valor": "1N5822",
+    "x": 68.67,
+    "y": 14.88,
+    "lado": "topo"
+   },
+   {
+    "ref": "R1",
+    "valor": "470",
+    "x": 123.73,
+    "y": 13.52,
+    "lado": "topo"
+   },
+   {
+    "ref": "R8",
+    "valor": "1k",
+    "x": 173.12,
+    "y": 19.12,
+    "lado": "topo"
+   },
+   {
+    "ref": "J23",
+    "valor": "BH_B",
+    "x": 157.82,
+    "y": 70.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "J44",
+    "valor": "C_FETCH",
+    "x": 40.33,
+    "y": 134.82,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED8",
+    "valor": "LED vermelho 3mm",
+    "x": 173.12,
+    "y": 14.27,
+    "lado": "topo"
+   },
+   {
+    "ref": "F1",
+    "valor": "PTC 3 A",
+    "x": 56.92,
+    "y": 13.17,
+    "lado": "topo"
+   },
+   {
+    "ref": "J47",
+    "valor": "EXPANSAO",
+    "x": 130.82,
+    "y": 118.82,
+    "lado": "topo"
+   },
+   {
+    "ref": "J16",
+    "valor": "BL_B",
+    "x": 144.32,
+    "y": 70.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "J14",
+    "valor": "P_DISPLAY",
+    "x": 130.82,
+    "y": 102.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "J20",
+    "valor": "BL_PC",
+    "x": 40.33,
+    "y": 70.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "J26",
+    "valor": "BH_OUT",
+    "x": 157.82,
+    "y": 86.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "J8",
+    "valor": "P_PC",
+    "x": 26.83,
+    "y": 70.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "SW1",
+    "valor": "LIGA/DESLIGA",
+    "x": 46.88,
+    "y": 13.52,
+    "lado": "topo"
+   },
+   {
+    "ref": "J11",
+    "valor": "P_FETCH",
+    "x": 26.83,
+    "y": 134.82,
+    "lado": "topo"
+   },
+   {
+    "ref": "J1",
+    "valor": "Jack DC 5,5x2,1",
+    "x": 22.02,
+    "y": 16.86,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED7",
+    "valor": "LED vermelho 3mm",
+    "x": 168.04,
+    "y": 14.27,
+    "lado": "topo"
+   },
+   {
+    "ref": "J45",
+    "valor": "C_CLOCK",
+    "x": 40.33,
+    "y": 38.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "J24",
+    "valor": "BH_ALU",
+    "x": 157.82,
+    "y": 54.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "R2",
+    "valor": "1k",
+    "x": 142.64,
+    "y": 19.12,
+    "lado": "topo"
+   },
+   {
+    "ref": "R9",
+    "valor": "1k",
+    "x": 178.2,
+    "y": 19.12,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED1",
+    "valor": "LED verde 3mm",
+    "x": 115.43,
+    "y": 14.27,
+    "lado": "topo"
+   },
+   {
+    "ref": "J6",
+    "valor": "P_IR",
+    "x": 26.83,
+    "y": 102.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "C1",
+    "valor": "470uF 10V",
+    "x": 92.33,
+    "y": 17.27,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED3",
+    "valor": "LED vermelho 3mm",
+    "x": 147.72,
+    "y": 14.27,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED2",
+    "valor": "LED vermelho 3mm",
+    "x": 142.64,
+    "y": 14.27,
+    "lado": "topo"
+   },
+   {
+    "ref": "J17",
+    "valor": "BL_ALU",
+    "x": 144.32,
+    "y": 54.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "R5",
+    "valor": "1k",
+    "x": 157.88,
+    "y": 19.12,
+    "lado": "topo"
+   },
+   {
+    "ref": "C2",
+    "valor": "100nF",
+    "x": 104.68,
+    "y": 13.52,
+    "lado": "topo"
+   },
+   {
+    "ref": "J25",
+    "valor": "BH_IR",
+    "x": 53.83,
+    "y": 102.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "R6",
+    "valor": "1k",
+    "x": 162.96,
+    "y": 19.12,
+    "lado": "topo"
+   },
+   {
+    "ref": "R7",
+    "valor": "1k",
+    "x": 168.04,
+    "y": 19.12,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED6",
+    "valor": "LED vermelho 3mm",
+    "x": 162.96,
+    "y": 14.27,
+    "lado": "topo"
+   },
+   {
+    "ref": "J5",
+    "valor": "P_ALU",
+    "x": 130.82,
+    "y": 54.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "J46",
+    "valor": "C_RESET",
+    "x": 40.33,
+    "y": 54.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "J29",
+    "valor": "C_ACC",
+    "x": 171.32,
+    "y": 38.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "J32",
+    "valor": "C_OUT",
+    "x": 171.32,
+    "y": 86.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "J34",
+    "valor": "C_PC2",
+    "x": 80.83,
+    "y": 70.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "J4",
+    "valor": "P_B",
+    "x": 130.82,
+    "y": 70.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "H4",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 201.0,
+    "y": 149.5,
+    "lado": "topo"
+   },
+   {
+    "ref": "J18",
+    "valor": "BL_IR",
+    "x": 40.33,
+    "y": 102.83,
+    "lado": "topo"
+   }
+  ],
+  "glb_kb": 1812,
+  "stl_kb": 3297,
+  "step_kb": 2726
+ },
+ "cd-decodificador-controle": {
+  "placa": "cd-decodificador-controle",
+  "largura_mm": 161.25,
+  "altura_mm": 60.95,
+  "furos": 128,
+  "vias": 6,
+  "componentes": [
+   {
+    "ref": "U3",
+    "valor": "AT28C16",
+    "x": 108.62,
+    "y": 40.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "J7",
+    "valor": "CTRL_C",
+    "x": 111.32,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "C3",
+    "valor": "100nF",
+    "x": 104.33,
+    "y": 30.27,
+    "lado": "topo"
+   },
+   {
+    "ref": "J1",
+    "valor": "ALIMENTACAO",
+    "x": 7.82,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "H1",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 3.5,
+    "y": 3.5,
+    "lado": "topo"
+   },
+   {
+    "ref": "J8",
+    "valor": "CTRL_D",
+    "x": 128.57,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "H4",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 157.75,
+    "y": 57.45,
+    "lado": "topo"
+   },
+   {
+    "ref": "R1",
+    "valor": "10k",
+    "x": 68.14,
+    "y": 50.42,
+    "lado": "topo"
+   },
+   {
+    "ref": "U1",
+    "valor": "AT28C16",
+    "x": 28.92,
+    "y": 40.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "J5",
+    "valor": "CTRL_A",
+    "x": 76.83,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "R2",
+    "valor": "10k",
+    "x": 82.95,
+    "y": 50.42,
+    "lado": "topo"
+   },
+   {
+    "ref": "J3",
+    "valor": "OPCODE",
+    "x": 42.33,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "H2",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 157.75,
+    "y": 3.5,
+    "lado": "topo"
+   },
+   {
+    "ref": "C2",
+    "valor": "100nF",
+    "x": 64.47,
+    "y": 30.27,
+    "lado": "topo"
+   },
+   {
+    "ref": "U2",
+    "valor": "AT28C16",
+    "x": 68.78,
+    "y": 40.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "H3",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 3.5,
+    "y": 57.45,
+    "lado": "topo"
+   },
+   {
+    "ref": "J4",
+    "valor": "FLAGS",
+    "x": 59.58,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "J9",
+    "valor": "CTRL_E",
+    "x": 145.82,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "J6",
+    "valor": "CTRL_B",
+    "x": 94.08,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "C1",
+    "valor": "100nF",
+    "x": 24.62,
+    "y": 30.27,
+    "lado": "topo"
+   },
+   {
+    "ref": "J2",
+    "valor": "PASSO",
+    "x": 25.08,
+    "y": 11.83,
+    "lado": "topo"
+   }
+  ],
+  "glb_kb": 961,
+  "stl_kb": 1491,
+  "step_kb": 2856
+ },
+ "clock-astavel-monoestavel": {
+  "placa": "clock-astavel-monoestavel",
+  "largura_mm": 105.34,
+  "altura_mm": 85.76,
+  "furos": 96,
+  "vias": 4,
+  "componentes": [
+   {
+    "ref": "U2",
+    "valor": "74LS00",
+    "x": 74.32,
+    "y": 32.77,
+    "lado": "topo"
+   },
+   {
+    "ref": "C5",
+    "valor": "100nF",
+    "x": 15.72,
+    "y": 26.45,
+    "lado": "topo"
+   },
+   {
+    "ref": "H2",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 101.84,
+    "y": 3.5,
+    "lado": "topo"
+   },
+   {
+    "ref": "R4",
+    "valor": "10k",
+    "x": 36.7,
+    "y": 42.78,
+    "lado": "topo"
+   },
+   {
+    "ref": "R5",
+    "valor": "330k",
+    "x": 51.5,
+    "y": 42.78,
+    "lado": "topo"
+   },
+   {
+    "ref": "C2",
+    "valor": "10nF",
+    "x": 73.97,
+    "y": 42.78,
+    "lado": "topo"
+   },
+   {
+    "ref": "J2",
+    "valor": "CLOCK",
+    "x": 57.5,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "R1",
+    "valor": "1k",
+    "x": 7.07,
+    "y": 42.78,
+    "lado": "topo"
+   },
+   {
+    "ref": "J1",
+    "valor": "ALIMENTACAO",
+    "x": 40.25,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "R2",
+    "valor": "10",
+    "x": 21.88,
+    "y": 42.78,
+    "lado": "topo"
+   },
+   {
+    "ref": "U1",
+    "valor": "NE556",
+    "x": 20.02,
+    "y": 32.77,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED1",
+    "valor": "LED azul 3mm",
+    "x": 72.42,
+    "y": 55.64,
+    "lado": "topo"
+   },
+   {
+    "ref": "RV1",
+    "valor": "100k lin",
+    "x": 30.37,
+    "y": 57.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "R6",
+    "valor": "470",
+    "x": 47.59,
+    "y": 75.23,
+    "lado": "topo"
+   },
+   {
+    "ref": "U3",
+    "valor": "74LS04",
+    "x": 47.17,
+    "y": 32.77,
+    "lado": "topo"
+   },
+   {
+    "ref": "H4",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 101.84,
+    "y": 82.26,
+    "lado": "topo"
+   },
+   {
+    "ref": "H1",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 3.5,
+    "y": 3.5,
+    "lado": "topo"
+   },
+   {
+    "ref": "H3",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 3.5,
+    "y": 82.26,
+    "lado": "topo"
+   },
+   {
+    "ref": "C6",
+    "valor": "100nF",
+    "x": 42.87,
+    "y": 26.45,
+    "lado": "topo"
+   },
+   {
+    "ref": "SW1",
+    "valor": "PASSO",
+    "x": 60.72,
+    "y": 54.89,
+    "lado": "topo"
+   },
+   {
+    "ref": "C1",
+    "valor": "10uF tantalo",
+    "x": 66.59,
+    "y": 43.81,
+    "lado": "topo"
+   },
+   {
+    "ref": "C7",
+    "valor": "100nF",
+    "x": 70.02,
+    "y": 26.45,
+    "lado": "topo"
+   },
+   {
+    "ref": "C3",
+    "valor": "10nF",
+    "x": 83.62,
+    "y": 42.78,
+    "lado": "topo"
+   },
+   {
+    "ref": "C4",
+    "valor": "330nF",
+    "x": 93.27,
+    "y": 42.78,
+    "lado": "topo"
+   },
+   {
+    "ref": "SW2",
+    "valor": "AUTO/MANUAL",
+    "x": 51.42,
+    "y": 54.89,
+    "lado": "topo"
+   }
+  ],
+  "glb_kb": 936,
+  "stl_kb": 1729,
+  "step_kb": 3803
+ },
+ "display-decimal": {
+  "placa": "display-decimal",
+  "largura_mm": 133.65,
+  "altura_mm": 111.88,
+  "furos": 138,
+  "vias": 11,
+  "componentes": [
+   {
+    "ref": "R5",
+    "valor": "100",
+    "x": 64.05,
+    "y": 76.19,
+    "lado": "topo"
+   },
+   {
+    "ref": "U4",
+    "valor": "74LS139",
+    "x": 65.97,
+    "y": 34.77,
+    "lado": "topo"
+   },
+   {
+    "ref": "R6",
+    "valor": "100",
+    "x": 69.6,
+    "y": 76.19,
+    "lado": "topo"
+   },
+   {
+    "ref": "C2",
+    "valor": "100nF",
+    "x": 29.52,
+    "y": 28.45,
+    "lado": "topo"
+   },
+   {
+    "ref": "R8",
+    "valor": "100",
+    "x": 80.7,
+    "y": 76.19,
+    "lado": "topo"
+   },
+   {
+    "ref": "C6",
+    "valor": "10nF",
+    "x": 77.44,
+    "y": 54.42,
+    "lado": "topo"
+   },
+   {
+    "ref": "H3",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 3.5,
+    "y": 108.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "R9",
+    "valor": "100",
+    "x": 86.25,
+    "y": 76.19,
+    "lado": "topo"
+   },
+   {
+    "ref": "R1",
+    "valor": "1k",
+    "x": 38.16,
+    "y": 54.42,
+    "lado": "topo"
+   },
+   {
+    "ref": "R7",
+    "valor": "100",
+    "x": 75.15,
+    "y": 76.19,
+    "lado": "topo"
+   },
+   {
+    "ref": "J1",
+    "valor": "ALIMENTACAO",
+    "x": 45.78,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "H4",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 130.15,
+    "y": 108.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "R3",
+    "valor": "100",
+    "x": 52.95,
+    "y": 76.19,
+    "lado": "topo"
+   },
+   {
+    "ref": "H2",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 130.15,
+    "y": 3.5,
+    "lado": "topo"
+   },
+   {
+    "ref": "C4",
+    "valor": "100nF",
+    "x": 93.83,
+    "y": 32.27,
+    "lado": "topo"
+   },
+   {
+    "ref": "SW1",
+    "valor": "SEM SINAL/COM SINAL",
+    "x": 91.28,
+    "y": 54.42,
+    "lado": "topo"
+   },
+   {
+    "ref": "R2",
+    "valor": "100",
+    "x": 47.4,
+    "y": 76.19,
+    "lado": "topo"
+   },
+   {
+    "ref": "DS1",
+    "valor": "4 dig. 0,4\" catodo comum",
+    "x": 66.83,
+    "y": 94.57,
+    "lado": "topo"
+   },
+   {
+    "ref": "R4",
+    "valor": "100",
+    "x": 58.5,
+    "y": 76.19,
+    "lado": "topo"
+   },
+   {
+    "ref": "R10",
+    "valor": "100k",
+    "x": 52.97,
+    "y": 54.42,
+    "lado": "topo"
+   },
+   {
+    "ref": "U3",
+    "valor": "74LS161",
+    "x": 33.83,
+    "y": 34.77,
+    "lado": "topo"
+   },
+   {
+    "ref": "C5",
+    "valor": "15nF",
+    "x": 67.78,
+    "y": 54.42,
+    "lado": "topo"
+   },
+   {
+    "ref": "J2",
+    "valor": "ENTRADA_L",
+    "x": 63.03,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "C1",
+    "valor": "100nF",
+    "x": 7.52,
+    "y": 28.45,
+    "lado": "topo"
+   },
+   {
+    "ref": "U1",
+    "valor": "AT28C16",
+    "x": 98.12,
+    "y": 42.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "U2",
+    "valor": "NE555",
+    "x": 11.82,
+    "y": 34.77,
+    "lado": "topo"
+   },
+   {
+    "ref": "J3",
+    "valor": "ENTRADA_H",
+    "x": 80.28,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "C3",
+    "valor": "100nF",
+    "x": 61.67,
+    "y": 28.45,
+    "lado": "topo"
+   },
+   {
+    "ref": "H1",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 3.5,
+    "y": 3.5,
+    "lado": "topo"
+   }
+  ],
+  "glb_kb": 1177,
+  "stl_kb": 2333,
+  "step_kb": 4752
+ },
+ "fetch-contador-passos": {
+  "placa": "fetch-contador-passos",
+  "largura_mm": 69.7,
+  "altura_mm": 68.61,
+  "furos": 86,
+  "vias": 2,
+  "componentes": [
+   {
+    "ref": "R5",
+    "valor": "470",
+    "x": 39.26,
+    "y": 58.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "C1",
+    "valor": "100nF",
+    "x": 8.98,
+    "y": 26.45,
+    "lado": "topo"
+   },
+   {
+    "ref": "H4",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 66.2,
+    "y": 65.11,
+    "lado": "topo"
+   },
+   {
+    "ref": "U2",
+    "valor": "74LS138",
+    "x": 42.92,
+    "y": 32.77,
+    "lado": "topo"
+   },
+   {
+    "ref": "R1",
+    "valor": "330",
+    "x": 7.18,
+    "y": 48.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED5",
+    "valor": "LED verde 3mm",
+    "x": 36.72,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "J3",
+    "valor": "CONTROLE",
+    "x": 48.3,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "R8",
+    "valor": "470",
+    "x": 62.17,
+    "y": 58.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED8",
+    "valor": "LED verde 3mm",
+    "x": 59.64,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "H1",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 3.5,
+    "y": 3.5,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED4",
+    "valor": "LED verde 3mm",
+    "x": 29.08,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "U1",
+    "valor": "74LS161",
+    "x": 13.27,
+    "y": 32.77,
+    "lado": "topo"
+   },
+   {
+    "ref": "R3",
+    "valor": "330",
+    "x": 21.77,
+    "y": 48.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "R4",
+    "valor": "470",
+    "x": 31.62,
+    "y": 58.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "J1",
+    "valor": "ALIMENTACAO",
+    "x": 13.8,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "R7",
+    "valor": "470",
+    "x": 54.53,
+    "y": 58.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED2",
+    "valor": "LED amarelo 3mm",
+    "x": 14.48,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED3",
+    "valor": "LED amarelo 3mm",
+    "x": 21.77,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "J2",
+    "valor": "PASSO",
+    "x": 31.05,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "R6",
+    "valor": "470",
+    "x": 46.89,
+    "y": 58.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "H3",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 3.5,
+    "y": 65.11,
+    "lado": "topo"
+   },
+   {
+    "ref": "C2",
+    "valor": "100nF",
+    "x": 38.62,
+    "y": 26.45,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED6",
+    "valor": "LED verde 3mm",
+    "x": 44.36,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED1",
+    "valor": "LED amarelo 3mm",
+    "x": 7.18,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "R2",
+    "valor": "330",
+    "x": 14.47,
+    "y": 48.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED7",
+    "valor": "LED verde 3mm",
+    "x": 52.0,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "H2",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 66.2,
+    "y": 3.5,
+    "lado": "topo"
+   }
+  ],
+  "glb_kb": 741,
+  "stl_kb": 1702,
+  "step_kb": 2209
+ },
+ "ir-registrador-instrucao": {
+  "placa": "ir-registrador-instrucao",
+  "largura_mm": 101.55,
+  "altura_mm": 68.61,
+  "furos": 120,
+  "vias": 6,
+  "componentes": [
+   {
+    "ref": "J4",
+    "valor": "BUS_H",
+    "x": 64.22,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "R2",
+    "valor": "470",
+    "x": 31.25,
+    "y": 48.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "R1",
+    "valor": "470",
+    "x": 23.95,
+    "y": 48.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "U1",
+    "valor": "74LS173",
+    "x": 11.82,
+    "y": 32.77,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED2",
+    "valor": "LED verde 3mm",
+    "x": 31.25,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED6",
+    "valor": "LED verde 3mm",
+    "x": 60.45,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "C1",
+    "valor": "100nF",
+    "x": 7.52,
+    "y": 26.45,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED4",
+    "valor": "LED verde 3mm",
+    "x": 45.85,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "H4",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 98.05,
+    "y": 65.11,
+    "lado": "topo"
+   },
+   {
+    "ref": "H1",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 3.5,
+    "y": 3.5,
+    "lado": "topo"
+   },
+   {
+    "ref": "R5",
+    "valor": "470",
+    "x": 53.15,
+    "y": 48.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "R3",
+    "valor": "470",
+    "x": 38.55,
+    "y": 48.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "H2",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 98.05,
+    "y": 3.5,
+    "lado": "topo"
+   },
+   {
+    "ref": "H3",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 3.5,
+    "y": 65.11,
+    "lado": "topo"
+   },
+   {
+    "ref": "J5",
+    "valor": "OPCODE",
+    "x": 81.47,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "J3",
+    "valor": "BUS_L",
+    "x": 46.97,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "C3",
+    "valor": "100nF",
+    "x": 66.82,
+    "y": 26.45,
+    "lado": "topo"
+   },
+   {
+    "ref": "R8",
+    "valor": "470",
+    "x": 75.05,
+    "y": 48.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED5",
+    "valor": "LED verde 3mm",
+    "x": 53.15,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "C2",
+    "valor": "100nF",
+    "x": 37.17,
+    "y": 26.45,
+    "lado": "topo"
+   },
+   {
+    "ref": "U2",
+    "valor": "74LS173",
+    "x": 41.47,
+    "y": 32.77,
+    "lado": "topo"
+   },
+   {
+    "ref": "R6",
+    "valor": "470",
+    "x": 60.45,
+    "y": 48.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "R4",
+    "valor": "470",
+    "x": 45.85,
+    "y": 48.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED3",
+    "valor": "LED verde 3mm",
+    "x": 38.55,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED1",
+    "valor": "LED verde 3mm",
+    "x": 23.95,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "J2",
+    "valor": "CONTROLE",
+    "x": 29.72,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "J1",
+    "valor": "ALIMENTACAO",
+    "x": 12.47,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED8",
+    "valor": "LED verde 3mm",
+    "x": 75.05,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "U3",
+    "valor": "74LS245",
+    "x": 71.12,
+    "y": 32.77,
+    "lado": "topo"
+   },
+   {
+    "ref": "R7",
+    "valor": "470",
+    "x": 67.75,
+    "y": 48.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED7",
+    "valor": "LED verde 3mm",
+    "x": 67.75,
+    "y": 43.53,
+    "lado": "topo"
+   }
+  ],
+  "glb_kb": 1014,
+  "stl_kb": 2040,
+  "step_kb": 3820
+ },
+ "out-registrador-saida": {
+  "placa": "out-registrador-saida",
+  "largura_mm": 109.5,
+  "altura_mm": 68.61,
+  "furos": 96,
+  "vias": 0,
+  "componentes": [
+   {
+    "ref": "C2",
+    "valor": "100nF",
+    "x": 58.52,
+    "y": 26.45,
+    "lado": "topo"
+   },
+   {
+    "ref": "J2",
+    "valor": "CONTROLE",
+    "x": 25.08,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "C1",
+    "valor": "100nF",
+    "x": 28.88,
+    "y": 26.45,
+    "lado": "topo"
+   },
+   {
+    "ref": "J6",
+    "valor": "DISPLAY_H",
+    "x": 94.08,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "H2",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 106.0,
+    "y": 3.5,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED2",
+    "valor": "LED verde 3mm",
+    "x": 35.23,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED1",
+    "valor": "LED verde 3mm",
+    "x": 27.93,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED4",
+    "valor": "LED verde 3mm",
+    "x": 49.83,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "J1",
+    "valor": "ALIMENTACAO",
+    "x": 7.82,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "R8",
+    "valor": "470",
+    "x": 79.02,
+    "y": 48.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "U1",
+    "valor": "74LS173",
+    "x": 33.17,
+    "y": 32.77,
+    "lado": "topo"
+   },
+   {
+    "ref": "R1",
+    "valor": "470",
+    "x": 27.93,
+    "y": 48.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "H4",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 106.0,
+    "y": 65.11,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED7",
+    "valor": "LED verde 3mm",
+    "x": 71.72,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "H3",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 3.5,
+    "y": 65.11,
+    "lado": "topo"
+   },
+   {
+    "ref": "R5",
+    "valor": "470",
+    "x": 57.13,
+    "y": 48.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "H1",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 3.5,
+    "y": 3.5,
+    "lado": "topo"
+   },
+   {
+    "ref": "R2",
+    "valor": "470",
+    "x": 35.23,
+    "y": 48.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED5",
+    "valor": "LED verde 3mm",
+    "x": 57.13,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "J3",
+    "valor": "BUS_L",
+    "x": 42.33,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED6",
+    "valor": "LED verde 3mm",
+    "x": 64.43,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "U2",
+    "valor": "74LS173",
+    "x": 62.82,
+    "y": 32.77,
+    "lado": "topo"
+   },
+   {
+    "ref": "R6",
+    "valor": "470",
+    "x": 64.43,
+    "y": 48.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "R7",
+    "valor": "470",
+    "x": 71.72,
+    "y": 48.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "J4",
+    "valor": "BUS_H",
+    "x": 59.58,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED3",
+    "valor": "LED verde 3mm",
+    "x": 42.53,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED8",
+    "valor": "LED verde 3mm",
+    "x": 79.02,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "R3",
+    "valor": "470",
+    "x": 42.53,
+    "y": 48.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "R4",
+    "valor": "470",
+    "x": 49.83,
+    "y": 48.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "J5",
+    "valor": "DISPLAY_L",
+    "x": 76.83,
+    "y": 11.83,
+    "lado": "topo"
+   }
+  ],
+  "glb_kb": 788,
+  "stl_kb": 1808,
+  "step_kb": 2274
+ },
+ "pc-contador-programa": {
+  "placa": "pc-contador-programa",
+  "largura_mm": 92.25,
+  "altura_mm": 68.61,
+  "furos": 85,
+  "vias": 5,
+  "componentes": [
+   {
+    "ref": "LED1",
+    "valor": "LED verde 3mm",
+    "x": 33.9,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "H4",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 88.75,
+    "y": 65.11,
+    "lado": "topo"
+   },
+   {
+    "ref": "J2",
+    "valor": "CONTROLE",
+    "x": 25.08,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "H2",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 88.75,
+    "y": 3.5,
+    "lado": "topo"
+   },
+   {
+    "ref": "H3",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 3.5,
+    "y": 65.11,
+    "lado": "topo"
+   },
+   {
+    "ref": "J3",
+    "valor": "CONTROLE2",
+    "x": 42.33,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "J1",
+    "valor": "ALIMENTACAO",
+    "x": 7.82,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "C2",
+    "valor": "100nF",
+    "x": 47.35,
+    "y": 26.45,
+    "lado": "topo"
+   },
+   {
+    "ref": "C1",
+    "valor": "100nF",
+    "x": 17.7,
+    "y": 26.45,
+    "lado": "topo"
+   },
+   {
+    "ref": "J5",
+    "valor": "BUS_H",
+    "x": 76.83,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "R4",
+    "valor": "470",
+    "x": 55.8,
+    "y": 48.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED3",
+    "valor": "LED verde 3mm",
+    "x": 48.5,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "H1",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 3.5,
+    "y": 3.5,
+    "lado": "topo"
+   },
+   {
+    "ref": "R2",
+    "valor": "470",
+    "x": 41.2,
+    "y": 48.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "U2",
+    "valor": "74LS245",
+    "x": 51.65,
+    "y": 32.77,
+    "lado": "topo"
+   },
+   {
+    "ref": "R1",
+    "valor": "470",
+    "x": 33.9,
+    "y": 48.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "J4",
+    "valor": "BUS_L",
+    "x": 59.58,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED2",
+    "valor": "LED verde 3mm",
+    "x": 41.2,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "R3",
+    "valor": "470",
+    "x": 48.5,
+    "y": 48.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "U1",
+    "valor": "74LS161",
+    "x": 22.0,
+    "y": 32.77,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED4",
+    "valor": "LED verde 3mm",
+    "x": 55.8,
+    "y": 43.53,
+    "lado": "topo"
+   }
+  ],
+  "glb_kb": 796,
+  "stl_kb": 1253,
+  "step_kb": 3635
+ },
+ "ram-mar-memoria": {
+  "placa": "ram-mar-memoria",
+  "largura_mm": 145.1,
+  "altura_mm": 139.47,
+  "furos": 494,
+  "vias": 151,
+  "componentes": [
+   {
+    "ref": "U3",
+    "valor": "74LS04",
+    "x": 35.6,
+    "y": 70.97,
+    "lado": "topo"
+   },
+   {
+    "ref": "U5",
+    "valor": "74LS245",
+    "x": 90.9,
+    "y": 70.97,
+    "lado": "topo"
+   },
+   {
+    "ref": "R2",
+    "valor": "470",
+    "x": 38.42,
+    "y": 119.24,
+    "lado": "topo"
+   },
+   {
+    "ref": "U4",
+    "valor": "74LS04",
+    "x": 63.25,
+    "y": 70.97,
+    "lado": "topo"
+   },
+   {
+    "ref": "U2",
+    "valor": "74S189",
+    "x": 111.02,
+    "y": 52.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "H2",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 141.6,
+    "y": 3.5,
+    "lado": "topo"
+   },
+   {
+    "ref": "R3",
+    "valor": "470",
+    "x": 45.73,
+    "y": 119.24,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED6",
+    "valor": "LED verde 3mm",
+    "x": 67.63,
+    "y": 114.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "SW3",
+    "valor": "DADO",
+    "x": 63.72,
+    "y": 93.24,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED1",
+    "valor": "LED verde 3mm",
+    "x": 31.13,
+    "y": 114.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "C5",
+    "valor": "100nF",
+    "x": 125.62,
+    "y": 27.45,
+    "lado": "topo"
+   },
+   {
+    "ref": "SW2",
+    "valor": "PROG/RUN",
+    "x": 86.27,
+    "y": 93.33,
+    "lado": "topo"
+   },
+   {
+    "ref": "C11",
+    "valor": "100nF",
+    "x": 58.95,
+    "y": 64.65,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED10",
+    "valor": "LED amarelo 3mm",
+    "x": 96.82,
+    "y": 114.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "SW1",
+    "valor": "ENDERECO",
+    "x": 37.98,
+    "y": 93.24,
+    "lado": "topo"
+   },
+   {
+    "ref": "U6",
+    "valor": "74LS173",
+    "x": 11.82,
+    "y": 33.77,
+    "lado": "topo"
+   },
+   {
+    "ref": "R13",
+    "valor": "1k",
+    "x": 48.49,
+    "y": 81.97,
+    "lado": "topo"
+   },
+   {
+    "ref": "SW4",
+    "valor": "GRAVAR",
+    "x": 70.47,
+    "y": 93.33,
+    "lado": "topo"
+   },
+   {
+    "ref": "R16",
+    "valor": "1k",
+    "x": 63.3,
+    "y": 81.97,
+    "lado": "topo"
+   },
+   {
+    "ref": "R10",
+    "valor": "470",
+    "x": 96.82,
+    "y": 119.24,
+    "lado": "topo"
+   },
+   {
+    "ref": "J1",
+    "valor": "ALIMENTACAO",
+    "x": 34.25,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED14",
+    "valor": "LED verde 3mm",
+    "x": 108.17,
+    "y": 94.08,
+    "lado": "topo"
+   },
+   {
+    "ref": "J2",
+    "valor": "CONTROLE1",
+    "x": 51.5,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "H3",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 3.5,
+    "y": 135.97,
+    "lado": "topo"
+   },
+   {
+    "ref": "U8",
+    "valor": "74LS157",
+    "x": 20.58,
+    "y": 52.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "R8",
+    "valor": "470",
+    "x": 82.22,
+    "y": 119.24,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED13",
+    "valor": "LED vermelho 3mm",
+    "x": 95.22,
+    "y": 94.08,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED2",
+    "valor": "LED verde 3mm",
+    "x": 38.43,
+    "y": 114.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "C6",
+    "valor": "100nF",
+    "x": 16.27,
+    "y": 46.05,
+    "lado": "topo"
+   },
+   {
+    "ref": "C10",
+    "valor": "100nF",
+    "x": 31.3,
+    "y": 64.65,
+    "lado": "topo"
+   },
+   {
+    "ref": "RN1",
+    "valor": "8x1k",
+    "x": 109.72,
+    "y": 82.12,
+    "lado": "topo"
+   },
+   {
+    "ref": "R14",
+    "valor": "470",
+    "x": 102.97,
+    "y": 103.03,
+    "lado": "topo"
+   },
+   {
+    "ref": "J3",
+    "valor": "CONTROLE2",
+    "x": 68.75,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED9",
+    "valor": "LED amarelo 3mm",
+    "x": 89.52,
+    "y": 114.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "R1",
+    "valor": "470",
+    "x": 31.13,
+    "y": 119.24,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED4",
+    "valor": "LED verde 3mm",
+    "x": 53.03,
+    "y": 114.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "C12",
+    "valor": "100nF",
+    "x": 86.6,
+    "y": 64.65,
+    "lado": "topo"
+   },
+   {
+    "ref": "R18",
+    "valor": "1k",
+    "x": 24.03,
+    "y": 81.97,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED5",
+    "valor": "LED verde 3mm",
+    "x": 60.33,
+    "y": 114.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "C14",
+    "valor": "10nF",
+    "x": 38.84,
+    "y": 81.97,
+    "lado": "topo"
+   },
+   {
+    "ref": "J5",
+    "valor": "BUS_H",
+    "x": 103.25,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "R15",
+    "valor": "470",
+    "x": 115.92,
+    "y": 103.03,
+    "lado": "topo"
+   },
+   {
+    "ref": "U7",
+    "valor": "74LS157",
+    "x": 41.97,
+    "y": 33.77,
+    "lado": "topo"
+   },
+   {
+    "ref": "U9",
+    "valor": "74LS157",
+    "x": 50.72,
+    "y": 52.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "C4",
+    "valor": "100nF",
+    "x": 95.47,
+    "y": 27.45,
+    "lado": "topo"
+   },
+   {
+    "ref": "U1",
+    "valor": "74S189",
+    "x": 80.87,
+    "y": 52.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED12",
+    "valor": "LED amarelo 3mm",
+    "x": 111.42,
+    "y": 114.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "R4",
+    "valor": "470",
+    "x": 53.03,
+    "y": 119.24,
+    "lado": "topo"
+   },
+   {
+    "ref": "C3",
+    "valor": "100nF",
+    "x": 67.82,
+    "y": 27.45,
+    "lado": "topo"
+   },
+   {
+    "ref": "R7",
+    "valor": "470",
+    "x": 74.92,
+    "y": 119.24,
+    "lado": "topo"
+   },
+   {
+    "ref": "U10",
+    "valor": "74LS157",
+    "x": 99.77,
+    "y": 33.77,
+    "lado": "topo"
+   },
+   {
+    "ref": "C8",
+    "valor": "100nF",
+    "x": 76.57,
+    "y": 46.05,
+    "lado": "topo"
+   },
+   {
+    "ref": "R5",
+    "valor": "470",
+    "x": 60.33,
+    "y": 119.24,
+    "lado": "topo"
+   },
+   {
+    "ref": "J4",
+    "valor": "BUS_L",
+    "x": 86.0,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "R12",
+    "valor": "470",
+    "x": 111.42,
+    "y": 119.24,
+    "lado": "topo"
+   },
+   {
+    "ref": "R17",
+    "valor": "10k",
+    "x": 78.11,
+    "y": 81.97,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED3",
+    "valor": "LED verde 3mm",
+    "x": 45.73,
+    "y": 114.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "R9",
+    "valor": "470",
+    "x": 89.52,
+    "y": 119.24,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED11",
+    "valor": "LED amarelo 3mm",
+    "x": 104.12,
+    "y": 114.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "C9",
+    "valor": "100nF",
+    "x": 106.72,
+    "y": 46.05,
+    "lado": "topo"
+   },
+   {
+    "ref": "U12",
+    "valor": "NE555",
+    "x": 129.92,
+    "y": 33.77,
+    "lado": "topo"
+   },
+   {
+    "ref": "C2",
+    "valor": "100nF",
+    "x": 37.67,
+    "y": 27.45,
+    "lado": "topo"
+   },
+   {
+    "ref": "H4",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 141.6,
+    "y": 135.97,
+    "lado": "topo"
+   },
+   {
+    "ref": "C7",
+    "valor": "100nF",
+    "x": 46.42,
+    "y": 46.05,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED8",
+    "valor": "LED verde 3mm",
+    "x": 82.22,
+    "y": 114.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "U11",
+    "valor": "74LS00",
+    "x": 72.12,
+    "y": 33.77,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED7",
+    "valor": "LED verde 3mm",
+    "x": 74.92,
+    "y": 114.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "R6",
+    "valor": "470",
+    "x": 67.63,
+    "y": 119.24,
+    "lado": "topo"
+   },
+   {
+    "ref": "C13",
+    "valor": "1nF",
+    "x": 14.38,
+    "y": 81.97,
+    "lado": "topo"
+   },
+   {
+    "ref": "H1",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 3.5,
+    "y": 3.5,
+    "lado": "topo"
+   },
+   {
+    "ref": "R11",
+    "valor": "470",
+    "x": 104.12,
+    "y": 119.24,
+    "lado": "topo"
+   },
+   {
+    "ref": "C1",
+    "valor": "100nF",
+    "x": 7.52,
+    "y": 27.45,
+    "lado": "topo"
+   },
+   {
+    "ref": "RN2",
+    "valor": "4x1k",
+    "x": 93.57,
+    "y": 82.12,
+    "lado": "topo"
+   }
+  ],
+  "glb_kb": 2884,
+  "stl_kb": 5819,
+  "step_kb": 9492
+ },
+ "reset-circuito": {
+  "placa": "reset-circuito",
+  "largura_mm": 66.71,
+  "altura_mm": 57.8,
+  "furos": 42,
+  "vias": 0,
+  "componentes": [
+   {
+    "ref": "SW1",
+    "valor": "RESET",
+    "x": 7.52,
+    "y": 42.78,
+    "lado": "topo"
+   },
+   {
+    "ref": "J2",
+    "valor": "RESET",
+    "x": 38.18,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "U1",
+    "valor": "74LS132",
+    "x": 19.45,
+    "y": 32.77,
+    "lado": "topo"
+   },
+   {
+    "ref": "H3",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 3.5,
+    "y": 54.3,
+    "lado": "topo"
+   },
+   {
+    "ref": "H4",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 63.21,
+    "y": 54.3,
+    "lado": "topo"
+   },
+   {
+    "ref": "H2",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 63.21,
+    "y": 3.5,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED1",
+    "valor": "LED vermelho 3mm",
+    "x": 42.17,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "H1",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 3.5,
+    "y": 3.5,
+    "lado": "topo"
+   },
+   {
+    "ref": "C2",
+    "valor": "100nF",
+    "x": 15.15,
+    "y": 26.45,
+    "lado": "topo"
+   },
+   {
+    "ref": "R2",
+    "valor": "10k",
+    "x": 41.85,
+    "y": 25.17,
+    "lado": "topo"
+   },
+   {
+    "ref": "C1",
+    "valor": "10uF",
+    "x": 34.72,
+    "y": 44.03,
+    "lado": "topo"
+   },
+   {
+    "ref": "R3",
+    "valor": "1k",
+    "x": 49.47,
+    "y": 42.78,
+    "lado": "topo"
+   },
+   {
+    "ref": "J1",
+    "valor": "ALIMENTACAO",
+    "x": 20.93,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "R1",
+    "valor": "10k",
+    "x": 19.12,
+    "y": 42.78,
+    "lado": "topo"
+   }
+  ],
+  "glb_kb": 599,
+  "stl_kb": 866,
+  "step_kb": 2548
+ }
+}

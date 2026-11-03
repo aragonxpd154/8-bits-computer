@@ -4,7 +4,8 @@
 
 🖼️ **[Guia visual passo a passo](GUIA-VISUAL-PASSO-A-PASSO.md)** — o caminho completo em diagramas.
 PDFs: [guia visual](pdf/guia-visual-passo-a-passo.pdf) · [manual completo](pdf/manual-completo.pdf) ·
-[esquema elétrico completo](../hardware/esquema-eletrico-completo.pdf)
+[esquema elétrico completo](../hardware/esquema-eletrico-completo.pdf) ·
+[guia das placas (PDF)](pdf/guia-das-placas.pdf)
 
 | # | Documento | Conteúdo |
 |---|---|---|
@@ -16,5 +17,7 @@ PDFs: [guia visual](pdf/guia-visual-passo-a-passo.pdf) · [manual completo](pdf/
 | 6 | [Gravação das EEPROMs](06-gravacao-das-eeproms.md) | microcódigo e display com `minipro` no Zorin OS |
 | 7 | [Programação e uso](07-programacao-e-uso.md) | painel, montador, emulador, gravação manual da RAM, exemplos |
 | 8 | [Testes e diagnóstico](08-testes-e-diagnostico.md) | subida do sistema por etapas e problemas comuns |
+| — | [**Guia das placas**](placas/README.md) | uma página por placa: função, diagrama de funcionamento, esquema, 3D, conectores, componentes e teste |
+| — | [Placas em 3D](3d/README.md) | visualizador interativo, modelos `.stl` (abrem no GitHub), `.glb` e `.step` |
 | — | [Lista de materiais completa](lista-de-materiais-completa.md) | todos os componentes das 13 placas |
 | — | [Esquema elétrico completo (PDF)](../hardware/esquema-eletrico-completo.pdf) | capa, diagrama de blocos e os 13 esquemáticos num único PDF |

@@ -43,8 +43,9 @@ def capa(titulo, sub, imagem):
             f'<div class="sub">github.com/aragonxpd154/8-bits-computer · GPL-3.0 · v3.0 · 2026</div></div>')
 
 
-def md_para_html(arquivos, titulo, capa_html, toc=False, primeiro_h2_sem_quebra=False):
-    md = '\n\n'.join(open(os.path.join(DOCS, a), encoding='utf-8').read() for a in arquivos)
+def md_para_html(arquivos, titulo, capa_html, toc=False, primeiro_h2_sem_quebra=False, base=DOCS, css_extra=''):
+    md = '\n\n'.join(open(os.path.join(base, a), encoding='utf-8').read() for a in arquivos)
+    md = re.sub(r'^← .*$|^.*\[todas as placas\]\(README\.md\).*$|^Voltar para a .*$', '', md, flags=re.M)
     # nos PDFs, cada capitulo (titulo nivel 1) comeca em pagina nova
     md = re.sub(r'^---\s*\nAnterior:.*$', '', md, flags=re.M)
     md = re.sub(r'^(Anterior|Próximo):.*$', '', md, flags=re.M)
@@ -53,15 +54,15 @@ def md_para_html(arquivos, titulo, capa_html, toc=False, primeiro_h2_sem_quebra=
         args += ['--toc', '--toc-depth=2']
     html = subprocess.run(args, input=md, capture_output=True, text=True, check=True).stdout
     html = re.sub(r'<header id="title-block-header">.*?</header>', '', html, flags=re.S)
-    html = html.replace('</head>', f'<style>{CSS}</style></head>', 1)
+    html = html.replace('</head>', f'<style>{CSS}{css_extra}</style></head>', 1)
     html = html.replace('<body>', '<body>' + capa_html, 1)
     html = html.replace('<h1 ', '<h1 style="page-break-before: always" ')
     return html
 
 
-def para_pdf(html, nome):
+def para_pdf(html, nome, base=DOCS):
     os.makedirs(OUT, exist_ok=True)
-    tmp = os.path.join(DOCS, f'_tmp_{nome}.html')
+    tmp = os.path.join(base, f'_tmp_{nome}.html')
     open(tmp, 'w', encoding='utf-8').write(html)
     pdf = os.path.join(OUT, nome + '.pdf')
     rodape = ('<div style="font-size:7pt;color:#718096;width:100%;text-align:center;">'
@@ -92,3 +93,16 @@ if __name__ == '__main__':
                                                    'montagem, gravação, uso e testes', 'imagens/diagrama-blocos.png'),
                      toc=True)
     print(para_pdf(m, 'manual-completo'))
+    import sys
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from placas_info import PLACAS, PASTAS
+    PL = os.path.join(DOCS, 'placas')
+    ordem = sorted(PLACAS, key=lambda k: PLACAS[k]['ordem'])
+    css_placas = ('h2 { page-break-before: auto !important; } '
+                  'table img { max-height: 70mm; width: auto; } '
+                  'td[width] img { max-height: 48mm; }')
+    gp = md_para_html(['README.md'] + [PASTAS[k] + '.md' for k in ordem], 'Guia das placas',
+                      capa('Computador 8 Bits', 'Guia das 13 placas — função, funcionamento, esquema, 3D e conectores',
+                           '../imagens/3d/alu-unidade-logica-aritmetica.png'),
+                      toc=False, base=PL, css_extra=css_placas)
+    print(para_pdf(gp, 'guia-das-placas', base=PL))

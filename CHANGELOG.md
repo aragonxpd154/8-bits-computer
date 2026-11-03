@@ -2,6 +2,16 @@
 
 Autor: **Marcos Silva dos Santos** (MarcosObel)
 
+## 3.0.1 — 2026-11-02
+- **Guia das placas** (`docs/placas/`): uma página por placa com função, explicação do circuito, diagrama de
+  funcionamento, papel de cada CI, LEDs, chaves, esquemático em imagem, faces da placa como saem da fábrica,
+  pinagem dos conectores (com o destino de cada cabo), lista de componentes, teste e mudanças da v3.0.
+- **Placas em 3D** (`docs/3d/`): modelos `.glb` com as camadas reais (cobre, máscara, serigrafia, furos), `.stl`
+  (visualização 3D direto no GitHub), `.step` em `hardware/fabricacao/<placa>/` e visualizador interativo (three.js).
+- Novos geradores: `tools/render3d.py`, `tools/gerar_visualizador.py`, `tools/render_imagens3d.py`,
+  `tools/gerar_placas.py`, `tools/diagramas_placas.py`, textos em `tools/placas_info.py`.
+- Novo PDF: `docs/pdf/guia-das-placas.pdf`.
+
 ## 3.0 — 2026-11-01
 - Projeto completo migrado para **KiCad** (`hardware/kicad/`), com esquemático e PCB de todas as 13 placas.
 - **Novas placas:** Backplane/Barramento (antiga pasta ASSEMBLY LAYOUT, vazia) e PCB do Reset.

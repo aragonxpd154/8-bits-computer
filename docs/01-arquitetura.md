@@ -4,6 +4,8 @@
 
 ![Diagrama de blocos](imagens/diagrama-blocos.svg)
 
+> 🧊 Cada bloco tem uma página própria, com diagrama de funcionamento e a placa em 3D: [guia das placas](placas/README.md).
+
 Um computador de 8 bits construído só com lógica TTL da série 74LS, memórias EEPROM 28C16 e
 temporizadores 555 — **sem microcontrolador e sem CPU pronta**. A arquitetura segue a família
 "SAP-1" (*Simple As Possible*), com algumas extensões (operações lógicas na ULA, saltos condicionais

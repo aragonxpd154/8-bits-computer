@@ -197,7 +197,9 @@ def md_hardware(render=True):
          '> Projeto e PCBs de **Marcos Silva dos Santos** (MarcosObel) — GPL-3.0. Gerado por `tools/gerar_docs.py`.', '',
          '- `kicad/<placa>/` — projeto KiCad (abra o `.kicad_pro`). Formato KiCad 7 (abre no 7, 8 e 9).',
          '- `fabricacao/<placa>/` — **Gerber para a fábrica**, guia de montagem 1:1, esquemático, BOM, relatório DRC.',
-         '- [`esquema-eletrico-completo.pdf`](esquema-eletrico-completo.pdf) — todos os esquemáticos num único PDF.', '',
+         '- [`esquema-eletrico-completo.pdf`](esquema-eletrico-completo.pdf) — todos os esquemáticos num único PDF.',
+         '- `fabricacao/<placa>/<placa>.step` — modelo 3D mecânico; modelos para visualizar em [`docs/3d/`](../docs/3d/README.md).',
+         '- **Explicação detalhada de cada placa:** [docs/placas](../docs/placas/README.md).', '',
          'Todas: 2 camadas, furo metalizado, trilha 0,5 mm (alimentação 0,9 mm), isolação 0,4 mm, '
          'vias 1,6/0,8 mm, 4 furos M3 nos cantos, serigrafia didática. Como pedir: '
          '[docs/03-fabricacao-das-placas.md](../docs/03-fabricacao-das-placas.md).', '',
@@ -219,7 +221,11 @@ def md_hardware(render=True):
     o += ['', 'Vermelho = cobre da face de cima (componentes) · azul = cobre da face de baixo (solda) · '
           'amarelo = serigrafia.', '']
     for b, png in imgs:
-        o += [f'## {b.title}', '', b.desc, '', f'![{b.title}](../docs/imagens/placas/{os.path.basename(png)})', '']
+        o += [f'## {b.title}', '', b.desc, '',
+              f'🧊 **[Página completa da placa](../docs/placas/{b.folder}.md)** (função, funcionamento, esquema, conectores, teste) · '
+              f'[3D (STL)](../docs/3d/stl/{b.folder}.stl) · [STEP](fabricacao/{b.folder}/{b.folder}.step)', '',
+              '| Em 3D | Cobre e serigrafia |', '|---|---|',
+              f'| ![{b.title} em 3D](../docs/imagens/3d/{b.folder}.png) | ![{b.title}](../docs/imagens/placas/{os.path.basename(png)}) |', '']
     return '\n'.join(o)
 
 
