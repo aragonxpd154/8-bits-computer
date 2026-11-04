@@ -56,7 +56,7 @@ Um computador completo de 8 bits dividido em **13 módulos** (um deles opcional)
 | [ULA](docs/placas/alu-unidade-logica-aritmetica.md) | 74LS283, 74LS86, 74LS08, 74LS32, 74LS153 | soma, subtração, AND, OR, XOR, NOT |
 | [Registrador de Saída](docs/placas/out-registrador-saida.md) | 2× 74LS173 | valor do display |
 | [Display Decimal](docs/placas/display-decimal.md) | 28C16, 555, 74LS161, 74LS139 | 0…255 ou −128…127 em 4 dígitos |
-| [Backplane](docs/placas/backplane-barramento.md) | — | 5 V protegido, barramento D0…D7 com LEDs, todos os sinais |
+| [Backplane](docs/placas/backplane-barramento.md) |  | 5 V protegido, barramento D0…D7 com LEDs, todos os sinais |
 
 **16 instruções:** `NOP LDA LDI STA ADD SUB AND OR XOR NOT JMP JC JZ OUT HLT` (JC/JZ prontos para uma futura placa de flags).
 Detalhes em [docs/01-arquitetura.md](docs/01-arquitetura.md). Clique no nome de um módulo para ver a página dele.
@@ -98,15 +98,15 @@ além do **modelo 3D** (STL que o GitHub mostra girando no navegador, GLB com as
 
 ## 💻 Status
 
-**Versão 3.0 (novembro/2026)** — projeto completo em **KiCad** (abre no Zorin OS/Ubuntu/Windows):
+**Versão 3.0 (novembro/2026)**  projeto completo em **KiCad** (abre no Zorin OS/Ubuntu/Windows):
 
 - [x] Esquemáticos de todos os módulos, com bloco de título e autoria
-- [x] PCBs roteadas de todas as 14 placas, **DRC sem erros** — prontas para fabricação profissional (JLCPCB/PCBWay) e com **serigrafia didática** (sinais nos conectores e LEDs, valores dos componentes)
+- [x] PCBs roteadas de todas as 14 placas, **DRC sem erros**  prontas para fabricação profissional (JLCPCB/PCBWay) e com **serigrafia didática** (sinais nos conectores e LEDs, valores dos componentes)
 - [x] PDFs 1:1 para transferência térmica, fotolitos, mapa de furação e Gerbers para fabricação industrial
 - [x] Backplane (antiga pasta *ASSEMBLY LAYOUT*, que estava vazia) e placa de Reset (que não tinha PCB)
 - [x] Microcódigo completo (Python e C), EEPROM do display, montador e emulador
 - [x] Teste automático do microcódigo: 14 programas de teste, um para cada instrução (`firmware/ferramentas/testar.py`)
-- [x] Revisão de todos os circuitos — 9 erros corrigidos (veja [docs/02-revisao-e-correcoes.md](docs/02-revisao-e-correcoes.md))
+- [x] Revisão de todos os circuitos  9 erros corrigidos (veja [docs/02-revisao-e-correcoes.md](docs/02-revisao-e-correcoes.md))
 - [x] Manual completo de fabricação, montagem, gravação e uso
 - [x] Página detalhada de cada placa, com diagrama de funcionamento e **modelo 3D** (STL, GLB, STEP e visualizador)
 - [ ] Testes em bancada de cada placa produzida (o Clock da versão 2.1 já foi testado)
@@ -114,22 +114,22 @@ além do **modelo 3D** (STL que o GitHub mostra girando no navegador, GLB com as
 
 ## ☕ Passo a passo (faça você mesmo)
 
-> 🖼️ **Comece pelo [Guia visual passo a passo](docs/GUIA-VISUAL-PASSO-A-PASSO.md)** — todo o caminho em diagramas,
+> 🖼️ **Comece pelo [Guia visual passo a passo](docs/GUIA-VISUAL-PASSO-A-PASSO.md)**  todo o caminho em diagramas,
 > do arquivo ao computador funcionando. Também em PDF:
 > 📕 [Guia visual (PDF)](docs/pdf/guia-visual-passo-a-passo.pdf) · 📘 [Manual completo (PDF)](docs/pdf/manual-completo.pdf) ·
 > 📄 [Esquema elétrico completo (PDF)](hardware/esquema-eletrico-completo.pdf)
 
 <p align="center"><img alt="Roteiro" src="docs/imagens/guia/01-roteiro.png" width="820"></p>
 
-Manual detalhado, capítulo por capítulo — tudo em português:
+Manual detalhado, capítulo por capítulo  tudo em português:
 
-1. [Arquitetura](docs/01-arquitetura.md) — entenda o computador
-2. [Revisão e correções](docs/02-revisao-e-correcoes.md) — o que mudou desde a versão EasyEDA
-3. [Fabricação das placas](docs/03-fabricacao-das-placas.md) — enviar os Gerbers para a China (JLCPCB/PCBWay)
-4. [Montagem das placas](docs/04-montagem-das-placas.md) — componente por componente, com testes
-5. [Interligação e backplane](docs/05-interligacao-e-backplane.md) — os 58 cabos e o arranjo na base
-6. [Gravação das EEPROMs](docs/06-gravacao-das-eeproms.md) — microcódigo e display com `minipro`
-7. [Programação e uso](docs/07-programacao-e-uso.md) — escrever, montar e rodar programas
+1. [Arquitetura](docs/01-arquitetura.md)  entenda o computador
+2. [Revisão e correções](docs/02-revisao-e-correcoes.md)  o que mudou desde a versão EasyEDA
+3. [Fabricação das placas](docs/03-fabricacao-das-placas.md)  enviar os Gerbers para a China (JLCPCB/PCBWay)
+4. [Montagem das placas](docs/04-montagem-das-placas.md)  componente por componente, com testes
+5. [Interligação e backplane](docs/05-interligacao-e-backplane.md)  os 58 cabos e o arranjo na base
+6. [Gravação das EEPROMs](docs/06-gravacao-das-eeproms.md)  microcódigo e display com `minipro`
+7. [Programação e uso](docs/07-programacao-e-uso.md)  escrever, montar e rodar programas
 8. [Testes e diagnóstico](docs/08-testes-e-diagnostico.md)
 
 📄 **Esquema elétrico completo em um único PDF:** [hardware/esquema-eletrico-completo.pdf](hardware/esquema-eletrico-completo.pdf)
@@ -198,11 +198,11 @@ Manual detalhado, capítulo por capítulo — tudo em português:
 
 ## 🚀 Ferramentas
 
-- [KiCad](https://www.kicad.org/) 7 ou superior — esquemáticos e PCBs
-- [Freerouting](https://github.com/freerouting/freerouting) — autorroteamento
-- [three.js](https://threejs.org/), trimesh e cascadio — modelos e visualizador 3D
-- Python 3 — microcódigo, montador, emulador e geradores
-- `minipro` + TL866II Plus/T48 — gravação das EEPROMs
+- [KiCad](https://www.kicad.org/) 7 ou superior  esquemáticos e PCBs
+- [Freerouting](https://github.com/freerouting/freerouting)  autorroteamento
+- [three.js](https://threejs.org/), trimesh e cascadio  modelos e visualizador 3D
+- Python 3  microcódigo, montador, emulador e geradores
+- `minipro` + TL866II Plus/T48  gravação das EEPROMs
 - Histórico: EasyEDA, LTspice, MultisimLive, Hexplorer, Code::Blocks
 
 Para regerar todo o hardware a partir da descrição em Python, veja [tools/gerador-kicad/README.md](tools/gerador-kicad/README.md).
@@ -213,6 +213,6 @@ Este projeto está sob a licença GPL v3.0. Veja o arquivo [LICENSE](LICENSE).
 
 ---
 
-Projeto e autoria: **Marcos Silva dos Santos (MarcosObel)** ♥ — [LinkedIn](https://www.linkedin.com/in/marcosobel) · [GitHub](https://github.com/aragonxpd154)
+Projeto e autoria: **Marcos Silva dos Santos (MarcosObel)** ♥  [LinkedIn](https://www.linkedin.com/in/marcosobel) · [GitHub](https://github.com/aragonxpd154)
 
 <sub>English summary: an 8-bit TTL computer (SAP-1 style, no microcontroller) by Marcos Silva dos Santos. Version 3.0 contains complete KiCad schematics and home-fabrication-friendly PCBs for all 13 boards, corrected microcode, EEPROM images, an assembler/emulator, a page per board with 3D models (STL/GLB/STEP and an interactive viewer), and a full build manual (in Portuguese) under `docs/`.</sub>
