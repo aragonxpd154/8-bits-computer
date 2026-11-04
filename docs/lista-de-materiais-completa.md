@@ -78,9 +78,12 @@ Total de circuitos integrados: **59** (+ 1 display).
 | Quantidade | Item |
 |---:|---|
 | 1 | Fonte 5 V regulada, 2 A ou mais, plugue P4 5,5 x 2,1 mm (centro positivo) |
-| 58 | Cabo jumper femea-femea de 4 vias, 20 cm (ou "cabo flat 4 vias" com conectores Dupont) |
-| 1 | Base de MDF/acrilico ~ 60 x 45 cm |
-| 60 | Espacador M3 x 10 mm + parafuso + porca (4 por placa) |
+| 58 | Cabo femea-femea de 4 vias (tamanhos na tabela de cabos do capitulo 5: 30 a 80 cm); ou fio flat de 4 vias + conectores Dupont 1x4 femea crimpados |
+| 1 | Base de madeira/MDF 65 x 56 cm, 18 mm |
+| 56 | Espacador M3 x 25 mm + parafuso + porca (4 por placa) |
+| 1 | Tampa de acrilico transparente 4-5 mm, 64 x 55 cm |
+| 6 | Coluna/espacador de aluminio ~105 mm (M6 ou M4) para a tampa |
+| ~100 | Abracadeira de nylon (enforca-gato) 100 mm + base adesiva 20 x 20 mm |
 | 1 | Gravador de EEPROM (TL866II Plus / XGecu T48) - para as 4 EEPROMs 28C16 |
 | - | Placa de fenolite/fibra de vidro cobreada dupla face (ver tamanhos em hardware/README.md) |
 | - | Percloreto de ferro, papel couche/glossy, fio rigido 0,6 mm (vias), estanho, fluxo |

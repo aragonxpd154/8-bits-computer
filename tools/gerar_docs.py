@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Gera tabelas da documentacao (lista de materiais, cabos, sinais) a partir de designs.py."""
-import os, sys, re, csv
+import os, sys, re, csv, json
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(HERE, 'gerador-kicad'))
 import designs, symlib
@@ -81,8 +81,12 @@ def md_bom():
           '### Itens gerais', '',
           '| Quantidade | Item |', '|---:|---|',
           '| 1 | Fonte 5 V regulada, 2 A ou mais, plugue P4 5,5 x 2,1 mm (centro positivo) |',
-          f'| {len(designs.CABOS)} | Cabo jumper femea-femea de 4 vias, 20 cm (ou "cabo flat 4 vias" com conectores Dupont) |',
-          '| 1 | Base de MDF/acrilico ~ 60 x 45 cm |', '| 60 | Espacador M3 x 10 mm + parafuso + porca (4 por placa) |',
+          f'| {len(designs.CABOS)} | Cabo femea-femea de 4 vias (tamanhos na tabela de cabos do capitulo 5: 30 a 80 cm); '
+          'ou fio flat de 4 vias + conectores Dupont 1x4 femea crimpados |',
+          '| 1 | Base de madeira/MDF 65 x 56 cm, 18 mm |', '| 56 | Espacador M3 x 25 mm + parafuso + porca (4 por placa) |',
+          '| 1 | Tampa de acrilico transparente 4-5 mm, 64 x 55 cm |',
+          '| 6 | Coluna/espacador de aluminio ~105 mm (M6 ou M4) para a tampa |',
+          '| ~100 | Abracadeira de nylon (enforca-gato) 100 mm + base adesiva 20 x 20 mm |',
           '| 1 | Gravador de EEPROM (TL866II Plus / XGecu T48) - para as 4 EEPROMs 28C16 |',
           '| - | Placa de fenolite/fibra de vidro cobreada dupla face (ver tamanhos em hardware/README.md) |',
           '| - | Percloreto de ferro, papel couche/glossy, fio rigido 0,6 mm (vias), estanho, fluxo |', '',
@@ -98,7 +102,10 @@ def md_bom():
 def md_cabos():
     bs = {b.key: b for b in designs.all_boards()}
     bp = bs['BACKPLANE']
-    o = ['| # | Placa | Conector | Sinais (pino 1 -> 4) | Liga em |', '|---:|---|---|---|---|']
+    mj = os.path.join(ROOT, 'docs', '3d', 'montagem.json')
+    comp = [c['cabo_cm'] for c in json.load(open(mj))['cabos']] if os.path.exists(mj) else None
+    o = ['| # | Placa | Conector | Sinais (pino 1 -> 4) | Liga em |' + (' Cabo |' if comp else ''),
+         '|---:|---|---|---|---|' + ('---:|' if comp else '')]
     for i, (placa, j, dest) in enumerate(designs.CABOS, 1):
         c = bs[placa].comps[j]
         sinais = ' '.join(c.pinlabels)
@@ -107,7 +114,7 @@ def md_cabos():
             alvo = f'**cabo direto** -> {NOMES[dest[0]]} {dest[1]} ({dc.value})'
         else:
             alvo = f'Backplane **{bp.header_map[dest]}** ({dest})'
-        o.append(f'| {i} | {NOMES[placa]} | {j} {c.value} | `{sinais}` | {alvo} |')
+        o.append(f'| {i} | {NOMES[placa]} | {j} {c.value} | `{sinais}` | {alvo} |' + (f' {comp[i - 1]} cm |' if comp else ''))
     return '\n'.join(o)
 
 

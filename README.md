@@ -26,6 +26,7 @@ com esquemas, placas (PCB) e manual para fabricar e montar tudo em casa.
 <p align="center">
 <a href="#-o-que-é">O que é</a> ·
 <a href="#-status">Status</a> ·
+<a href="#-o-computador-montado">Montado</a> ·
 <a href="#-as-placas-em-3d">Placas em 3D</a> ·
 <a href="#-passo-a-passo-faça-você-mesmo">Faça você mesmo</a> ·
 <a href="#-conteúdo-do-repositório">Conteúdo</a> ·
@@ -59,6 +60,18 @@ Um computador completo de 8 bits dividido em **13 módulos** (um deles opcional)
 
 **16 instruções:** `NOP LDA LDI STA ADD SUB AND OR XOR NOT JMP JC JZ OUT HLT` (JC/JZ prontos para uma futura placa de flags).
 Detalhes em [docs/01-arquitetura.md](docs/01-arquitetura.md). Clique no nome de um módulo para ver a página dele.
+
+## 🧱 O computador montado
+
+As 14 placas numa base de madeira de 65 × 56 cm, em espaçadores de 25 mm, com tampa de acrílico. Os 58 cabos
+passam por baixo das placas, presos com enforca-gatos. Na versão 3D os LEDs e o display funcionam de verdade:
+a página roda o mesmo microcódigo das EEPROMs (Fibonacci, contador, tabuada…), com clock ajustável e passo a passo.
+
+<p align="center"><a href="https://aragonxpd154.github.io/8-bits-computer/docs/3d/montagem.html"><img alt="Ver o computador montado em 3D" src="https://img.shields.io/badge/%E2%96%B6%20Ver%20montado-computador%20completo%20em%203D-a06b3a?style=for-the-badge&logo=threedotjs&logoColor=white&labelColor=5a3a1c" height="36"></a></p>
+
+<p align="center"><img alt="Computador 8 Bits montado na base com tampa de acrílico" src="docs/imagens/montagem/montagem-final.png" width="860"></p>
+
+Arranjo, medidas e comprimento de cada cabo: [docs/05-interligacao-e-backplane.md](docs/05-interligacao-e-backplane.md).
 
 ## 🧊 As placas em 3D
 
@@ -134,7 +147,7 @@ Manual detalhado, capítulo por capítulo — tudo em português:
 ├── docs/                         MANUAL COMPLETO (pt-BR)
 │   ├── GUIA-VISUAL-PASSO-A-PASSO.md  o projeto inteiro em diagramas, etapa por etapa
 │   ├── placas/                       UMA PÁGINA POR PLACA: função, funcionamento, 3D, esquema, conectores, teste
-│   ├── 3d/                           visualizador 3D, modelos .glb, .stl e texturas das 14 placas
+│   ├── 3d/                           visualizador das placas, computador montado (montagem.html), modelos .glb/.stl
 │   ├── pdf/                          guia visual e manual completo em PDF
 │   ├── 01-arquitetura.md             blocos, instruções, tabela de todos os sinais
 │   ├── 02-revisao-e-correcoes.md     erros corrigidos em relação à versão EasyEDA

@@ -8,6 +8,8 @@
 
 | Pasta / arquivo | O que é | Como abrir |
 |---|---|---|
+| [`montagem.html`](montagem.html) | o computador **montado**: base de madeira, tampa de acrílico, cabos por baixo das placas com enforca-gatos; LEDs e display funcionando (roda o microcódigo de verdade) | [online](https://aragonxpd154.github.io/8-bits-computer/docs/3d/montagem.html) ou servidor local, como o visualizador |
+| [`montagem.json`](montagem.json) | posição de cada placa na base, conectores, LEDs e cabos (gerado por `tools/montagem3d.py`) | — |
 | [`visualizador.html`](visualizador.html) | visualizador interativo das 13 placas, com a função de cada uma, LEDs e pinagem dos conectores | veja abaixo |
 | [`stl/<placa>.stl`](stl/) | malha 3D (sem cores), em milímetros | **o GitHub mostra em 3D** — é só clicar no arquivo |
 | [`modelos/<placa>.glb`](modelos/) | modelo com cores e as camadas reais da placa (cobre, máscara verde, serigrafia, furos) | visualizador, Blender, [gltf-viewer.donmccurdy.com](https://gltf-viewer.donmccurdy.com/), Windows "Visualizador 3D" |
@@ -51,6 +53,8 @@ python3 tools/render3d.py              # STEP + GLB + STL + texturas (todas as p
 python3 tools/gerar_visualizador.py    # docs/3d/visualizador.html
 python3 tools/render_imagens3d.py      # imagens docs/imagens/3d/*.png
 python3 tools/gerar_placas.py          # páginas docs/placas/*.md
+python3 tools/montagem3d.py            # arranjo na base + cabos (docs/3d/montagem.json)
+python3 tools/gerar_montagem_html.py   # docs/3d/montagem.html
 ```
 
 Peças sem modelo na biblioteca do KiCad (display de 7 segmentos, chave deslizante, potenciômetro, PTC e borne)

@@ -20,22 +20,31 @@ Regras simples:
 
 ## 5.2 Arranjo físico sugerido
 
-Monte os módulos numa base de MDF/acrílico (~60 × 45 cm) com espaçadores M3 de 10 mm, no mesmo
-arranjo do diagrama de blocos — assim todos os cabos de 20 cm alcançam:
+Monte as placas numa base de madeira/MDF de **65 × 56 cm** (18 mm), com **espaçadores M3 de 25 mm**, e uma
+tampa de acrílico transparente de 4–5 mm apoiada em 6 colunas de ~105 mm — dá para ver tudo funcionando e
+nada fica exposto. Com os espaçadores altos, **os cabos passam por baixo das placas**: cada cabo sai do
+conector, desce pela borda mais próxima da placa, corre colado na base e sobe na outra ponta, preso com
+**enforca-gatos (abraçadeiras de nylon) em bases adesivas** a cada 7 cm mais ou menos.
+
+<p align="center"><img alt="Computador montado na base, com tampa de acrílico" src="imagens/montagem/montagem-final.png" width="820"></p>
+<p align="center"><img alt="Vista de cima, sem a tampa" src="imagens/montagem/montagem-vista-de-cima.png" width="620"></p>
+
+🧊 Gire e veja funcionando: [montagem em 3D](3d/montagem.html) ([online](https://aragonxpd154.github.io/8-bits-computer/docs/3d/montagem.html)).
 
 ```
-            +--------------------- BASE ~60 x 45 cm ---------------------+
-            |  [RESET]                                [ENTRADA 5 V]      |
-            |  [CLOCK]                                                  |
-            |  [PC]                                   [REG. A]          |
-            |  [RAM/MAR]          [ BACKPLANE ]       [ULA]             |
-            |  [IR]               [ D0..D7    ]       [REG. B]          |
-            |  [CONTROLE] [PALAVRA CTRL*]             [SAIDA]           |
-            |  [PASSOS]                               [DISPLAY]         |
-            +------------------------------------------------------------+
+            +------------------------ BASE 65 x 56 cm ------------------------+
+            |  [CLOCK]     [ BACKPLANE     ]        [REG. A]                  |
+            |  [RESET]     [ D0..D7 + sinais]        [ULA          ]          |
+            |  [PC]        [PALAVRA CTRL*]           [REG. B]                 |
+            |  [RAM/MAR]   [CONTROLE]                [SAIDA]                  |
+            |              [IR] [PASSOS]             [DISPLAY]                |
+            +-----------------------------------------------------------------+
 ```
 
-- O **Controle** fica logo abaixo do **IR** (cabo direto do opcode) e acima de **Passos** (cabo direto T0…T2).
+- O **Controle** fica logo acima do **IR** e dos **Passos** (cabos diretos do opcode e de T0…T2).
+- A coluna **Cabo** da tabela 5.4 dá o comprimento de cada cabo nesse arranjo, já com folga (passando por baixo das
+  placas): 17 de 30 cm, 15 de 40 cm, 15 de 50 cm, 8 de 60 cm e 3 de 80 cm. Jumpers prontos costumam ir até 30–40 cm;
+  os maiores fica mais fácil montar com fio flat de 4 vias e conectores Dupont 1×4 fêmea (crimpados).
 - A **ULA** fica entre **A** e **B** (dois cabos diretos de cada lado); o **Display** abaixo da **Saída**.
 - \* A **Palavra de Controle** (opcional) fica ao lado do **Controle**: recebe os 5 cabos CTRL_A…E e a alimentação
   (P_CD), repassa os 5 V ao Controle por J12 e manda os sinais ao backplane (CD_A…CD_E).
@@ -52,66 +61,66 @@ arranjo do diagrama de blocos — assim todos os cabos de 20 cm alcançam:
 ## 5.4 Tabela de cabos
 
 <!-- tabela gerada por tools/gerar_docs.py -->
-| # | Placa | Conector | Sinais (pino 1 -> 4) | Liga em |
-|---:|---|---|---|---|
-| 1 | Clock | J1 ALIMENTACAO | `+5V +5V GND GND` | Backplane **J12** (P_CLOCK) |
-| 2 | Clock | J2 CLOCK | `CLK /CLK HLT NC` | Backplane **J45** (C_CLOCK) |
-| 3 | Reset | J1 ALIMENTACAO | `+5V +5V GND GND` | Backplane **J13** (P_RESET) |
-| 4 | Reset | J2 RESET | `RST /RST /Y5 /STCLR` | Backplane **J46** (C_RESET) |
-| 5 | Contador de Programa | J1 ALIMENTACAO | `+5V +5V GND GND` | Backplane **J8** (P_PC) |
-| 6 | Contador de Programa | J2 CONTROLE | `PCI CLK /JMP /RST` | Backplane **J33** (C_PC1) |
-| 7 | Contador de Programa | J3 CONTROLE2 | `/PCO NC NC NC` | Backplane **J34** (C_PC2) |
-| 8 | Contador de Programa | J4 BUS_L | `D0 D1 D2 D3` | Backplane **J20** (BL_PC) |
-| 9 | Contador de Programa | J5 BUS_H | `D4 D5 D6 D7` | Backplane **J27** (BH_PC) |
-| 10 | RAM e MAR | J1 ALIMENTACAO | `+5V +5V GND GND` | Backplane **J9** (P_RAM) |
-| 11 | RAM e MAR | J2 CONTROLE1 | `CLK /MAI RST RMI` | Backplane **J35** (C_RAM1) |
-| 12 | RAM e MAR | J3 CONTROLE2 | `/WE /CLK /RMO RUN` | Backplane **J36** (C_RAM2) |
-| 13 | RAM e MAR | J4 BUS_L | `D0 D1 D2 D3` | Backplane **J21** (BL_RAM) |
-| 14 | RAM e MAR | J5 BUS_H | `D4 D5 D6 D7` | Backplane **J28** (BH_RAM) |
-| 15 | Reg. Instrucao | J1 ALIMENTACAO | `+5V +5V GND GND` | Backplane **J6** (P_IR) |
-| 16 | Reg. Instrucao | J2 CONTROLE | `CLK /IRI RST /IRO` | Backplane **J31** (C_IR) |
-| 17 | Reg. Instrucao | J3 BUS_L | `D0 D1 D2 D3` | Backplane **J18** (BL_IR) |
-| 18 | Reg. Instrucao | J4 BUS_H | `D4 D5 D6 D7` | Backplane **J25** (BH_IR) |
-| 19 | Reg. Instrucao | J5 OPCODE | `OP3 OP2 OP1 OP0` | **cabo direto** -> Decodificador de Controle J3 (OPCODE) |
-| 20 | Palavra de Controle (opcional) | J1 ALIMENTACAO | `+5V +5V GND GND` | Backplane **J10** (P_CD) |
-| 21 | Decodificador de Controle | J1 ALIMENTACAO | `+5V +5V GND GND` | **cabo direto** -> Palavra de Controle (opcional) J12 (ALIM_DECODIF) |
-| 22 | Decodificador de Controle | J5 CTRL_A | `/IRI /RMO RMI /MAI` | **cabo direto** -> Palavra de Controle (opcional) J2 (ENTRADA_A) |
-| 23 | Decodificador de Controle | J6 CTRL_B | `/PCO /JMP PCI HLT` | **cabo direto** -> Palavra de Controle (opcional) J3 (ENTRADA_B) |
-| 24 | Decodificador de Controle | J7 CTRL_C | `NOT /ALUO AL0 AL1` | **cabo direto** -> Palavra de Controle (opcional) J4 (ENTRADA_C) |
-| 25 | Decodificador de Controle | J8 CTRL_D | `SUB /ACI /ACO /IRO` | **cabo direto** -> Palavra de Controle (opcional) J5 (ENTRADA_D) |
-| 26 | Decodificador de Controle | J9 CTRL_E | `/BRI /ORI E0_5 E0_4` | **cabo direto** -> Palavra de Controle (opcional) J6 (ENTRADA_E) |
-| 27 | Palavra de Controle (opcional) | J7 SAIDA_A | `/IRI /RMO RMI /MAI` | Backplane **J39** (CD_A) |
-| 28 | Palavra de Controle (opcional) | J8 SAIDA_B | `/PCO /JMP PCI HLT` | Backplane **J40** (CD_B) |
-| 29 | Palavra de Controle (opcional) | J9 SAIDA_C | `NOT /ALUO AL0 AL1` | Backplane **J41** (CD_C) |
-| 30 | Palavra de Controle (opcional) | J10 SAIDA_D | `SUB /ACI /ACO /IRO` | Backplane **J42** (CD_D) |
-| 31 | Palavra de Controle (opcional) | J11 SAIDA_E | `/BRI /ORI E0_5 E0_4` | Backplane **J43** (CD_E) |
-| 32 | Contador de Passos | J1 ALIMENTACAO | `+5V +5V GND GND` | Backplane **J11** (P_FETCH) |
-| 33 | Contador de Passos | J2 PASSO | `T0 T1 T2 NC` | **cabo direto** -> Decodificador de Controle J2 (PASSO) |
-| 34 | Contador de Passos | J3 CONTROLE | `/Y5 /CLK /STCLR NC` | Backplane **J44** (C_FETCH) |
-| 35 | Registrador A | J1 ALIMENTACAO | `+5V +5V GND GND` | Backplane **J3** (P_ACC) |
-| 36 | Registrador A | J2 CONTROLE | `CLK /ACI RST /ACO` | Backplane **J29** (C_ACC) |
-| 37 | Registrador A | J3 BUS_L | `D0 D1 D2 D3` | Backplane **J15** (BL_ACC) |
-| 38 | Registrador A | J4 BUS_H | `D4 D5 D6 D7` | Backplane **J22** (BH_ACC) |
-| 39 | Registrador A | J5 ALU_L | `A0 A1 A2 A3` | **cabo direto** -> ULA J4 (ACC_L) |
-| 40 | Registrador A | J6 ALU_H | `A4 A5 A6 A7` | **cabo direto** -> ULA J5 (ACC_H) |
-| 41 | Registrador B | J1 ALIMENTACAO | `+5V +5V GND GND` | Backplane **J4** (P_B) |
-| 42 | Registrador B | J2 CONTROLE | `CLK /BRI RST /BRO` | Backplane **J30** (C_B) |
-| 43 | Registrador B | J3 BUS_L | `D0 D1 D2 D3` | Backplane **J16** (BL_B) |
-| 44 | Registrador B | J4 BUS_H | `D4 D5 D6 D7` | Backplane **J23** (BH_B) |
-| 45 | Registrador B | J5 ALU_L | `B0 B1 B2 B3` | **cabo direto** -> ULA J6 (B_L) |
-| 46 | Registrador B | J6 ALU_H | `B4 B5 B6 B7` | **cabo direto** -> ULA J7 (B_H) |
-| 47 | ULA | J1 ALIMENTACAO | `+5V +5V GND GND` | Backplane **J5** (P_ALU) |
-| 48 | ULA | J2 BUS_L | `D0 D1 D2 D3` | Backplane **J17** (BL_ALU) |
-| 49 | ULA | J3 BUS_H | `D4 D5 D6 D7` | Backplane **J24** (BH_ALU) |
-| 50 | ULA | J8 CTRL1 | `/ALUO SUB AL0 AL1` | Backplane **J37** (C_ALU1) |
-| 51 | ULA | J9 CTRL2 | `NOT CARRY NC NC` | Backplane **J38** (C_ALU2) |
-| 52 | Registrador de Saida | J1 ALIMENTACAO | `+5V +5V GND GND` | Backplane **J7** (P_OUT) |
-| 53 | Registrador de Saida | J2 CONTROLE | `CLK /ORI RST NC` | Backplane **J32** (C_OUT) |
-| 54 | Registrador de Saida | J3 BUS_L | `D0 D1 D2 D3` | Backplane **J19** (BL_OUT) |
-| 55 | Registrador de Saida | J4 BUS_H | `D4 D5 D6 D7` | Backplane **J26** (BH_OUT) |
-| 56 | Registrador de Saida | J5 DISPLAY_L | `O0 O1 O2 O3` | **cabo direto** -> Display Decimal J2 (ENTRADA_L) |
-| 57 | Registrador de Saida | J6 DISPLAY_H | `O4 O5 O6 O7` | **cabo direto** -> Display Decimal J3 (ENTRADA_H) |
-| 58 | Display Decimal | J1 ALIMENTACAO | `+5V +5V GND GND` | Backplane **J14** (P_DISPLAY) |
+| # | Placa | Conector | Sinais (pino 1 -> 4) | Liga em | Cabo |
+|---:|---|---|---|---|---:|
+| 1 | Clock | J1 ALIMENTACAO | `+5V +5V GND GND` | Backplane **J12** (P_CLOCK) | 40 cm |
+| 2 | Clock | J2 CLOCK | `CLK /CLK HLT NC` | Backplane **J45** (C_CLOCK) | 40 cm |
+| 3 | Reset | J1 ALIMENTACAO | `+5V +5V GND GND` | Backplane **J13** (P_RESET) | 40 cm |
+| 4 | Reset | J2 RESET | `RST /RST /Y5 /STCLR` | Backplane **J46** (C_RESET) | 40 cm |
+| 5 | Contador de Programa | J1 ALIMENTACAO | `+5V +5V GND GND` | Backplane **J8** (P_PC) | 50 cm |
+| 6 | Contador de Programa | J2 CONTROLE | `PCI CLK /JMP /RST` | Backplane **J33** (C_PC1) | 80 cm |
+| 7 | Contador de Programa | J3 CONTROLE2 | `/PCO NC NC NC` | Backplane **J34** (C_PC2) | 80 cm |
+| 8 | Contador de Programa | J4 BUS_L | `D0 D1 D2 D3` | Backplane **J20** (BL_PC) | 50 cm |
+| 9 | Contador de Programa | J5 BUS_H | `D4 D5 D6 D7` | Backplane **J27** (BH_PC) | 40 cm |
+| 10 | RAM e MAR | J1 ALIMENTACAO | `+5V +5V GND GND` | Backplane **J9** (P_RAM) | 50 cm |
+| 11 | RAM e MAR | J2 CONTROLE1 | `CLK /MAI RST RMI` | Backplane **J35** (C_RAM1) | 60 cm |
+| 12 | RAM e MAR | J3 CONTROLE2 | `/WE /CLK /RMO RUN` | Backplane **J36** (C_RAM2) | 60 cm |
+| 13 | RAM e MAR | J4 BUS_L | `D0 D1 D2 D3` | Backplane **J21** (BL_RAM) | 50 cm |
+| 14 | RAM e MAR | J5 BUS_H | `D4 D5 D6 D7` | Backplane **J28** (BH_RAM) | 50 cm |
+| 15 | Reg. Instrucao | J1 ALIMENTACAO | `+5V +5V GND GND` | Backplane **J6** (P_IR) | 50 cm |
+| 16 | Reg. Instrucao | J2 CONTROLE | `CLK /IRI RST /IRO` | Backplane **J31** (C_IR) | 50 cm |
+| 17 | Reg. Instrucao | J3 BUS_L | `D0 D1 D2 D3` | Backplane **J18** (BL_IR) | 60 cm |
+| 18 | Reg. Instrucao | J4 BUS_H | `D4 D5 D6 D7` | Backplane **J25** (BH_IR) | 50 cm |
+| 19 | Reg. Instrucao | J5 OPCODE | `OP3 OP2 OP1 OP0` | **cabo direto** -> Decodificador de Controle J3 (OPCODE) | 30 cm |
+| 20 | Palavra de Controle (opcional) | J1 ALIMENTACAO | `+5V +5V GND GND` | Backplane **J10** (P_CD) | 30 cm |
+| 21 | Decodificador de Controle | J1 ALIMENTACAO | `+5V +5V GND GND` | **cabo direto** -> Palavra de Controle (opcional) J12 (ALIM_DECODIF) | 40 cm |
+| 22 | Decodificador de Controle | J5 CTRL_A | `/IRI /RMO RMI /MAI` | **cabo direto** -> Palavra de Controle (opcional) J2 (ENTRADA_A) | 30 cm |
+| 23 | Decodificador de Controle | J6 CTRL_B | `/PCO /JMP PCI HLT` | **cabo direto** -> Palavra de Controle (opcional) J3 (ENTRADA_B) | 30 cm |
+| 24 | Decodificador de Controle | J7 CTRL_C | `NOT /ALUO AL0 AL1` | **cabo direto** -> Palavra de Controle (opcional) J4 (ENTRADA_C) | 30 cm |
+| 25 | Decodificador de Controle | J8 CTRL_D | `SUB /ACI /ACO /IRO` | **cabo direto** -> Palavra de Controle (opcional) J5 (ENTRADA_D) | 30 cm |
+| 26 | Decodificador de Controle | J9 CTRL_E | `/BRI /ORI E0_5 E0_4` | **cabo direto** -> Palavra de Controle (opcional) J6 (ENTRADA_E) | 40 cm |
+| 27 | Palavra de Controle (opcional) | J7 SAIDA_A | `/IRI /RMO RMI /MAI` | Backplane **J39** (CD_A) | 30 cm |
+| 28 | Palavra de Controle (opcional) | J8 SAIDA_B | `/PCO /JMP PCI HLT` | Backplane **J40** (CD_B) | 30 cm |
+| 29 | Palavra de Controle (opcional) | J9 SAIDA_C | `NOT /ALUO AL0 AL1` | Backplane **J41** (CD_C) | 30 cm |
+| 30 | Palavra de Controle (opcional) | J10 SAIDA_D | `SUB /ACI /ACO /IRO` | Backplane **J42** (CD_D) | 30 cm |
+| 31 | Palavra de Controle (opcional) | J11 SAIDA_E | `/BRI /ORI E0_5 E0_4` | Backplane **J43** (CD_E) | 30 cm |
+| 32 | Contador de Passos | J1 ALIMENTACAO | `+5V +5V GND GND` | Backplane **J11** (P_FETCH) | 50 cm |
+| 33 | Contador de Passos | J2 PASSO | `T0 T1 T2 NC` | **cabo direto** -> Decodificador de Controle J2 (PASSO) | 40 cm |
+| 34 | Contador de Passos | J3 CONTROLE | `/Y5 /CLK /STCLR NC` | Backplane **J44** (C_FETCH) | 60 cm |
+| 35 | Registrador A | J1 ALIMENTACAO | `+5V +5V GND GND` | Backplane **J3** (P_ACC) | 30 cm |
+| 36 | Registrador A | J2 CONTROLE | `CLK /ACI RST /ACO` | Backplane **J29** (C_ACC) | 30 cm |
+| 37 | Registrador A | J3 BUS_L | `D0 D1 D2 D3` | Backplane **J15** (BL_ACC) | 40 cm |
+| 38 | Registrador A | J4 BUS_H | `D4 D5 D6 D7` | Backplane **J22** (BH_ACC) | 40 cm |
+| 39 | Registrador A | J5 ALU_L | `A0 A1 A2 A3` | **cabo direto** -> ULA J4 (ACC_L) | 30 cm |
+| 40 | Registrador A | J6 ALU_H | `A4 A5 A6 A7` | **cabo direto** -> ULA J5 (ACC_H) | 30 cm |
+| 41 | Registrador B | J1 ALIMENTACAO | `+5V +5V GND GND` | Backplane **J4** (P_B) | 50 cm |
+| 42 | Registrador B | J2 CONTROLE | `CLK /BRI RST /BRO` | Backplane **J30** (C_B) | 40 cm |
+| 43 | Registrador B | J3 BUS_L | `D0 D1 D2 D3` | Backplane **J16** (BL_B) | 50 cm |
+| 44 | Registrador B | J4 BUS_H | `D4 D5 D6 D7` | Backplane **J23** (BH_B) | 50 cm |
+| 45 | Registrador B | J5 ALU_L | `B0 B1 B2 B3` | **cabo direto** -> ULA J6 (B_L) | 40 cm |
+| 46 | Registrador B | J6 ALU_H | `B4 B5 B6 B7` | **cabo direto** -> ULA J7 (B_H) | 40 cm |
+| 47 | ULA | J1 ALIMENTACAO | `+5V +5V GND GND` | Backplane **J5** (P_ALU) | 60 cm |
+| 48 | ULA | J2 BUS_L | `D0 D1 D2 D3` | Backplane **J17** (BL_ALU) | 60 cm |
+| 49 | ULA | J3 BUS_H | `D4 D5 D6 D7` | Backplane **J24** (BH_ALU) | 50 cm |
+| 50 | ULA | J8 CTRL1 | `/ALUO SUB AL0 AL1` | Backplane **J37** (C_ALU1) | 40 cm |
+| 51 | ULA | J9 CTRL2 | `NOT CARRY NC NC` | Backplane **J38** (C_ALU2) | 40 cm |
+| 52 | Registrador de Saida | J1 ALIMENTACAO | `+5V +5V GND GND` | Backplane **J7** (P_OUT) | 50 cm |
+| 53 | Registrador de Saida | J2 CONTROLE | `CLK /ORI RST NC` | Backplane **J32** (C_OUT) | 50 cm |
+| 54 | Registrador de Saida | J3 BUS_L | `D0 D1 D2 D3` | Backplane **J19** (BL_OUT) | 60 cm |
+| 55 | Registrador de Saida | J4 BUS_H | `D4 D5 D6 D7` | Backplane **J26** (BH_OUT) | 60 cm |
+| 56 | Registrador de Saida | J5 DISPLAY_L | `O0 O1 O2 O3` | **cabo direto** -> Display Decimal J2 (ENTRADA_L) | 30 cm |
+| 57 | Registrador de Saida | J6 DISPLAY_H | `O4 O5 O6 O7` | **cabo direto** -> Display Decimal J3 (ENTRADA_H) | 30 cm |
+| 58 | Display Decimal | J1 ALIMENTACAO | `+5V +5V GND GND` | Backplane **J14** (P_DISPLAY) | 80 cm |
 
 ### Pinos que mudam de nome de propósito
 - **Reg. B J2 pino 4 (/BRO):** no backplane vai fixo em +5 V — o registrador B nunca escreve no barramento.

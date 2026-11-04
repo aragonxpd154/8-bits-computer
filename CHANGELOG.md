@@ -13,6 +13,9 @@ Autor: **Marcos Silva dos Santos** (MarcosObel)
   `firmware/programas/testes/` e o teste automático `firmware/ferramentas/testar.py`.
 - `DISPLAY-com-zeros.bin`: tabela do display com zeros à esquerda (042, −014).
 - Corrigido o texto sobre o R1 do Clock.
+- **Computador montado em 3D** (`docs/3d/montagem.html`): base de madeira 65 × 56 cm, espaçadores de 25 mm, tampa
+  de acrílico, cabos por baixo das placas com enforca-gatos; LEDs e display funcionando com o microcódigo real.
+  Comprimento de cada cabo na tabela do capítulo 5.
 
 ## 3.0.1 — 2026-11-02
 - **Guia das placas** (`docs/placas/`): uma página por placa com função, explicação do circuito, diagrama de

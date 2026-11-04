@@ -222,12 +222,16 @@ Cores das imagens: **vermelho** = cobre de cima, **azul** = cobre de baixo, **am
 
 ## Etapa 6 — Montar na base e ligar os cabos
 
+![Computador montado](imagens/montagem/montagem-final.png)
+
+🧊 [Veja montado e funcionando em 3D](3d/montagem.html)
+
 ![Base e cabos](imagens/guia/06-base-e-cabos.png)
 
 ![Cabo reto](imagens/guia/07-cabo-reto.png)
 
 ✅ **Checklist**
-- [ ] Módulos na base no arranjo acima, com espaçadores M3
+- [ ] Módulos na base no arranjo acima, com espaçadores M3 de 25 mm (cabos por baixo, presos com enforca-gatos)
 - [ ] 44 cabos módulo ↔ backplane (cada conector do backplane tem o nome do módulo e dos sinais)
 - [ ] 8 cabos diretos: A→ULA (2), B→ULA (2), Saída→Display (2), IR→Controle (opcode), Passos→Controle (T0–T2)
 - [ ] Pino 1 sempre com o fio da mesma cor
