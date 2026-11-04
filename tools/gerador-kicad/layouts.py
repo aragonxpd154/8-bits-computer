@@ -24,6 +24,7 @@ LAYOUTS = {
             ['C13', 'R18', 'C14', 'R13', 'R16', 'R17', 'RN2', 'RN1'],
             {'refs': ['SW1', 'SW3', 'SW4', 'SW2', 'LED13', 'R14', 'LED14', 'R15'], 'rot': {'SW1': 270, 'SW3': 270, 'R14': 90, 'R15': 90}},
             'LEDS'],
+    'CW': [['J1', 'J12', 'J2', 'J3', 'J4', 'J5', 'J6'], ['U1', 'U2', 'U3'], 'LEDS', ['J7', 'J8', 'J9', 'J10', 'J11']],
     'BACKPLANE': None,  # layout proprio
 }
 
@@ -35,6 +36,7 @@ NOTAS = {
     'RESET': [('SW1', 'RESET')],
     'DISPLAY': [('SW1', 'COM SINAL / SEM SINAL'), ('DS1', 'CATODO COMUM')],
     'CD': [('U1', 'EEPROM2.bin'), ('U2', 'EEPROM1.bin'), ('U3', 'EEPROM0.bin')],
+    'CW': [('U1', 'CTRL A + B'), ('U2', 'CTRL C + D'), ('U3', 'CTRL E')],
 }
 
 # espacamentos especiais (mm) para placas densas

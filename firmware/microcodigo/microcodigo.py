@@ -36,17 +36,18 @@ BUSCA = [[PCO, MAI], [RMO, IRI, PCI]]          # T0, T1 (iguais para todas as in
 # ---- conjunto de instrucoes ---------------------------------------------------
 # opcode: (mnemonico, tem_operando, passos T2.., descricao)
 INSTRUCOES = {
+    # JC e JZ ficam nos opcodes B e C (precisam da futura placa de flags).
     0x0: ('NOP', False, [], 'nao faz nada'),
     0x1: ('LDA', True, [[IRO, MAI], [RMO, ACI]], 'A <- RAM[end]'),
-    0x2: ('SUB', True, [[IRO, MAI], [RMO, BRI], [ALU, SUB, ACI]], 'A <- A - RAM[end]'),
+    0x2: ('LDI', True, [[IRO, ACI]], 'A <- valor imediato (0..15)'),
     0x3: ('STA', True, [[IRO, MAI], [ACO, RMI]], 'RAM[end] <- A'),
     0x4: ('ADD', True, [[IRO, MAI], [RMO, BRI], [ALU, ACI]], 'A <- A + RAM[end]'),
-    0x5: ('LDI', True, [[IRO, ACI]], 'A <- valor imediato (0..15)'),
-    0x6: ('JMP', True, [[IRO, JMP]], 'PC <- end'),
-    0x7: ('AND', True, [[IRO, MAI], [RMO, BRI], [ALU, AL0, ACI]], 'A <- A AND RAM[end]'),
-    0x8: ('OR', True, [[IRO, MAI], [RMO, BRI], [ALU, AL1, ACI]], 'A <- A OR RAM[end]'),
-    0x9: ('XOR', True, [[IRO, MAI], [RMO, BRI], [ALU, AL1, AL0, ACI]], 'A <- A XOR RAM[end]'),
-    0xA: ('NOT', False, [[ALU, AL1, AL0, NOT, ACI]], 'A <- NOT A'),
+    0x5: ('SUB', True, [[IRO, MAI], [RMO, BRI], [ALU, SUB, ACI]], 'A <- A - RAM[end]'),
+    0x6: ('AND', True, [[IRO, MAI], [RMO, BRI], [ALU, AL0, ACI]], 'A <- A AND RAM[end]'),
+    0x7: ('OR', True, [[IRO, MAI], [RMO, BRI], [ALU, AL1, ACI]], 'A <- A OR RAM[end]  (tambem aceito como ORL)'),
+    0x8: ('XOR', True, [[IRO, MAI], [RMO, BRI], [ALU, AL1, AL0, ACI]], 'A <- A XOR RAM[end]'),
+    0x9: ('NOT', False, [[ALU, AL1, AL0, NOT, ACI]], 'A <- NOT A'),
+    0xA: ('JMP', True, [[IRO, JMP]], 'PC <- end'),
     0xB: ('JC', True, 'CF', 'se CF=1: PC <- end (precisa da placa de flags)'),
     0xC: ('JZ', True, 'ZF', 'se ZF=1: PC <- end (precisa da placa de flags)'),
     0xD: ('NOP', False, [], 'reservado'),

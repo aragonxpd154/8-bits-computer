@@ -21,7 +21,7 @@ preparados, display decimal com sinal).
 | Clock | 0,7 Hz a ~140 Hz (automático) ou passo a passo (manual) |
 | Saída | display de 4 dígitos, 0…255 ou −128…127 |
 | Alimentação | 5 V, ~1,2 A típico (fonte de 2 A ou mais) |
-| Placas | 12 módulos + 1 backplane |
+| Placas | 13 módulos (1 opcional: Palavra de Controle) + 1 backplane |
 
 ## 1.1 Os módulos
 
@@ -72,24 +72,26 @@ instrução começa em T0.
 |---|---|---|---|---|---|
 | 0 | 0000 | NOP | — | não faz nada | — |
 | 1 | 0001 | LDA end | endereço | A ← RAM[end] | IRO MAI / RMO ACI |
-| 2 | 0010 | SUB end | endereço | A ← A − RAM[end] | IRO MAI / RMO BRI / ALU SUB ACI |
+| 2 | 0010 | LDI n | valor 0…15 | A ← n | IRO ACI |
 | 3 | 0011 | STA end | endereço | RAM[end] ← A | IRO MAI / ACO RMI |
 | 4 | 0100 | ADD end | endereço | A ← A + RAM[end] | IRO MAI / RMO BRI / ALU ACI |
-| 5 | 0101 | LDI n | valor 0…15 | A ← n | IRO ACI |
-| 6 | 0110 | JMP end | endereço | PC ← end | IRO JMP |
-| 7 | 0111 | AND end | endereço | A ← A AND RAM[end] | IRO MAI / RMO BRI / ALU AL0 ACI |
-| 8 | 1000 | OR end | endereço | A ← A OR RAM[end] | IRO MAI / RMO BRI / ALU AL1 ACI |
-| 9 | 1001 | XOR end | endereço | A ← A XOR RAM[end] | IRO MAI / RMO BRI / ALU AL1 AL0 ACI |
-| A | 1010 | NOT | — | A ← NOT A | ALU AL1 AL0 NOT ACI |
+| 5 | 0101 | SUB end | endereço | A ← A − RAM[end] | IRO MAI / RMO BRI / ALU SUB ACI |
+| 6 | 0110 | AND end | endereço | A ← A AND RAM[end] | IRO MAI / RMO BRI / ALU AL0 ACI |
+| 7 | 0111 | OR end (ou ORL) | endereço | A ← A OR RAM[end] | IRO MAI / RMO BRI / ALU AL1 ACI |
+| 8 | 1000 | XOR end | endereço | A ← A XOR RAM[end] | IRO MAI / RMO BRI / ALU AL1 AL0 ACI |
+| 9 | 1001 | NOT | — | A ← NOT A | ALU AL1 AL0 NOT ACI |
+| A | 1010 | JMP end | endereço | PC ← end | IRO JMP |
 | B | 1011 | JC end | endereço | se carry: PC ← end | IRO JMP (só com CF = 1) |
 | C | 1100 | JZ end | endereço | se zero: PC ← end | IRO JMP (só com ZF = 1) |
 | D | 1101 | — | — | reservado (NOP) | — |
 | E | 1110 | OUT | — | OUT ← A (display) | ACO ORI |
 | F | 1111 | HLT | — | para o clock | HLT |
 
-Os opcodes originais do projeto (NOP = 0, LDA = 1, ADD = 4, OUT = 14, HLT = 15) foram mantidos.
-`JC` e `JZ` já estão no microcódigo e nas EEPROMs: enquanto não existir a placa de *flags*, as linhas
-CF/ZF ficam em 0 (resistores de pull-down no Decodificador) e as duas instruções se comportam como NOP.
+Cada instrução tem um programa de teste em `firmware/programas/testes/`, conferido por
+`firmware/ferramentas/testar.py`. O montador aceita também `ORL`, `.org`, `.end` e números como `0Eh`.
+
+`JC` e `JZ` ocupam os opcodes B e C. Enquanto não existir a placa de *flags*,
+as linhas CF/ZF ficam em 0 (resistores de pull-down no Decodificador) e as duas instruções se comportam como NOP.
 
 ## 1.4 Sinais de controle
 

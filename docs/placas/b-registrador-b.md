@@ -1,4 +1,4 @@
-# 10 · Registrador B
+# 11 · Registrador B
 
 > Placa do **Computador 8 Bits v3.0** — projeto de **Marcos Silva dos Santos** (MarcosObel) — GPL-3.0.
 

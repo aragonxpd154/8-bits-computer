@@ -346,7 +346,7 @@ def board_clock():
     b = Board('CLOCK', 'Clock Astavel / Monoestavel', '3.0', 'clock-astavel-monoestavel',
               'NE556: metade astavel (clock automatico ajustavel) e metade monoestavel (passo manual sem repique). '
               'Chave AUTO/MANUAL, entrada HLT.',
-              changes=['R1 150 R -> 1 k (limita a corrente do pino DIS do 556, como no projeto de referencia).',
+              changes=['R1 150 R -> 1 k: corrente no pino DIS do 556 cai de ~33 mA para 5 mA; faixa 0,7 a 140 Hz.',
                        'Logica identica ao Clock 2.1V (testado em bancada).'])
     b.add('U1', 'NE556', 'NE556', {1: 'DIS1', 2: 'TC1', 6: 'TC1', 3: 'CV1', 4: '+5V', 5: 'ASTABLE', 7: 'GND',
                                    8: 'TRIG2', 9: 'MONO', 10: '+5V', 11: 'CV2', 12: 'TC2', 13: 'TC2', 14: '+5V'},
@@ -441,6 +441,51 @@ def board_display():
     return b
 
 
+# Sinais de controle na ordem dos conectores CTRL_A..CTRL_E do Decodificador (= CD_A..CD_E do backplane)
+CTRL_GRUPOS = [('A', ['~{IRI}', '~{RMO}', 'RMI', '~{MAI}']), ('B', ['~{PCO}', '~{JMP}', 'PCI', 'HLT']),
+               ('C', ['NOT', '~{ALUO}', 'AL0', 'AL1']), ('D', ['SUB', '~{ACI}', '~{ACO}', '~{IRO}']),
+               ('E', ['~{BRI}', '~{ORI}', 'E0_5', 'E0_4'])]
+
+
+def board_cw():
+    """Palavra de Controle: repete os 20 sinais do Decodificador e mostra os 18 sinais de controle em LEDs."""
+    b = Board('CW', 'Palavra de Controle (18 LEDs)', '3.0', 'cw-palavra-de-controle',
+              'Fica entre o Decodificador de Controle e o backplane (que nao muda): recebe os 5 V do conector P_CD e '
+              'repassa ao Decodificador por J12. 3x 74HCT541 repetem os 20 sinais das EEPROMs '
+              '(reforcam a saida das EEPROMs) e 18 LEDs mostram cada sinal de controle: LED aceso = sinal ATIVO, '
+              'inclusive nos sinais com barra (ativos em 0). Opcional: sem ela, os cabos do Decodificador vao direto '
+              'ao backplane.',
+              changes=['Placa nova na v3.0: os 11 sinais ativos em 0 ja saem invertidos das EEPROMs, entao esta placa '
+                       'NAO inverte nada - so repete os sinais e acende os LEDs.'])
+    sinais = [n for _, g in CTRL_GRUPOS for n in g]
+    canais = [sinais[0:8], sinais[8:16], sinais[16:20] + [None] * 4]
+    for k, ch in enumerate(canais):
+        p = {1: 'GND', 19: 'GND', 20: '+5V', 10: 'GND'}
+        for i, n in enumerate(ch):
+            p[2 + i] = f'IN_{n}' if n else 'GND'
+            p[18 - i] = n
+        b.add(f'U{k + 1}', '74HCT541', '74HCT541', p, group='IC')
+    nl = 0
+    for n in sinais:
+        if n.startswith('E0_'):
+            continue
+        nl += 1
+        if n.startswith('~{'):      # ativo em 0: +5V -> R -> LED -> saida (acende quando a saida vai a 0)
+            b.r(f'R{nl}', '1k', '+5V', f'LA{nl}')
+            b.led(f'LED{nl}', f'LA{nl}', n, 'azul')
+        else:                       # ativo em 1: saida -> LED -> R -> GND
+            b.led(f'LED{nl}', n, f'LK{nl}', 'azul')
+            b.r(f'R{nl}', '1k', f'LK{nl}', 'GND')
+    b.decoupling(3)
+    b.hdr('J1', 'ALIMENTACAO', PWR, PWR_NAMES)
+    for k, (g, ns) in enumerate(CTRL_GRUPOS):
+        lab = [n.replace('~{', '/').replace('}', '') for n in ns]
+        b.hdr(f'J{2 + k}', f'ENTRADA_{g}', [f'IN_{n}' for n in ns], lab)
+        b.hdr(f'J{7 + k}', f'SAIDA_{g}', ns, lab)
+    b.hdr('J12', 'ALIM_DECODIF', PWR, PWR_NAMES)   # repassa os 5 V para o Decodificador (backplane sem mudanca)
+    return b
+
+
 # Conectores do backplane: (ref, rotulo, redes, nomes impressos)
 BACKPLANE_HEADERS = [
     # alimentacao
@@ -499,7 +544,7 @@ def board_backplane():
 
 
 def all_boards():
-    return [board_clock(), board_reset(), board_pc(), board_ram(), board_ir(), board_cd(), board_fetch(),
+    return [board_clock(), board_reset(), board_pc(), board_ram(), board_ir(), board_cd(), board_cw(), board_fetch(),
             board_acc(), board_b(), board_alu(), board_out(), board_display(), board_backplane()]
 
 
@@ -513,8 +558,13 @@ CABOS = [
     ('RAM', 'J1', 'P_RAM'), ('RAM', 'J2', 'C_RAM1'), ('RAM', 'J3', 'C_RAM2'), ('RAM', 'J4', 'BL_RAM'),
     ('RAM', 'J5', 'BH_RAM'),
     ('IR', 'J1', 'P_IR'), ('IR', 'J2', 'C_IR'), ('IR', 'J3', 'BL_IR'), ('IR', 'J4', 'BH_IR'), ('IR', 'J5', ('CD', 'J3')),
-    ('CD', 'J1', 'P_CD'), ('CD', 'J5', 'CD_A'), ('CD', 'J6', 'CD_B'), ('CD', 'J7', 'CD_C'), ('CD', 'J8', 'CD_D'),
-    ('CD', 'J9', 'CD_E'),
+    # Decodificador -> Palavra de Controle -> backplane (o backplane NAO muda).
+    # Sem a placa CW: CD J1 -> P_CD e CD J5..J9 -> CD_A..CD_E, direto.
+    ('CW', 'J1', 'P_CD'), ('CD', 'J1', ('CW', 'J12')),
+    ('CD', 'J5', ('CW', 'J2')), ('CD', 'J6', ('CW', 'J3')), ('CD', 'J7', ('CW', 'J4')), ('CD', 'J8', ('CW', 'J5')),
+    ('CD', 'J9', ('CW', 'J6')),
+    ('CW', 'J7', 'CD_A'), ('CW', 'J8', 'CD_B'), ('CW', 'J9', 'CD_C'), ('CW', 'J10', 'CD_D'),
+    ('CW', 'J11', 'CD_E'),
     ('FETCH', 'J1', 'P_FETCH'), ('FETCH', 'J2', ('CD', 'J2')), ('FETCH', 'J3', 'C_FETCH'),
     ('ACC', 'J1', 'P_ACC'), ('ACC', 'J2', 'C_ACC'), ('ACC', 'J3', 'BL_ACC'), ('ACC', 'J4', 'BH_ACC'),
     ('ACC', 'J5', ('ALU', 'J4')), ('ACC', 'J6', ('ALU', 'J5')),
@@ -539,6 +589,7 @@ EXCECOES = {
 
 # mesmo sinal com nomes diferentes em placas diferentes
 ALIAS = {'I7': 'OP3', 'I6': 'OP2', 'I5': 'OP1', 'I4': 'OP0'}
+ALIAS.update({f'IN_{n}': n for _, g in CTRL_GRUPOS for n in g})   # entradas da Palavra de Controle
 
 
 def verificar_cabos():

@@ -92,7 +92,7 @@ def dados():
 
 CABECA = '''<title>Placas 3D — Computador 8 Bits</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="As 13 placas do Computador 8 Bits v3.0 de Marcos Silva dos Santos em 3D, com a função de cada uma.">
+<meta name="description" content="As 14 placas do Computador 8 Bits v3.0 de Marcos Silva dos Santos em 3D, com a função de cada uma.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Saira+Semi+Condensed:wght@500;600;700&display=swap">
@@ -197,7 +197,7 @@ CORPO = r'''<div class="app">
   <header class="topo">
     <h1>Computador 8 Bits — placas em 3D</h1>
     <span class="autor">projeto de Marcos Silva dos Santos (MarcosObel)</span>
-    <span class="ver">v3.0 · 13 placas · KiCad</span>
+    <span class="ver">v3.0 · 14 placas · KiCad</span>
   </header>
   <nav class="lista" id="lista" aria-label="Placas"></nav>
   <main class="palco" id="palco">

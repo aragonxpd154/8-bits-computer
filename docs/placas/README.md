@@ -1,4 +1,4 @@
-# As 13 placas — guia detalhado
+# As 14 placas — guia detalhado
 
 > **Computador 8 Bits v3.0** — projeto de **Marcos Silva dos Santos** (MarcosObel) — GPL-3.0.
 
@@ -17,12 +17,13 @@ Cada placa tem uma página com: a função dela no computador, como o circuito f
 | 5 | **[RAM e MAR](ram-mar-memoria.md)** | 16 bytes de memória, o registrador de endereço (MAR) e a programação manual por chaves DIP. | 145 × 139 mm | [STL](../3d/stl/ram-mar-memoria.stl) |
 | 6 | **[Registrador de Instrução (IR)](ir-registrador-instrucao.md)** | Guarda a instrução atual: o opcode vai para o Controle, o operando volta ao barramento. | 102 × 69 mm | [STL](../3d/stl/ir-registrador-instrucao.stl) |
 | 7 | **[Decodificador de Controle](cd-decodificador-controle.md)** | O "cérebro": 3 EEPROMs com o microcódigo ligam os 18 sinais certos em cada passo de cada instrução. | 161 × 61 mm | [STL](../3d/stl/cd-decodificador-controle.stl) |
-| 8 | **[Contador de Passos](fetch-contador-passos.md)** | Conta os passos T0…T4 de cada instrução e avisa (/Y5) quando a instrução terminou. | 70 × 69 mm | [STL](../3d/stl/fetch-contador-passos.stl) |
-| 9 | **[Registrador A (Acumulador)](acc-registrador-a.md)** | Registrador principal de 8 bits: guarda o resultado das contas e alimenta a ULA. | 110 × 69 mm | [STL](../3d/stl/acc-registrador-a.stl) |
-| 10 | **[Registrador B](b-registrador-b.md)** | Segundo operando da ULA: recebe o valor da RAM nas contas ADD, SUB, AND, OR e XOR. | 110 × 69 mm | [STL](../3d/stl/b-registrador-b.stl) |
-| 11 | **[ULA (Unidade Lógica e Aritmética)](alu-unidade-logica-aritmetica.md)** | Faz soma, subtração, AND, OR, XOR e NOT entre A e B; resultado vai ao barramento. | 218 × 128 mm | [STL](../3d/stl/alu-unidade-logica-aritmetica.stl) |
-| 12 | **[Registrador de Saída](out-registrador-saida.md)** | Guarda o valor que aparece no display (instrução OUT). | 110 × 69 mm | [STL](../3d/stl/out-registrador-saida.stl) |
-| 13 | **[Display Decimal](display-decimal.md)** | Mostra o valor do registrador de saída em decimal, 0…255 ou −128…127, em 4 dígitos. | 134 × 112 mm | [STL](../3d/stl/display-decimal.stl) |
+| 8 | **[Palavra de Controle](cw-palavra-de-controle.md)** | Placa opcional: 18 LEDs mostram, em cada passo, quais sinais de controle o microcódigo ligou. | 145 × 82 mm | [STL](../3d/stl/cw-palavra-de-controle.stl) |
+| 9 | **[Contador de Passos](fetch-contador-passos.md)** | Conta os passos T0…T4 de cada instrução e avisa (/Y5) quando a instrução terminou. | 70 × 69 mm | [STL](../3d/stl/fetch-contador-passos.stl) |
+| 10 | **[Registrador A (Acumulador)](acc-registrador-a.md)** | Registrador principal de 8 bits: guarda o resultado das contas e alimenta a ULA. | 110 × 69 mm | [STL](../3d/stl/acc-registrador-a.stl) |
+| 11 | **[Registrador B](b-registrador-b.md)** | Segundo operando da ULA: recebe o valor da RAM nas contas ADD, SUB, AND, OR e XOR. | 110 × 69 mm | [STL](../3d/stl/b-registrador-b.stl) |
+| 12 | **[ULA (Unidade Lógica e Aritmética)](alu-unidade-logica-aritmetica.md)** | Faz soma, subtração, AND, OR, XOR e NOT entre A e B; resultado vai ao barramento. | 218 × 128 mm | [STL](../3d/stl/alu-unidade-logica-aritmetica.stl) |
+| 13 | **[Registrador de Saída](out-registrador-saida.md)** | Guarda o valor que aparece no display (instrução OUT). | 110 × 69 mm | [STL](../3d/stl/out-registrador-saida.stl) |
+| 14 | **[Display Decimal](display-decimal.md)** | Mostra o valor do registrador de saída em decimal, 0…255 ou −128…127, em 4 dígitos. | 134 × 112 mm | [STL](../3d/stl/display-decimal.stl) |
 
 ## Galeria
 
@@ -39,15 +40,16 @@ Cada placa tem uma página com: a função dela no computador, como o circuito f
 </tr>
 <tr>
 <td align="center" width="33%"><a href="cd-decodificador-controle.md"><img src="../imagens/3d/cd-decodificador-controle.png" alt="Decodificador de Controle"><br><b>Decodificador de Controle</b></a></td>
+<td align="center" width="33%"><a href="cw-palavra-de-controle.md"><img src="../imagens/3d/cw-palavra-de-controle.png" alt="Palavra de Controle"><br><b>Palavra de Controle</b></a></td>
 <td align="center" width="33%"><a href="fetch-contador-passos.md"><img src="../imagens/3d/fetch-contador-passos.png" alt="Contador de Passos"><br><b>Contador de Passos</b></a></td>
-<td align="center" width="33%"><a href="acc-registrador-a.md"><img src="../imagens/3d/acc-registrador-a.png" alt="Registrador A (Acumulador)"><br><b>Registrador A (Acumulador)</b></a></td>
 </tr>
 <tr>
+<td align="center" width="33%"><a href="acc-registrador-a.md"><img src="../imagens/3d/acc-registrador-a.png" alt="Registrador A (Acumulador)"><br><b>Registrador A (Acumulador)</b></a></td>
 <td align="center" width="33%"><a href="b-registrador-b.md"><img src="../imagens/3d/b-registrador-b.png" alt="Registrador B"><br><b>Registrador B</b></a></td>
 <td align="center" width="33%"><a href="alu-unidade-logica-aritmetica.md"><img src="../imagens/3d/alu-unidade-logica-aritmetica.png" alt="ULA (Unidade Lógica e Aritmética)"><br><b>ULA (Unidade Lógica e Aritmética)</b></a></td>
-<td align="center" width="33%"><a href="out-registrador-saida.md"><img src="../imagens/3d/out-registrador-saida.png" alt="Registrador de Saída"><br><b>Registrador de Saída</b></a></td>
 </tr>
 <tr>
+<td align="center" width="33%"><a href="out-registrador-saida.md"><img src="../imagens/3d/out-registrador-saida.png" alt="Registrador de Saída"><br><b>Registrador de Saída</b></a></td>
 <td align="center" width="33%"><a href="display-decimal.md"><img src="../imagens/3d/display-decimal.png" alt="Display Decimal"><br><b>Display Decimal</b></a></td>
 </tr>
 </table>

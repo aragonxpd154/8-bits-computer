@@ -105,7 +105,7 @@ if __name__ == '__main__':
                   'table img { max-height: 70mm; width: auto; } '
                   'td[width] img { max-height: 48mm; }')
     gp = md_para_html(['README.md'] + [PASTAS[k] + '.md' for k in ordem], 'Guia das placas',
-                      capa('Computador 8 Bits', 'Guia das 13 placas — função, funcionamento, esquema, 3D e conectores',
+                      capa('Computador 8 Bits', 'Guia das 14 placas — função, funcionamento, esquema, 3D e conectores',
                            '../imagens/3d/alu-unidade-logica-aritmetica.png'),
                       toc=False, base=PL, css_extra=css_placas)
     print(para_pdf(gp, 'guia-das-placas', base=PL))

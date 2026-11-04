@@ -1,4 +1,4 @@
-# 12 · Registrador de Saída
+# 13 · Registrador de Saída
 
 > Placa do **Computador 8 Bits v3.0** — projeto de **Marcos Silva dos Santos** (MarcosObel) — GPL-3.0.
 

@@ -49,7 +49,7 @@ def roteiro():
     f, ax = fig(14, 6.2, 'Roteiro do projeto - do arquivo ao computador funcionando')
     etapas = [('Entender', 'arquitetura e\nsinais (doc 1)', CI), ('Fabricar', 'Gerbers no\nJLCPCB (doc 3)', AZ),
               ('Comprar', 'componentes\n(lista de materiais)', AM), ('Gravar', '4 EEPROMs\n28C16 (doc 6)', RO),
-              ('Montar', 'soldar e testar\ncada placa (doc 4)', VE), ('Interligar', 'base + backplane\n52 cabos (doc 5)', LA),
+              ('Montar', 'soldar e testar\ncada placa (doc 4)', VE), ('Interligar', 'base + backplane\n58 cabos (doc 5)', LA),
               ('Ligar', 'subida por etapas\n(doc 8)', VM), ('Programar', 'RAM pelas chaves\nRUN! (doc 7)', AZ)]
     for i, (t, s, c) in enumerate(etapas):
         row, col = divmod(i, 4)
@@ -69,7 +69,7 @@ def roteiro():
 def pedido():
     f, ax = fig(14, 4.8, 'Como pedir as placas (JLCPCB / PCBWay)')
     p = [('hardware/fabricacao/\n<placa>/', '<placa>-gerber.zip'), ('jlcpcb.com', 'Order now >\nAdd gerber file'),
-         ('Opcoes', 'FR-4 | 2 camadas | 1,6 mm\nHASL | 1 oz | 5 pecas'), ('Carrinho', 'repita p/ as 13 placas\n1 pedido = 1 frete'),
+         ('Opcoes', 'FR-4 | 2 camadas | 1,6 mm\nHASL | 1 oz | 5 pecas'), ('Carrinho', 'repita p/ as 14 placas\n1 pedido = 1 frete'),
          ('Chegada', 'inspecao visual +\ncontinuidade +5V x GND')]
     for i, (t, s) in enumerate(p):
         x = 0.4 + i * 2.75
@@ -185,40 +185,45 @@ def base():
     f, ax = fig(14, 9, 'Arranjo dos modulos na base e cabos (todos de 4 vias, RETOS: pino 1 com pino 1)')
     ax.add_patch(Rectangle((0.4, 0.6), 13.2, 7.7, fc='#f7fafc', ec='#a0aec0', lw=1.5, ls='--'))
     ax.text(0.6, 8.05, 'BASE ~60 x 45 cm (MDF/acrilico) - espacadores M3', fontsize=8, color='#718096')
-    esq = [('RESET', VM), ('CLOCK', CI), ('PC', AZ), ('RAM/MAR', AZ), ('IR', AZ), ('CONTROLE', RO), ('PASSOS', RO)]
+    esq = [('RESET', VM), ('CLOCK', CI), ('PC', AZ), ('RAM/MAR', AZ), ('IR', AZ), ('CONTROLE', RO), ('PALAVRA CTRL*', RO), ('PASSOS', RO)]
     dir_ = [('REG. A', VE), ('ULA', VE), ('REG. B', VE), ('SAIDA', LA), ('DISPLAY', LA)]
     pe, pd = {}, {}
     for i, (t, c) in enumerate(esq):
-        y = 7.2 - i * 0.98
-        caixa(ax, 0.8, y, 2.6, 0.75, t, '', c, 10); pe[t] = y
+        y = 7.3 - i * 0.84
+        caixa(ax, 0.8, y, 2.6, 0.66, t, '', c, 10); pe[t] = y
     for i, (t, c) in enumerate(dir_):
         y = 6.25 - i * 1.15
         caixa(ax, 10.6, y, 2.6, 0.85, t, '', c, 10); pd[t] = y
-    ax.add_patch(FancyBboxPatch((5.2, 1.2), 3.6, 5.9, boxstyle='round,pad=0.02', fc='#fefcbf', ec=AM, lw=2.5))
-    ax.text(7.0, 6.75, 'BACKPLANE', ha='center', fontsize=12, weight='bold', color='#744210')
-    ax.text(7.0, 6.4, 'conectores agrupados por modulo\n+ barramento D0..D7 (LEDs)', ha='center', fontsize=8, color='#744210')
+    ax.add_patch(FancyBboxPatch((5.2, 1.3), 3.6, 6.4, boxstyle='round,pad=0.02', fc='#fefcbf', ec=AM, lw=2.5))
+    ax.text(7.0, 7.3, 'BACKPLANE', ha='center', fontsize=12, weight='bold', color='#744210')
+    ax.text(7.0, 6.95, 'conectores agrupados por modulo\n+ barramento D0..D7 (LEDs)', ha='center', fontsize=8, color='#744210')
     caixa(ax, 10.6, 7.3, 2.6, 0.6, 'FONTE 5 V / 2-3 A', '', VM, 9)
-    seta(ax, (10.6, 7.6), (8.8, 6.9), VM, 2)
+    seta(ax, (10.6, 7.6), (8.8, 7.4), VM, 2)
     for t, y in pe.items():
-        seta(ax, (3.4, y + 0.38), (5.2, y + 0.38), '#718096', 1.6, '<|-|>')
+        if t == 'CONTROLE':
+            continue   # o Decodificador liga na Palavra de Controle (direto) e ela no backplane
+        seta(ax, (3.4, y + 0.33), (5.2, y + 0.33), '#718096', 1.6, '<|-|>')
+    seta(ax, (3.55, pe['CONTROLE'] + 0.33), (3.55, pe['PALAVRA CTRL*'] + 0.33), RO, 2.5)
     for t, y in pd.items():
         seta(ax, (10.6, y + 0.42), (8.8, y + 0.42), '#718096', 1.6, '<|-|>')
     # diretos
-    seta(ax, (0.7, pe['IR'] + 0.2), (0.7, pe['CONTROLE'] + 0.55), RO, 2.5)
+    seta(ax, (0.7, pe['IR'] + 0.2), (0.7, pe['CONTROLE'] + 0.5), RO, 2.5)
     ax.text(0.45, pe['IR'] - 0.25, 'opcode', fontsize=7.5, color=RO, rotation=90)
     seta(ax, (0.7, pe['PASSOS'] + 0.55), (0.7, pe['CONTROLE'] + 0.2), RO, 2.5)
     ax.text(0.45, pe['PASSOS'] + 0.4, 'T0-T2', fontsize=7.5, color=RO, rotation=90)
     seta(ax, (13.35, pd['REG. A'] + 0.3), (13.35, pd['ULA'] + 0.6), VE, 2.5)
     seta(ax, (13.35, pd['REG. B'] + 0.6), (13.35, pd['ULA'] + 0.25), VE, 2.5)
     seta(ax, (13.35, pd['SAIDA'] + 0.25), (13.35, pd['DISPLAY'] + 0.6), LA, 2.5)
-    ax.text(5.2, 0.85, 'Cinza = cabo modulo <-> backplane (44)   |   Colorido = cabo DIRETO entre modulos vizinhos (8)',
+    ax.text(5.2, 1.0, 'Cinza = cabo modulo <-> backplane (44)   |   Colorido = cabo DIRETO entre placas vizinhas (14)',
             fontsize=9, color='#2d3748')
+    ax.text(5.2, 0.72, '* Palavra de Controle (18 LEDs) e opcional: sem ela o CONTROLE liga direto no backplane (52 cabos).',
+            fontsize=8, color='#4a5568')
     salvar(f, '06-base-e-cabos')
 
 
 # 7. Cabo reto ---------------------------------------------------------------
 def cabo():
-    f, ax = fig(12, 4.2, 'Cabo de 4 vias RETO - todos os 52 cabos sao assim')
+    f, ax = fig(12, 4.2, 'Cabo de 4 vias RETO - todos os 58 cabos sao assim')
     cores = ['#e53e3e', '#dd6b20', '#d69e2e', '#38a169']
     for side, x in (('MODULO  J2 CONTROLE', 1.2), ('BACKPLANE  C_ACC', 8.8)):
         ax.add_patch(Rectangle((x, 1.2), 2.0, 2.0, fc='#1a202c'))

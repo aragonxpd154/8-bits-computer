@@ -40,19 +40,19 @@ typedef struct { int n; int s[MAXS]; } passo_t;
 #define P(...) { sizeof((int[]){__VA_ARGS__}) / sizeof(int), { __VA_ARGS__ } }
 #define VAZIO { 0, { 0 } }
 
-/* passos T2..T4 de cada opcode (T0/T1 = busca, iguais para todos) */
+/* passos T2..T4 de cada opcode (T0/T1 = busca, iguais para todos). */
 static const passo_t prog[16][3] = {
     /* 0 NOP */ { VAZIO, VAZIO, VAZIO },
     /* 1 LDA */ { P(IRO, MAI), P(RMO, ACI), VAZIO },
-    /* 2 SUB */ { P(IRO, MAI), P(RMO, BRI), P(ALU, SUB, ACI) },
+    /* 2 LDI */ { P(IRO, ACI), VAZIO, VAZIO },
     /* 3 STA */ { P(IRO, MAI), P(ACO, RMI), VAZIO },
     /* 4 ADD */ { P(IRO, MAI), P(RMO, BRI), P(ALU, ACI) },
-    /* 5 LDI */ { P(IRO, ACI), VAZIO, VAZIO },
-    /* 6 JMP */ { P(IRO, JMP), VAZIO, VAZIO },
-    /* 7 AND */ { P(IRO, MAI), P(RMO, BRI), P(ALU, AL0, ACI) },
-    /* 8 OR  */ { P(IRO, MAI), P(RMO, BRI), P(ALU, AL1, ACI) },
-    /* 9 XOR */ { P(IRO, MAI), P(RMO, BRI), P(ALU, AL1, AL0, ACI) },
-    /* A NOT */ { P(ALU, AL1, AL0, NOT, ACI), VAZIO, VAZIO },
+    /* 5 SUB */ { P(IRO, MAI), P(RMO, BRI), P(ALU, SUB, ACI) },
+    /* 6 AND */ { P(IRO, MAI), P(RMO, BRI), P(ALU, AL0, ACI) },
+    /* 7 OR  */ { P(IRO, MAI), P(RMO, BRI), P(ALU, AL1, ACI) },
+    /* 8 XOR */ { P(IRO, MAI), P(RMO, BRI), P(ALU, AL1, AL0, ACI) },
+    /* 9 NOT */ { P(ALU, AL1, AL0, NOT, ACI), VAZIO, VAZIO },
+    /* A JMP */ { P(IRO, JMP), VAZIO, VAZIO },
     /* B JC  */ { VAZIO, VAZIO, VAZIO },   /* tratado abaixo (depende de CF) */
     /* C JZ  */ { VAZIO, VAZIO, VAZIO },   /* tratado abaixo (depende de ZF) */
     /* D --  */ { VAZIO, VAZIO, VAZIO },

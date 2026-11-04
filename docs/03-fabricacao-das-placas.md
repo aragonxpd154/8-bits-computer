@@ -2,7 +2,7 @@
 
 > Computador 8 Bits v3.0 — projeto de **Marcos Silva dos Santos** (MarcosObel). Licença GPL-3.0.
 
-As 13 placas foram projetadas para **fabricação profissional** (2 camadas, furo metalizado) e, ao mesmo
+As 14 placas foram projetadas para **fabricação profissional** (2 camadas, furo metalizado) e, ao mesmo
 tempo, para serem **didáticas**: quem pega a placa na mão consegue seguir o circuito.
 
 ## 3.1 O que a placa mostra (pensado para estudo)
@@ -52,7 +52,7 @@ padrão (as mais baratas) dos fabricantes.
    | Remove Order Number | *Specify a location* não é necessário — escolha "No" ou deixe o padrão |
    | PCB Assembly | **desligado** (você mesmo solda) |
 
-3. *Save to cart* e repita para as 13 placas. Fazer **um único pedido** com todas sai mais barato no frete.
+3. *Save to cart* e repita para as outras placas (são 14; a Palavra de Controle é opcional e pode ser pedida depois). Fazer **um único pedido** com todas sai mais barato no frete.
 4. Pague e acompanhe. Prazo típico: alguns dias de produção + o frete escolhido.
 
 > Dica: o backplane (≈ 205 × 150 mm) e a ULA (≈ 220 × 130 mm) passam de 100 × 100 mm, faixa em que

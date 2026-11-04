@@ -18,6 +18,7 @@ Todas: 2 camadas, furo metalizado, trilha 0,5 mm (alimentação 0,9 mm), isolaç
 | **Memoria RAM e MAR** | 145 × 139 | 151 | 866 segmentos | [PDF](fabricacao/ram-mar-memoria/0-esquematico.pdf) | [arquivos](fabricacao/ram-mar-memoria/) |
 | **Registrador de Instrucao (IR)** | 102 × 69 | 6 | 125 segmentos | [PDF](fabricacao/ir-registrador-instrucao/0-esquematico.pdf) | [arquivos](fabricacao/ir-registrador-instrucao/) |
 | **Decodificador de Controle (microcodigo)** | 161 × 61 | 6 | 144 segmentos | [PDF](fabricacao/cd-decodificador-controle/0-esquematico.pdf) | [arquivos](fabricacao/cd-decodificador-controle/) |
+| **Palavra de Controle (18 LEDs)** | 145 × 82 | 25 | 289 segmentos | [PDF](fabricacao/cw-palavra-de-controle/0-esquematico.pdf) | [arquivos](fabricacao/cw-palavra-de-controle/) |
 | **Contador de Passos (Fetch/Execute)** | 70 × 69 | 2 | 86 segmentos | [PDF](fabricacao/fetch-contador-passos/0-esquematico.pdf) | [arquivos](fabricacao/fetch-contador-passos/) |
 | **Registrador A (Acumulador)** | 110 × 69 | 4 | 174 segmentos | [PDF](fabricacao/acc-registrador-a/0-esquematico.pdf) | [arquivos](fabricacao/acc-registrador-a/) |
 | **Registrador B** | 110 × 69 | 8 | 160 segmentos | [PDF](fabricacao/b-registrador-b/0-esquematico.pdf) | [arquivos](fabricacao/b-registrador-b/) |
@@ -87,6 +88,16 @@ Guarda a instrucao: nibble alto = opcode (para o decodificador), nibble baixo = 
 | Em 3D | Cobre e serigrafia |
 |---|---|
 | ![Decodificador de Controle (microcodigo) em 3D](../docs/imagens/3d/cd-decodificador-controle.png) | ![Decodificador de Controle (microcodigo)](../docs/imagens/placas/cd-decodificador-controle.png) |
+
+## Palavra de Controle (18 LEDs)
+
+Fica entre o Decodificador de Controle e o backplane (que nao muda): recebe os 5 V do conector P_CD e repassa ao Decodificador por J12. 3x 74HCT541 repetem os 20 sinais das EEPROMs (reforcam a saida das EEPROMs) e 18 LEDs mostram cada sinal de controle: LED aceso = sinal ATIVO, inclusive nos sinais com barra (ativos em 0). Opcional: sem ela, os cabos do Decodificador vao direto ao backplane.
+
+🧊 **[Página completa da placa](../docs/placas/cw-palavra-de-controle.md)** (função, funcionamento, esquema, conectores, teste) · [3D (STL)](../docs/3d/stl/cw-palavra-de-controle.stl) · [STEP](fabricacao/cw-palavra-de-controle/cw-palavra-de-controle.step)
+
+| Em 3D | Cobre e serigrafia |
+|---|---|
+| ![Palavra de Controle (18 LEDs) em 3D](../docs/imagens/3d/cw-palavra-de-controle.png) | ![Palavra de Controle (18 LEDs)](../docs/imagens/placas/cw-palavra-de-controle.png) |
 
 ## Contador de Passos (Fetch/Execute)
 

@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-01T15:22:36.548228</dc:date>
+    <dc:date>2026-11-03T21:05:06.511121</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -35,7 +35,7 @@ L 185.76 173.52
 L 185.76 62.64 
 L 74.16 62.64 
 z
-" clip-path="url(#p07382f65c9)" style="fill: #1a202c"/>
+" clip-path="url(#pcba5b285f7)" style="fill: #1a202c"/>
    </g>
    <g id="patch_3">
     <path d="M 118.8 82.044 
@@ -43,7 +43,7 @@ L 138.33 82.044
 L 138.33 68.184 
 L 118.8 68.184 
 z
-" clip-path="url(#p07382f65c9)" style="fill: #ecc94b"/>
+" clip-path="url(#pcba5b285f7)" style="fill: #ecc94b"/>
    </g>
    <g id="patch_4">
     <path d="M 118.8 108.6552 
@@ -51,7 +51,7 @@ L 138.33 108.6552
 L 138.33 94.7952 
 L 118.8 94.7952 
 z
-" clip-path="url(#p07382f65c9)" style="fill: #ecc94b"/>
+" clip-path="url(#pcba5b285f7)" style="fill: #ecc94b"/>
    </g>
    <g id="patch_5">
     <path d="M 118.8 135.2664 
@@ -59,7 +59,7 @@ L 138.33 135.2664
 L 138.33 121.4064 
 L 118.8 121.4064 
 z
-" clip-path="url(#p07382f65c9)" style="fill: #ecc94b"/>
+" clip-path="url(#pcba5b285f7)" style="fill: #ecc94b"/>
    </g>
    <g id="patch_6">
     <path d="M 118.8 161.8776 
@@ -67,7 +67,7 @@ L 138.33 161.8776
 L 138.33 148.0176 
 L 118.8 148.0176 
 z
-" clip-path="url(#p07382f65c9)" style="fill: #ecc94b"/>
+" clip-path="url(#pcba5b285f7)" style="fill: #ecc94b"/>
    </g>
    <g id="patch_7">
     <path d="M 498.24 173.52 
@@ -75,7 +75,7 @@ L 609.84 173.52
 L 609.84 62.64 
 L 498.24 62.64 
 z
-" clip-path="url(#p07382f65c9)" style="fill: #1a202c"/>
+" clip-path="url(#pcba5b285f7)" style="fill: #1a202c"/>
    </g>
    <g id="patch_8">
     <path d="M 542.88 82.044 
@@ -83,7 +83,7 @@ L 562.41 82.044
 L 562.41 68.184 
 L 542.88 68.184 
 z
-" clip-path="url(#p07382f65c9)" style="fill: #ecc94b"/>
+" clip-path="url(#pcba5b285f7)" style="fill: #ecc94b"/>
    </g>
    <g id="patch_9">
     <path d="M 542.88 108.6552 
@@ -91,7 +91,7 @@ L 562.41 108.6552
 L 562.41 94.7952 
 L 542.88 94.7952 
 z
-" clip-path="url(#p07382f65c9)" style="fill: #ecc94b"/>
+" clip-path="url(#pcba5b285f7)" style="fill: #ecc94b"/>
    </g>
    <g id="patch_10">
     <path d="M 542.88 135.2664 
@@ -99,7 +99,7 @@ L 562.41 135.2664
 L 562.41 121.4064 
 L 542.88 121.4064 
 z
-" clip-path="url(#p07382f65c9)" style="fill: #ecc94b"/>
+" clip-path="url(#pcba5b285f7)" style="fill: #ecc94b"/>
    </g>
    <g id="patch_11">
     <path d="M 542.88 161.8776 
@@ -107,31 +107,31 @@ L 562.41 161.8776
 L 562.41 148.0176 
 L 542.88 148.0176 
 z
-" clip-path="url(#p07382f65c9)" style="fill: #ecc94b"/>
+" clip-path="url(#pcba5b285f7)" style="fill: #ecc94b"/>
    </g>
    <g id="line2d_1">
     <path d="M 185.76 75.3912 
 L 498.24 75.3912 
-" clip-path="url(#p07382f65c9)" style="fill: none; stroke: #e53e3e; stroke-width: 4; stroke-linecap: square"/>
+" clip-path="url(#pcba5b285f7)" style="fill: none; stroke: #e53e3e; stroke-width: 4; stroke-linecap: square"/>
    </g>
    <g id="line2d_2">
     <path d="M 185.76 102.0024 
 L 498.24 102.0024 
-" clip-path="url(#p07382f65c9)" style="fill: none; stroke: #dd6b20; stroke-width: 4; stroke-linecap: square"/>
+" clip-path="url(#pcba5b285f7)" style="fill: none; stroke: #dd6b20; stroke-width: 4; stroke-linecap: square"/>
    </g>
    <g id="line2d_3">
     <path d="M 185.76 128.6136 
 L 498.24 128.6136 
-" clip-path="url(#p07382f65c9)" style="fill: none; stroke: #d69e2e; stroke-width: 4; stroke-linecap: square"/>
+" clip-path="url(#pcba5b285f7)" style="fill: none; stroke: #d69e2e; stroke-width: 4; stroke-linecap: square"/>
    </g>
    <g id="line2d_4">
     <path d="M 185.76 155.2248 
 L 498.24 155.2248 
-" clip-path="url(#p07382f65c9)" style="fill: none; stroke: #38a169; stroke-width: 4; stroke-linecap: square"/>
+" clip-path="url(#pcba5b285f7)" style="fill: none; stroke: #38a169; stroke-width: 4; stroke-linecap: square"/>
    </g>
    <g id="text_1">
-    <!-- Cabo de 4 vias RETO - todos os 52 cabos sao assim -->
-    <g style="fill: #1a202c" transform="translate(154.066406 41.13525) scale(0.15 -0.15)">
+    <!-- Cabo de 4 vias RETO - todos os 58 cabos sao assim -->
+    <g style="fill: #1a202c" transform="translate(153.908203 41.13525) scale(0.15 -0.15)">
      <defs>
       <path id="Inter-Bold-49" d="M 2456 -63 
 C 3631 -63 4356 728 4463 1594 
@@ -410,21 +410,29 @@ L 403 1306
 C 422 509 1119 -63 2075 -63 
 z
 " transform="scale(0.015625)"/>
-      <path id="Inter-Bold-541" d="M 388 0 
-L 3681 0 
-L 3681 784 
-L 1713 784 
-L 1713 819 
-L 2416 1513 
-C 3369 2391 3619 2822 3619 3344 
-C 3619 4150 2963 4719 1978 4719 
-C 1013 4719 344 4134 344 3228 
-L 1256 3228 
-C 1256 3681 1538 3956 1972 3956 
-C 2388 3956 2694 3700 2694 3284 
-C 2694 2909 2459 2647 2038 2234 
-L 388 688 
-L 388 0 
+      <path id="Inter-Bold-549" d="M 2081 -63 
+C 3122 -63 3875 494 3875 1250 
+C 3875 1831 3425 2313 2872 2406 
+L 2872 2434 
+C 3356 2538 3703 2959 3703 3469 
+C 3703 4184 3013 4719 2081 4719 
+C 1147 4719 463 4188 463 3469 
+C 463 2959 800 2538 1297 2434 
+L 1297 2406 
+C 728 2313 294 1831 294 1250 
+C 294 494 1038 -63 2081 -63 
+z
+M 2081 644 
+C 1600 644 1284 925 1284 1325 
+C 1284 1738 1619 2031 2081 2031 
+C 2541 2031 2878 1734 2878 1325 
+C 2878 922 2559 644 2081 644 
+z
+M 2081 2731 
+C 1681 2731 1394 2994 1394 3366 
+C 1394 3741 1675 3991 2081 3991 
+C 2488 3991 2769 3738 2769 3366 
+C 2769 2994 2478 2731 2081 2731 
 z
 " transform="scale(0.015625)"/>
       <path id="Inter-Bold-24b" d="M 1963 -69 
@@ -495,23 +503,23 @@ z
      <use xlink:href="#Inter-Bold-369" transform="translate(1466.0625 0)"/>
      <use xlink:href="#Inter-Bold-6eb" transform="translate(1522.0625 0)"/>
      <use xlink:href="#Inter-Bold-545" transform="translate(1545.75 0)"/>
-     <use xlink:href="#Inter-Bold-541" transform="translate(1609.671875 0)"/>
-     <use xlink:href="#Inter-Bold-6eb" transform="translate(1672.65625 0)"/>
-     <use xlink:href="#Inter-Bold-24b" transform="translate(1696.34375 0)"/>
-     <use xlink:href="#Inter-Bold-1fc" transform="translate(1756.171875 0)"/>
-     <use xlink:href="#Inter-Bold-243" transform="translate(1814.234375 0)"/>
-     <use xlink:href="#Inter-Bold-318" transform="translate(1877.265625 0)"/>
-     <use xlink:href="#Inter-Bold-369" transform="translate(1938.59375 0)"/>
-     <use xlink:href="#Inter-Bold-6eb" transform="translate(1994.59375 0)"/>
-     <use xlink:href="#Inter-Bold-369" transform="translate(2018.28125 0)"/>
-     <use xlink:href="#Inter-Bold-1fc" transform="translate(2074.28125 0)"/>
-     <use xlink:href="#Inter-Bold-318" transform="translate(2132.34375 0)"/>
-     <use xlink:href="#Inter-Bold-6eb" transform="translate(2193.671875 0)"/>
-     <use xlink:href="#Inter-Bold-1fc" transform="translate(2217.359375 0)"/>
-     <use xlink:href="#Inter-Bold-369" transform="translate(2275.421875 0)"/>
-     <use xlink:href="#Inter-Bold-369" transform="translate(2331.421875 0)"/>
-     <use xlink:href="#Inter-Bold-2b2" transform="translate(2387.421875 0)"/>
-     <use xlink:href="#Inter-Bold-300" transform="translate(2414.515625 0)"/>
+     <use xlink:href="#Inter-Bold-549" transform="translate(1609.671875 0)"/>
+     <use xlink:href="#Inter-Bold-6eb" transform="translate(1674.765625 0)"/>
+     <use xlink:href="#Inter-Bold-24b" transform="translate(1698.453125 0)"/>
+     <use xlink:href="#Inter-Bold-1fc" transform="translate(1758.28125 0)"/>
+     <use xlink:href="#Inter-Bold-243" transform="translate(1816.34375 0)"/>
+     <use xlink:href="#Inter-Bold-318" transform="translate(1879.375 0)"/>
+     <use xlink:href="#Inter-Bold-369" transform="translate(1940.703125 0)"/>
+     <use xlink:href="#Inter-Bold-6eb" transform="translate(1996.703125 0)"/>
+     <use xlink:href="#Inter-Bold-369" transform="translate(2020.390625 0)"/>
+     <use xlink:href="#Inter-Bold-1fc" transform="translate(2076.390625 0)"/>
+     <use xlink:href="#Inter-Bold-318" transform="translate(2134.453125 0)"/>
+     <use xlink:href="#Inter-Bold-6eb" transform="translate(2195.78125 0)"/>
+     <use xlink:href="#Inter-Bold-1fc" transform="translate(2219.46875 0)"/>
+     <use xlink:href="#Inter-Bold-369" transform="translate(2277.53125 0)"/>
+     <use xlink:href="#Inter-Bold-369" transform="translate(2333.53125 0)"/>
+     <use xlink:href="#Inter-Bold-2b2" transform="translate(2389.53125 0)"/>
+     <use xlink:href="#Inter-Bold-300" transform="translate(2416.625 0)"/>
     </g>
    </g>
    <g id="text_2">
@@ -1157,6 +1165,23 @@ L 213 1400
 C 213 463 803 -63 1772 -63 
 z
 " transform="scale(0.015625)"/>
+      <path id="Inter-Bold-541" d="M 388 0 
+L 3681 0 
+L 3681 784 
+L 1713 784 
+L 1713 819 
+L 2416 1513 
+C 3369 2391 3619 2822 3619 3344 
+C 3619 4150 2963 4719 1978 4719 
+C 1013 4719 344 4134 344 3228 
+L 1256 3228 
+C 1256 3681 1538 3956 1972 3956 
+C 2388 3956 2694 3700 2694 3284 
+C 2694 2909 2459 2647 2038 2234 
+L 388 688 
+L 388 0 
+z
+" transform="scale(0.015625)"/>
       <path id="Inter-Bold-12d" d="M 422 0 
 L 1397 0 
 L 1397 2141 
@@ -1705,7 +1730,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="p07382f65c9">
+  <clipPath id="pcba5b285f7">
    <rect x="7.2" y="7.2" width="669.6" height="232.848"/>
   </clipPath>
  </defs>

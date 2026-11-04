@@ -296,6 +296,11 @@ def build_library():
             (15, 'B4', 'bidirectional'), (14, 'B5', 'bidirectional'), (13, 'B6', 'bidirectional'),
             (12, 'B7', 'bidirectional'), (11, 'B8', 'bidirectional')],
            20, 10, FP['DIP20'], 'Transceptor octal 3-state', '74LS245'))
+    add(ic('74HCT541', [(2, 'A1'), (3, 'A2'), (4, 'A3'), (5, 'A4'), (6, 'A5'), (7, 'A6'), (8, 'A7'), (9, 'A8'), None,
+                        (1, '~{OE1}'), (19, '~{OE2}')],
+           [(18, 'Y1', 'tri_state'), (17, 'Y2', 'tri_state'), (16, 'Y3', 'tri_state'), (15, 'Y4', 'tri_state'),
+            (14, 'Y5', 'tri_state'), (13, 'Y6', 'tri_state'), (12, 'Y7', 'tri_state'), (11, 'Y8', 'tri_state')],
+           20, 10, FP['DIP20'], 'Buffer octal 3-state (entradas TTL, saidas CMOS)', '74HCT541'))
     add(ic('74LS283', [(5, 'A1'), (3, 'A2'), (14, 'A3'), (12, 'A4'), None, (6, 'B1'), (2, 'B2'), (15, 'B3'), (11, 'B4'),
                        None, (7, 'C0')],
            [(4, 'S1'), (1, 'S2'), (13, 'S3'), (10, 'S4'), None, None, None, None, None, None, (9, 'C4')],

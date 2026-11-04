@@ -13,6 +13,13 @@ O computador usa **4 EEPROMs 28C16** (AT28C16, CAT28C16A ou equivalente, 2 KB, D
 
 Cada arquivo tem exatamente 2048 bytes. Também há versões `.hex` (Intel HEX) para gravadores que preferem esse formato.
 
+> **Display com zeros à esquerda:** se preferir ver sempre 3 dígitos (`042`, `-014`), grave
+> `firmware/display/DISPLAY-com-zeros.bin` no lugar do `DISPLAY.bin`.
+>
+> ⚠️ **Use só os `EEPROM0/1/2.bin` deste repositório.** Os 11 sinais ativos em nível baixo já estão gravados
+> invertidos: microcódigos de outros projetos, feitos para placas com inversores 74LS04 entre a EEPROM e os
+> módulos, ligariam os sinais ao contrário.
+
 > **Etiquete cada chip** (fita crepe: "CD-U1 EEPROM2", "CD-U2 EEPROM1", "CD-U3 EEPROM0", "DISPLAY").
 > Trocar dois chips de lugar faz o computador "enlouquecer" sem nenhum dano — mas é difícil de achar.
 

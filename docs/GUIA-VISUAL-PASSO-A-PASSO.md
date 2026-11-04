@@ -13,11 +13,11 @@ um programa. Cada etapa aponta para o capítulo do manual com os detalhes.
 |---|---|---|
 | [0](#etapa-0--o-que-você-vai-construir) | Conhecer o computador | 30 min |
 | [1](#etapa-1--entender-como-uma-instrução-funciona) | Entender como uma instrução funciona | 30 min |
-| [2](#etapa-2--mandar-fabricar-as-13-placas) | Mandar fabricar as 13 placas | 1 h (+ prazo da fábrica) |
+| [2](#etapa-2--mandar-fabricar-as-14-placas) | Mandar fabricar as 14 placas | 1 h (+ prazo da fábrica) |
 | [3](#etapa-3--comprar-os-componentes) | Comprar os componentes | 1 h (+ entrega) |
 | [4](#etapa-4--gravar-as-4-eeproms) | Gravar as 4 EEPROMs | 30 min |
 | [5](#etapa-5--montar-e-testar-cada-placa) | Montar e testar cada placa | 1–3 h por placa |
-| [6](#etapa-6--montar-na-base-e-ligar-os-cabos) | Montar na base e ligar os 52 cabos | 2 h |
+| [6](#etapa-6--montar-na-base-e-ligar-os-cabos) | Montar na base e ligar os 58 cabos | 2 h |
 | [7](#etapa-7--ligar-por-etapas) | Ligar por etapas | 1–2 h |
 | [8](#etapa-8--programar-e-rodar) | Programar e rodar | 15 min por programa |
 
@@ -29,10 +29,10 @@ um programa. Cada etapa aponta para o capítulo do manual com os detalhes.
 
 ![Diagrama de blocos](imagens/diagrama-blocos.png)
 
-- **12 módulos + 1 backplane**, todos só com CIs TTL 74LS, EEPROMs 28C16 e 555 — **sem microcontrolador**.
+- **13 módulos (1 opcional) + 1 backplane**, todos só com CIs TTL 74LS, EEPROMs 28C16 e 555 — **sem microcontrolador**.
 - **Barramento de 8 bits** (D0…D7) no backplane, com LEDs para ver os dados passando.
 - **16 bytes de RAM**, programados por chaves DIP.
-- **16 instruções**: `NOP LDA SUB STA ADD LDI JMP AND OR XOR NOT JC JZ OUT HLT`.
+- **16 instruções**: `NOP LDA LDI STA ADD SUB AND OR XOR NOT JMP JC JZ OUT HLT`.
 - **Display decimal** de 4 dígitos (0…255 ou −128…127).
 
 📖 Detalhes: [01-arquitetura.md](01-arquitetura.md) · 📄 [Esquema elétrico completo (PDF)](../hardware/esquema-eletrico-completo.pdf)
@@ -56,7 +56,7 @@ python3 ferramentas/emulador.py programas/01-soma.asm --passos
 
 ---
 
-## Etapa 2 — Mandar fabricar as 13 placas
+## Etapa 2 — Mandar fabricar as 14 placas
 
 ![Pedido das placas](imagens/guia/02-pedido-das-placas.png)
 
@@ -232,7 +232,7 @@ Cores das imagens: **vermelho** = cobre de cima, **azul** = cobre de baixo, **am
 - [ ] 8 cabos diretos: A→ULA (2), B→ULA (2), Saída→Display (2), IR→Controle (opcode), Passos→Controle (T0–T2)
 - [ ] Pino 1 sempre com o fio da mesma cor
 
-📖 Tabela dos 52 cabos: [05-interligacao-e-backplane.md](05-interligacao-e-backplane.md#54-tabela-de-cabos)
+📖 Tabela dos 58 cabos: [05-interligacao-e-backplane.md](05-interligacao-e-backplane.md#54-tabela-de-cabos)
 
 ---
 
@@ -286,9 +286,9 @@ Se algo não bater, use a tabela de problemas comuns em [08-testes-e-diagnostico
 
 ### Checklist final
 
-- [ ] 13 placas montadas e testadas individualmente
+- [ ] 14 placas montadas e testadas individualmente (13 sem a Palavra de Controle)
 - [ ] 4 EEPROMs gravadas e nos lugares certos
-- [ ] 52 cabos ligados (pino 1 com pino 1)
+- [ ] 58 cabos ligados, pino 1 com pino 1 (52 sem a Palavra de Controle)
 - [ ] Fonte de 5 V (não 9 V/12 V!)
 - [ ] `01-soma.asm` mostrando 42 no display
 

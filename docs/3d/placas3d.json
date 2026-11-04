@@ -1814,6 +1814,424 @@
   "stl_kb": 1729,
   "step_kb": 3803
  },
+ "cw-palavra-de-controle": {
+  "placa": "cw-palavra-de-controle",
+  "largura_mm": 144.74,
+  "altura_mm": 82.26,
+  "furos": 215,
+  "vias": 25,
+  "componentes": [
+   {
+    "ref": "J9",
+    "valor": "SAIDA_C",
+    "x": 68.57,
+    "y": 68.44,
+    "lado": "topo"
+   },
+   {
+    "ref": "R7",
+    "valor": "1k",
+    "x": 52.67,
+    "y": 48.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "J12",
+    "valor": "ALIM_DECODIF",
+    "x": 34.07,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "R9",
+    "valor": "1k",
+    "x": 67.27,
+    "y": 48.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "R11",
+    "valor": "1k",
+    "x": 82.21,
+    "y": 48.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED16",
+    "valor": "LED azul 3mm",
+    "x": 119.39,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "U2",
+    "valor": "74HCT541",
+    "x": 63.07,
+    "y": 32.77,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED9",
+    "valor": "LED azul 3mm",
+    "x": 67.27,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "U3",
+    "valor": "74HCT541",
+    "x": 97.82,
+    "y": 32.77,
+    "lado": "topo"
+   },
+   {
+    "ref": "J1",
+    "valor": "ALIMENTACAO",
+    "x": 16.82,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED4",
+    "valor": "LED azul 3mm",
+    "x": 29.76,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED12",
+    "valor": "LED azul 3mm",
+    "x": 89.51,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "R14",
+    "valor": "1k",
+    "x": 106.65,
+    "y": 58.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "H2",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 141.24,
+    "y": 3.5,
+    "lado": "topo"
+   },
+   {
+    "ref": "R16",
+    "valor": "1k",
+    "x": 121.93,
+    "y": 58.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED14",
+    "valor": "LED azul 3mm",
+    "x": 104.11,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "R3",
+    "valor": "1k",
+    "x": 22.45,
+    "y": 48.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "U1",
+    "valor": "74HCT541",
+    "x": 28.32,
+    "y": 32.77,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED11",
+    "valor": "LED azul 3mm",
+    "x": 82.21,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED5",
+    "valor": "LED azul 3mm",
+    "x": 37.4,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "R8",
+    "valor": "1k",
+    "x": 59.97,
+    "y": 48.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED10",
+    "valor": "LED azul 3mm",
+    "x": 74.57,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "R4",
+    "valor": "1k",
+    "x": 32.3,
+    "y": 58.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "R18",
+    "valor": "1k",
+    "x": 137.21,
+    "y": 58.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED8",
+    "valor": "LED azul 3mm",
+    "x": 59.97,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "H3",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 3.5,
+    "y": 78.76,
+    "lado": "topo"
+   },
+   {
+    "ref": "J6",
+    "valor": "ENTRADA_E",
+    "x": 120.32,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "R1",
+    "valor": "1k",
+    "x": 9.71,
+    "y": 58.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "C1",
+    "valor": "100nF",
+    "x": 24.02,
+    "y": 26.45,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED13",
+    "valor": "LED azul 3mm",
+    "x": 96.81,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "R2",
+    "valor": "1k",
+    "x": 17.35,
+    "y": 58.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "J5",
+    "valor": "ENTRADA_D",
+    "x": 103.07,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "R13",
+    "valor": "1k",
+    "x": 96.81,
+    "y": 48.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "H1",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 3.5,
+    "y": 3.5,
+    "lado": "topo"
+   },
+   {
+    "ref": "R10",
+    "valor": "1k",
+    "x": 77.11,
+    "y": 58.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "C2",
+    "valor": "100nF",
+    "x": 58.77,
+    "y": 26.45,
+    "lado": "topo"
+   },
+   {
+    "ref": "J7",
+    "valor": "SAIDA_A",
+    "x": 34.07,
+    "y": 68.44,
+    "lado": "topo"
+   },
+   {
+    "ref": "J4",
+    "valor": "ENTRADA_C",
+    "x": 85.82,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED2",
+    "valor": "LED azul 3mm",
+    "x": 14.81,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "J10",
+    "valor": "SAIDA_D",
+    "x": 85.82,
+    "y": 68.44,
+    "lado": "topo"
+   },
+   {
+    "ref": "R17",
+    "valor": "1k",
+    "x": 129.57,
+    "y": 58.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "C3",
+    "valor": "100nF",
+    "x": 93.52,
+    "y": 26.45,
+    "lado": "topo"
+   },
+   {
+    "ref": "R12",
+    "valor": "1k",
+    "x": 89.51,
+    "y": 48.38,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED6",
+    "valor": "LED azul 3mm",
+    "x": 45.03,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "J2",
+    "valor": "ENTRADA_A",
+    "x": 51.32,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED1",
+    "valor": "LED azul 3mm",
+    "x": 7.18,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "H4",
+    "valor": "MountingHole_3.2mm_M3",
+    "x": 141.24,
+    "y": 78.76,
+    "lado": "topo"
+   },
+   {
+    "ref": "J11",
+    "valor": "SAIDA_E",
+    "x": 103.07,
+    "y": 68.44,
+    "lado": "topo"
+   },
+   {
+    "ref": "R6",
+    "valor": "1k",
+    "x": 47.58,
+    "y": 58.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED18",
+    "valor": "LED azul 3mm",
+    "x": 134.67,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "J3",
+    "valor": "ENTRADA_B",
+    "x": 68.57,
+    "y": 11.83,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED17",
+    "valor": "LED azul 3mm",
+    "x": 127.03,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED7",
+    "valor": "LED azul 3mm",
+    "x": 52.67,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "J8",
+    "valor": "SAIDA_B",
+    "x": 51.32,
+    "y": 68.44,
+    "lado": "topo"
+   },
+   {
+    "ref": "R5",
+    "valor": "1k",
+    "x": 39.94,
+    "y": 58.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED3",
+    "valor": "LED azul 3mm",
+    "x": 22.45,
+    "y": 43.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "R15",
+    "valor": "1k",
+    "x": 114.29,
+    "y": 58.53,
+    "lado": "topo"
+   },
+   {
+    "ref": "LED15",
+    "valor": "LED azul 3mm",
+    "x": 111.75,
+    "y": 43.53,
+    "lado": "topo"
+   }
+  ],
+  "glb_kb": 1449,
+  "stl_kb": 3777,
+  "step_kb": 3022
+ },
  "display-decimal": {
   "placa": "display-decimal",
   "largura_mm": 133.65,

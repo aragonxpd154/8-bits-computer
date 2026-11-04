@@ -162,7 +162,7 @@ def pagina(b, meta, dest, ordem):
 
 
 def indice(bs, meta, ordem):
-    o = ['# As 13 placas — guia detalhado', '',
+    o = ['# As 14 placas — guia detalhado', '',
          '> **Computador 8 Bits v3.0** — projeto de **Marcos Silva dos Santos** (MarcosObel) — GPL-3.0.', '',
          'Cada placa tem uma página com: a função dela no computador, como o circuito funciona, o papel de cada CI, '
          'o significado dos LEDs, o esquemático, a placa em 3D, a pinagem dos conectores, a lista de componentes e '

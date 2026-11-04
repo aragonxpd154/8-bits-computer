@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Gera os modelos 3D das 13 placas do Computador 8 Bits v3.0.
+"""Gera os modelos 3D das 14 placas do Computador 8 Bits v3.0.
 
 Para cada placa:
   hardware/fabricacao/<placa>/<placa>.step   modelo mecanico (abre no FreeCAD/Fusion/KiCad)

@@ -4,10 +4,11 @@
 
 Compre **10 % a mais** de resistores, capacitores, LEDs e barras de pinos, e **1 CI reserva** de cada tipo mais usado (74LS173, 74LS245, 74LS157).
 
-## Totais (todas as 13 placas)
+## Totais (todas as 14 placas)
 
 | Quantidade | Componente |
 |---:|---|
+| 3 | CI 74HCT541 (DIP-20) |
 | 2 | CI 74LS00 (DIP-14) |
 | 4 | CI 74LS04 (DIP-14) |
 | 2 | CI 74LS08 (DIP-14) |
@@ -27,10 +28,10 @@ Compre **10 % a mais** de resistores, capacitores, LEDs e barras de pinos, e **1
 | 2 | CI NE555 (DIP-8) |
 | 1 | CI NE556 (DIP-14) |
 | 1 | 1N5822 |
-| 106 | Barra de pinos macho 1x4 2,54 mm (90 graus ou reta) |
+| 118 | Barra de pinos macho 1x4 2,54 mm (90 graus ou reta) |
 | 1 | Borne 5 V |
 | 3 | Botao tactil 6x6 mm (4 terminais) |
-| 57 | Capacitor 100nF |
+| 60 | Capacitor 100nF |
 | 4 | Capacitor 10nF |
 | 1 | Capacitor 10uF eletrolitico |
 | 1 | Capacitor 10uF tantalo |
@@ -44,7 +45,7 @@ Compre **10 % a mais** de resistores, capacitores, LEDs e barras de pinos, e **1
 | 1 | Display 7 segmentos 4 digitos 0,4" catodo comum (12 pinos) |
 | 1 | Jack DC 5,5x2,1 (5 V) |
 | 7 | LED amarelo 3mm |
-| 1 | LED azul 3mm |
+| 19 | LED azul 3mm |
 | 59 | LED verde 3mm |
 | 10 | LED vermelho 3mm |
 | 1 | PTC 3 A (MF-RG300) |
@@ -55,7 +56,7 @@ Compre **10 % a mais** de resistores, capacitores, LEDs e barras de pinos, e **1
 | 8 | Resistor 100 1/4 W |
 | 1 | Resistor 100k 1/4 W |
 | 6 | Resistor 10k 1/4 W |
-| 14 | Resistor 1k 1/4 W |
+| 32 | Resistor 1k 1/4 W |
 | 3 | Resistor 330 1/4 W |
 | 1 | Resistor 330k 1/4 W |
 | 65 | Resistor 470 1/4 W |
@@ -66,18 +67,18 @@ Compre **10 % a mais** de resistores, capacitores, LEDs e barras de pinos, e **1
 |---:|---|
 | 18 | Soquete DIP-14 (300 mil) |
 | 26 | Soquete DIP-16 (300 mil) |
-| 6 | Soquete DIP-20 (300 mil) |
+| 9 | Soquete DIP-20 (300 mil) |
 | 4 | Soquete DIP-24 largo (600 mil) - ou ZIF 24 pinos |
 | 2 | Soquete DIP-8 (300 mil) |
 
-Total de circuitos integrados: **56** (+ 1 display).
+Total de circuitos integrados: **59** (+ 1 display).
 
 ### Itens gerais
 
 | Quantidade | Item |
 |---:|---|
 | 1 | Fonte 5 V regulada, 2 A ou mais, plugue P4 5,5 x 2,1 mm (centro positivo) |
-| 52 | Cabo jumper femea-femea de 4 vias, 20 cm (ou "cabo flat 4 vias" com conectores Dupont) |
+| 58 | Cabo jumper femea-femea de 4 vias, 20 cm (ou "cabo flat 4 vias" com conectores Dupont) |
 | 1 | Base de MDF/acrilico ~ 60 x 45 cm |
 | 60 | Espacador M3 x 10 mm + parafuso + porca (4 por placa) |
 | 1 | Gravador de EEPROM (TL866II Plus / XGecu T48) - para as 4 EEPROMs 28C16 |
@@ -179,6 +180,16 @@ Total de circuitos integrados: **56** (+ 1 display).
 | 9 | Barra de pinos macho 1x4 2,54 mm (90 graus ou reta) | J1 J2 J3 J4 J5 J6 J7 J8 J9 |
 | 2 | Resistor 10k 1/4 W | R1 R2 |
 | 3 | CI AT28C16 (DIP-24) | U1 U2 U3 |
+
+### Palavra de Controle (opcional) (`CW`)
+
+| Qtd | Componente | Referencias |
+|---:|---|---|
+| 3 | Capacitor 100nF | C1 C2 C3 |
+| 12 | Barra de pinos macho 1x4 2,54 mm (90 graus ou reta) | J1 J2 J3 J4 J5 J6 J7 J8 J9 J10 J11 J12 |
+| 18 | LED azul 3mm | LED1 LED2 LED3 LED4 LED5 LED6 LED7 LED8 LED9 LED10 LED11 LED12 LED13 LED14 LED15 LED16 LED17 LED18 |
+| 18 | Resistor 1k 1/4 W | R1 R2 R3 R4 R5 R6 R7 R8 R9 R10 R11 R12 R13 R14 R15 R16 R17 R18 |
+| 3 | CI 74HCT541 (DIP-20) | U1 U2 U3 |
 
 ### Contador de Passos (`FETCH`)
 

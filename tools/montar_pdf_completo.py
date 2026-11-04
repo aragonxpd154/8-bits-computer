@@ -14,7 +14,7 @@ ROOT = os.path.abspath(os.path.join(HERE, '..'))
 sys.path.insert(0, os.path.join(HERE, 'gerador-kicad'))
 import designs
 
-ORDEM = ['BACKPLANE', 'CLOCK', 'RESET', 'PC', 'RAM', 'IR', 'CD', 'FETCH', 'ACC', 'B', 'ALU', 'OUT', 'DISPLAY']
+ORDEM = ['BACKPLANE', 'CLOCK', 'RESET', 'PC', 'RAM', 'IR', 'CD', 'CW', 'FETCH', 'ACC', 'B', 'ALU', 'OUT', 'DISPLAY']
 
 
 def capa(boards):
@@ -29,7 +29,7 @@ def capa(boards):
     c.setFont('Helvetica-Bold', 30)
     c.drawString(20 * mm, H - 30 * mm, 'Computador 8 Bits  -  v3.0')
     c.setFont('Helvetica', 16)
-    c.drawString(20 * mm, H - 42 * mm, 'Esquema eletrico completo  |  12 modulos + backplane  |  logica TTL 74LS, sem microcontrolador')
+    c.drawString(20 * mm, H - 42 * mm, 'Esquema eletrico completo  |  13 modulos (1 opcional) + backplane  |  logica TTL 74LS, sem microcontrolador')
     c.setFillColor(colors.black)
     c.setFont('Helvetica-Bold', 14)
     c.drawString(20 * mm, H - 75 * mm, 'Autor: Marcos Silva dos Santos (MarcosObel)')
@@ -40,7 +40,7 @@ def capa(boards):
     c.drawString(20 * mm, H - 105 * mm, 'Indice')
     c.setFont('Helvetica', 10)
     y = H - 113 * mm
-    itens = [('1', 'Diagrama de blocos'), ('2', 'Tabela de interligacao (52 cabos)')]
+    itens = [('1', 'Diagrama de blocos'), ('2', 'Tabela de interligacao (58 cabos)')]
     for i, b in enumerate(boards):
         itens.append((str(3 + i), f'{b.title}  ({b.folder})'))
     for n, t in itens:

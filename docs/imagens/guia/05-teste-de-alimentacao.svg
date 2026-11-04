@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-01T15:22:36.067971</dc:date>
+    <dc:date>2026-11-03T21:05:06.071602</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -35,7 +35,7 @@ L 185.76 179.064
 L 185.76 145.8 
 L 51.84 145.8 
 z
-" clip-path="url(#pc6c8071cda)" style="fill: #1a202c"/>
+" clip-path="url(#p7a2b4f8d22)" style="fill: #1a202c"/>
    </g>
    <g id="patch_3">
     <path d="M 61.884 170.748 
@@ -43,7 +43,7 @@ L 75.834 170.748
 L 75.834 154.116 
 L 61.884 154.116 
 z
-" clip-path="url(#pc6c8071cda)" style="fill: #ecc94b"/>
+" clip-path="url(#p7a2b4f8d22)" style="fill: #ecc94b"/>
    </g>
    <g id="patch_4">
     <path d="M 95.364 170.748 
@@ -51,7 +51,7 @@ L 109.314 170.748
 L 109.314 154.116 
 L 95.364 154.116 
 z
-" clip-path="url(#pc6c8071cda)" style="fill: #ecc94b"/>
+" clip-path="url(#p7a2b4f8d22)" style="fill: #ecc94b"/>
    </g>
    <g id="patch_5">
     <path d="M 128.844 170.748 
@@ -59,7 +59,7 @@ L 142.794 170.748
 L 142.794 154.116 
 L 128.844 154.116 
 z
-" clip-path="url(#pc6c8071cda)" style="fill: #ecc94b"/>
+" clip-path="url(#p7a2b4f8d22)" style="fill: #ecc94b"/>
    </g>
    <g id="patch_6">
     <path d="M 162.324 170.748 
@@ -67,17 +67,17 @@ L 176.274 170.748
 L 176.274 154.116 
 L 162.324 154.116 
 z
-" clip-path="url(#pc6c8071cda)" style="fill: #ecc94b"/>
+" clip-path="url(#p7a2b4f8d22)" style="fill: #ecc94b"/>
    </g>
    <g id="patch_7">
     <path d="M 198.919182 162.432 
 Q 224.819692 162.432 248.484134 162.432 
-" clip-path="url(#pc6c8071cda)" style="fill: none; stroke: #4a5568; stroke-width: 2; stroke-linecap: round"/>
+" clip-path="url(#p7a2b4f8d22)" style="fill: none; stroke: #4a5568; stroke-width: 2; stroke-linecap: round"/>
     <path d="M 242.884134 159.632 
 L 248.484134 162.432 
 L 242.884134 165.232 
 z
-" clip-path="url(#pc6c8071cda)" style="fill: #4a5568; stroke: #4a5568; stroke-width: 2; stroke-linecap: round"/>
+" clip-path="url(#p7a2b4f8d22)" style="fill: #4a5568; stroke: #4a5568; stroke-width: 2; stroke-linecap: round"/>
    </g>
    <g id="text_1">
     <!-- Teste de alimentacao de cada placa (antes de colocar os CIs) -->
@@ -2001,7 +2001,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="pc6c8071cda">
+  <clipPath id="p7a2b4f8d22">
    <rect x="7.2" y="7.2" width="781.2" height="293.832"/>
   </clipPath>
  </defs>

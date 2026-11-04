@@ -22,7 +22,7 @@
 
 Transforma **opcode + passo** em **sinais de controle**. É uma tabela gravada em 3 EEPROMs 28C16: o endereço da EEPROM é formado pelo opcode (do IR), pelo passo T0…T2 (do Contador de Passos) e pelas flags; o byte guardado naquele endereço diz quais sinais ligar. Cada EEPROM fornece 8 sinais.
 
-Liga-se diretamente (cabo próprio) a: [Registrador de Instrução (IR)](ir-registrador-instrucao.md), [Contador de Passos](fetch-contador-passos.md). Todo o resto passa pelo [backplane](backplane-barramento.md).
+Liga-se diretamente (cabo próprio) a: [Registrador de Instrução (IR)](ir-registrador-instrucao.md), [Palavra de Controle](cw-palavra-de-controle.md), [Contador de Passos](fetch-contador-passos.md). Todo o resto passa pelo [backplane](backplane-barramento.md).
 
 ## Diagrama de funcionamento
 
@@ -43,6 +43,8 @@ Liga-se diretamente (cabo próprio) a: [Registrador de Instrução (IR)](ir-regi
 **Sinais ativos em 0.** Vários sinais (/PCO, /MAI, /IRI…) ligam em nível baixo. O gerador do microcódigo já grava esses bits invertidos, então nos passos vazios todas as saídas ficam desligadas.
 
 **Flags.** O conector FLAGS (J4) tem pull-down (R1, R2): sem a futura placa de flags, CF = ZF = 0 e `JC`/`JZ` não saltam.
+
+**Sem placa inversora.** Os 11 sinais ativos em 0 já saem invertidos das EEPROMs, então não é preciso nenhum 74LS04 entre o Decodificador e os módulos. Para ver os sinais em LEDs, use a placa opcional [Palavra de Controle](cw-palavra-de-controle.md), que só repete os sinais (não inverte).
 
 ## O que cada parte faz
 
@@ -75,15 +77,15 @@ Todos os conectores são barras de pinos de 2,54 mm. Os nomes dos sinais estão 
 
 | Conector | Nome | Pino 1 | Pino 2 | Pino 3 | Pino 4 | Liga em |
 |---|---|---|---|---|---|---|
-| **J1** | ALIMENTACAO | `+5V` | `+5V` | `GND` | `GND` | backplane J10 (P_CD) |
+| **J1** | ALIMENTACAO | `+5V` | `+5V` | `GND` | `GND` | cabo direto → Palavra de Controle J12 |
 | **J2** | PASSO | `T0` | `T1` | `T2` | `NC` | cabo direto → Contador de Passos J2 |
 | **J3** | OPCODE | `OP3` | `OP2` | `OP1` | `OP0` | cabo direto → Registrador de Instrução (IR) J5 |
 | **J4** | FLAGS | `CF` | `ZF` | `NC` | `NC` | — |
-| **J5** | CTRL_A | `/IRI` | `/RMO` | `RMI` | `/MAI` | backplane J39 (CD_A) |
-| **J6** | CTRL_B | `/PCO` | `/JMP` | `PCI` | `HLT` | backplane J40 (CD_B) |
-| **J7** | CTRL_C | `NOT` | `/ALUO` | `AL0` | `AL1` | backplane J41 (CD_C) |
-| **J8** | CTRL_D | `SUB` | `/ACI` | `/ACO` | `/IRO` | backplane J42 (CD_D) |
-| **J9** | CTRL_E | `/BRI` | `/ORI` | `E0_5` | `E0_4` | backplane J43 (CD_E) |
+| **J5** | CTRL_A | `/IRI` | `/RMO` | `RMI` | `/MAI` | cabo direto → Palavra de Controle J2 |
+| **J6** | CTRL_B | `/PCO` | `/JMP` | `PCI` | `HLT` | cabo direto → Palavra de Controle J3 |
+| **J7** | CTRL_C | `NOT` | `/ALUO` | `AL0` | `AL1` | cabo direto → Palavra de Controle J4 |
+| **J8** | CTRL_D | `SUB` | `/ACI` | `/ACO` | `/IRO` | cabo direto → Palavra de Controle J5 |
+| **J9** | CTRL_E | `/BRI` | `/ORI` | `E0_5` | `E0_4` | cabo direto → Palavra de Controle J6 |
 
 ## Lista de componentes
 
@@ -101,6 +103,7 @@ Todos os conectores são barras de pinos de 2,54 mm. Os nomes dos sinais estão 
 1. Grave as EEPROMs (capítulo 6) e confira com `minipro` que a leitura bate com o .bin.
 2. Ligue IR e Contador de Passos e use o clock MANUAL. Com o opcode 0000 (NOP), em T0 os sinais /PCO e /MAI devem ir a 0 V e em T1 /RMO e /IRI a 0 V e PCI a 5 V.
 3. Mude o opcode para 1110 (OUT) e confira em T2: /ACO = 0 V e /ORI = 0 V.
+4. No PC, rode `python3 firmware/ferramentas/testar.py`: os 14 programas de teste devem dar OK.
 
 ## Atenção
 
@@ -115,4 +118,4 @@ Todos os conectores são barras de pinos de 2,54 mm. Os nomes dos sinais estão 
 - Sinais ativos em nivel baixo agora sao invertidos no microcodigo (ver firmware).
 
 ---
-← [Registrador de Instrução (IR)](ir-registrador-instrucao.md) · [todas as placas](README.md) · [Contador de Passos](fetch-contador-passos.md) →
+← [Registrador de Instrução (IR)](ir-registrador-instrucao.md) · [todas as placas](README.md) · [Palavra de Controle](cw-palavra-de-controle.md) →

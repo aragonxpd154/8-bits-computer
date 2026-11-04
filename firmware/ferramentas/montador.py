@@ -7,6 +7,8 @@ Sintaxe:
     ; comentario
     rotulo: MNEMONICO operando      operando = numero (0..15), rotulo, 0x0F, 0b1010
     rotulo: DB valor                 byte de dado (0..255)
+    .org N                           o proximo byte vai para o endereco N (ex.: dados no fim da RAM)
+Numeros: 14, 0x0E, 0b1110, 0Eh, 1110b, 14d.  Aceita tambem ORL (= OR).
 Saida: tabela endereco -> byte, com a posicao das chaves DIP da placa RAM (1 = chave LIGADA).
 """
 import os, sys, re
@@ -14,12 +16,20 @@ sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'
 from microcodigo import INSTRUCOES
 
 OPC = {v[0]: (k, v[1]) for k, v in INSTRUCOES.items() if not (v[0] == 'NOP' and k != 0)}
+OPC['ORL'] = OPC['OR']     # nome alternativo
 
 
 def num(tok, rot):
     tok = tok.strip()
     if tok in rot:
         return rot[tok]
+    t = tok.lower()
+    if re.fullmatch(r'[0-9a-f]+h', t):           # 0Eh, Ch, 9h  (hexadecimal com sufixo h)
+        return int(t[:-1], 16)
+    if re.fullmatch(r'[01]+b', t):               # 1010b
+        return int(t[:-1], 2)
+    if re.fullmatch(r'[0-9]+d', t):              # 14d
+        return int(t[:-1])
     return int(tok, 0)
 
 
@@ -29,7 +39,10 @@ def montar(texto):
     end = 0
     for nl, l in enumerate(texto.splitlines(), 1):
         l = l.split(';')[0].strip()
-        if not l:
+        if not l or l.lower().startswith('.end'):
+            continue
+        if l.lower().startswith(('.org', 'org ')):             # .org N  -> proximo byte no endereco N
+            end = num(l.split(None, 1)[1], rot)
             continue
         m = re.match(r'^(\w+):\s*(.*)$', l)
         if m:
@@ -39,8 +52,8 @@ def montar(texto):
                 continue
         linhas.append((nl, end, l))
         end += 1
-    if end > 16:
-        raise SystemExit(f'programa tem {end} bytes; a RAM tem so 16')
+    if any(a > 15 for _, a, _ in linhas):
+        raise SystemExit('programa passa do endereco 15; a RAM tem so 16 bytes')
     mem = [0] * 16
     lista = []
     for nl, a, l in linhas:

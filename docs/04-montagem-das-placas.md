@@ -113,6 +113,14 @@ Ordem recomendada de montagem (cada placa testada antes de seguir):
 - **Montagem:** R1, R2 (10 k) → soquetes de 24 pinos **largos (600 mil)** → C1–C3 → J1–J9.
 - **Teste:** com PASSO (J2) e OPCODE (J3) todos em GND (instrução NOP, passo T0), os sinais ativos devem ser apenas `/PCO` e `/MAI` (nível **baixo** em J6.1 e J5.4); os demais sinais ativos-baixos ficam em 5 V e os ativos-altos em 0 V. Use a tabela de sinais em [1. Arquitetura](01-arquitetura.md).
 
+### Palavra de Controle — opcional (`cw-palavra-de-controle`)
+- **CIs:** 3× **74HCT541** (família HCT, não LS) em soquetes de 20 pinos · 18 LEDs azuis 3 mm + 18 resistores de 1 kΩ.
+- **LEDs:** o pad quadrado é o cátodo. Metade dos LEDs fica "de cabeça para baixo" em relação à outra (os dos sinais
+  com barra vão ao +5 V) — siga a serigrafia de cada um, não copie a orientação do vizinho.
+- **Cabos:** backplane P_CD → J1; J12 → J1 do Decodificador; Decodificador J5…J9 → J2…J6; J7…J11 → CD_A…CD_E do backplane.
+- **Teste:** com o Decodificador ligado e o clock em MANUAL, T0 acende PCO e MAI; T1 acende RMO, IRI e PCI.
+  Detalhes: [página da placa](placas/cw-palavra-de-controle.md).
+
 ### Registrador A (`acc-registrador-a`) e Registrador B (`b-registrador-b`)
 - **CIs:** U1, U2 74LS173, U3 74LS245 (as duas placas são idênticas, mudam só os nomes dos sinais).
 - **Montagem:** R1–R8 → soquetes → C1–C3 → LED1–LED8 (LED1 = bit 7, à esquerda) → J1–J6.

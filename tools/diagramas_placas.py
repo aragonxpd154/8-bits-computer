@@ -250,6 +250,23 @@ def cd():
     d.salvar('cd-decodificador-controle')
 
 
+def cw():
+    d = D(16, 7.6, 'Palavra de Controle — repete os sinais e mostra cada um num LED')
+    d.bloco('cd', 0.4, 2.6, 2.6, 2.4, 'Decodificador', 'CTRL_A … CTRL_E\n(20 sinais)', CTL, 10.5)
+    d.bloco('buf', 4.6, 2.2, 3.6, 3.2, '3× 74HCT541', 'buffer octal\nNÃO inverte\n/OE no GND', AZ, 11)
+    d.seta(d.p('cd', 'r'), d.p('buf', 'l'), 'J2…J6', cor=CTL)
+    d.bloco('bp', 12.8, 2.6, 2.8, 2.4, 'Backplane', 'CD_A … CD_E\n→ todos os módulos', CTL, 10.5)
+    d.seta(d.p('buf', 'r'), d.p('bp', 'l'), 'J7…J11 (mesma pinagem)', cor=CTL, pos=0.5)
+    d.bloco('la', 9.0, 5.4, 3.4, 1.4, '11 LEDs (sinais /X)', '+5V → 1 kΩ → LED → saída', VE, 9.5)
+    d.bloco('lh', 9.0, 0.5, 3.4, 1.4, '7 LEDs (sinais X)', 'saída → LED → 1 kΩ → GND', VE, 9.5)
+    d.seta((9.6, 3.8), d.p('la', 'b', 0.2), cor=CI, lw=1.4)
+    d.seta((9.6, 3.8), d.p('lh', 't', 0.2), cor=CI, lw=1.4)
+    d.ext(2.0, 6.6, 'P_CD (5 V) → J1', PWR)
+    d.ext(2.0, 1.2, 'J12 → J1 do Decodificador', PWR)
+    d.nota(4.4, 1.9, 'LED aceso = sinal ATIVO\n(0 V nos sinais com barra, 5 V nos outros)')
+    d.salvar('cw-palavra-de-controle')
+
+
 def fetch():
     d = D(14, 6.6, 'Contador de Passos — T0…T4')
     d.ext(1.2, 4.2, '/CLK', VE)
@@ -324,7 +341,7 @@ def display():
 
 
 def main():
-    backplane(); clock(); reset(); pc(); ram(); cd(); fetch(); alu(); display()
+    backplane(); clock(); reset(); pc(); ram(); cd(); cw(); fetch(); alu(); display()
     registrador('acc-registrador-a', 'Registrador A (acumulador)', '/ACI', '/ACO', BUS, 'A0…A7 → ULA (cabo direto)')
     registrador('b-registrador-b', 'Registrador B', '/BRI', '/BRO (fixo em +5 V)', BUS, 'B0…B7 → ULA (cabo direto)',
                 nota='O registrador B nunca escreve no barramento:\no backplane mantém /BRO desligado.')

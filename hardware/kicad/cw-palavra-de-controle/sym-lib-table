@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "computador8bits")(type "KiCad")(uri "${KIPRJMOD}/../bibliotecas/computador8bits.kicad_sym")(options "")(descr "Computador 8 Bits"))
+)

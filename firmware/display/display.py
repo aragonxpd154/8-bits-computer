@@ -5,7 +5,8 @@ Endereco: A10 = modo (0 = sem sinal 0..255, 1 = com sinal -128..127)
           A9..A8 = digito (0 = unidades/DIG4 ... 3 = DIG1 a esquerda)
           A7..A0 = valor do registrador OUT
 Dados:    IO6=a IO5=b IO4=c IO3=d IO2=e IO1=f IO0=g IO7=ponto  (display catodo comum)
-Zeros a esquerda ficam apagados.
+Zeros a esquerda ficam apagados (DISPLAY.bin). DISPLAY-com-zeros.bin mostra sempre 3 digitos
+("042", "-014"). Grave o que preferir: o hardware e o mesmo.
 """
 import os, sys
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'microcodigo'))
@@ -21,7 +22,7 @@ def digitos_de(v):
     return [int(c) for c in s[::-1]]
 
 
-def imagem():
+def imagem(com_zeros=False):
     rom = bytearray(2048)
     for modo in (0, 1):
         for valor in range(256):
@@ -30,6 +31,8 @@ def imagem():
             for pos in range(4):
                 if pos < len(d):
                     seg = DIGITOS[d[pos]]
+                elif com_zeros and pos < 3:
+                    seg = DIGITOS[0]
                 elif v < 0 and pos == 3:
                     seg = MENOS
                 else:
@@ -43,4 +46,8 @@ if __name__ == '__main__':
     rom = imagem()
     open(os.path.join(out, 'DISPLAY.bin'), 'wb').write(rom)
     open(os.path.join(out, 'DISPLAY.hex'), 'w').write(intel_hex(rom))
+    rz = imagem(com_zeros=True)
+    open(os.path.join(out, 'DISPLAY-com-zeros.bin'), 'wb').write(rz)
+    open(os.path.join(out, 'DISPLAY-com-zeros.hex'), 'w').write(intel_hex(rz))
     print('DISPLAY.bin gerado (grave no U1 da placa Display Decimal)')
+    print('DISPLAY-com-zeros.bin gerado (sempre 3 digitos: 042, -014)')

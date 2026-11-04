@@ -1,6 +1,6 @@
 # Placas em 3D — Computador 8 Bits v3.0
 
-> Modelos 3D das 13 placas — projeto de **Marcos Silva dos Santos** (MarcosObel) — GPL-3.0.
+> Modelos 3D das 14 placas — projeto de **Marcos Silva dos Santos** (MarcosObel) — GPL-3.0.
 
 <p align="center"><a href="https://aragonxpd154.github.io/8-bits-computer/docs/3d/visualizador.html"><img alt="Abrir o 3D Viewer" src="https://img.shields.io/badge/%E2%96%B6%20Abrir%20o%203D%20Viewer-as%2013%20placas%20em%203D-1d5c34?style=for-the-badge&logo=threedotjs&logoColor=white&labelColor=0f3a20" height="36"></a></p>
 

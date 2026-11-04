@@ -1,0 +1,104 @@
+[
+ {
+  "nome": "t01-lda",
+  "titulo": "LDA: carrega um byte da RAM",
+  "saida": [
+   77
+  ]
+ },
+ {
+  "nome": "t02-ldi",
+  "titulo": "LDI: carrega um numero de 0 a 15",
+  "saida": [
+   12
+  ]
+ },
+ {
+  "nome": "t03-sta",
+  "titulo": "STA: grava o acumulador na RAM e le de volta",
+  "saida": [
+   7
+  ]
+ },
+ {
+  "nome": "t04-add",
+  "titulo": "ADD: 100 + 55",
+  "saida": [
+   155
+  ]
+ },
+ {
+  "nome": "t05-add-estouro",
+  "titulo": "ADD com estouro: 200 + 100 = 300 - 256",
+  "saida": [
+   44
+  ]
+ },
+ {
+  "nome": "t06-sub",
+  "titulo": "SUB: 90 - 25",
+  "saida": [
+   65
+  ]
+ },
+ {
+  "nome": "t07-sub-negativo",
+  "titulo": "SUB com resultado negativo: 5 - 9 = -4 (252 sem sinal)",
+  "saida": [
+   252
+  ]
+ },
+ {
+  "nome": "t08-and",
+  "titulo": "AND: 11110000 AND 10101010",
+  "saida": [
+   160
+  ]
+ },
+ {
+  "nome": "t09-or",
+  "titulo": "OR: 11110000 OR 00001111",
+  "saida": [
+   255
+  ]
+ },
+ {
+  "nome": "t10-xor",
+  "titulo": "XOR: 11001100 XOR 10101010",
+  "saida": [
+   102
+  ]
+ },
+ {
+  "nome": "t11-not",
+  "titulo": "NOT: inverte 00001111",
+  "saida": [
+   240
+  ]
+ },
+ {
+  "nome": "t12-jmp",
+  "titulo": "JMP: pula a instrucao LDI 9",
+  "saida": [
+   1
+  ]
+ },
+ {
+  "nome": "t13-laco",
+  "titulo": "Laco com JMP: soma 3 a cada volta",
+  "saida": [
+   0,
+   3,
+   6,
+   9,
+   12
+  ]
+ },
+ {
+  "nome": "t14-nop",
+  "titulo": "NOP nao altera nada",
+  "saida": [
+   5
+  ]
+ }
+]

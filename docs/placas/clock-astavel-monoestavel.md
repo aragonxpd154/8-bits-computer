@@ -126,7 +126,7 @@ Todos os conectores são barras de pinos de 2,54 mm. Os nomes dos sinais estão 
 
 ## O que mudou na v3.0
 
-- R1 150 R -> 1 k (limita a corrente do pino DIS do 556, como no projeto de referencia).
+- R1 150 R -> 1 k: corrente no pino DIS do 556 cai de ~33 mA para 5 mA; faixa 0,7 a 140 Hz.
 - Logica identica ao Clock 2.1V (testado em bancada).
 
 ---

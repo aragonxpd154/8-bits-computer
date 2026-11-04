@@ -8,7 +8,8 @@ import designs, symlib
 ROOT = os.path.abspath(os.path.join(HERE, '..'))
 NOMES = {'CLOCK': 'Clock', 'RESET': 'Reset', 'PC': 'Contador de Programa', 'RAM': 'RAM e MAR', 'IR': 'Reg. Instrucao',
          'CD': 'Decodificador de Controle', 'FETCH': 'Contador de Passos', 'ACC': 'Registrador A', 'B': 'Registrador B',
-         'ALU': 'ULA', 'OUT': 'Registrador de Saida', 'DISPLAY': 'Display Decimal', 'BACKPLANE': 'Backplane'}
+         'ALU': 'ULA', 'OUT': 'Registrador de Saida', 'DISPLAY': 'Display Decimal', 'BACKPLANE': 'Backplane',
+         'CW': 'Palavra de Controle (opcional)'}
 nat = lambda s: [int(t) if t.isdigit() else t for t in re.split(r'(\d+)', s)]
 txt = lambda n: (n or 'NC').replace('~{', '/').replace('}', '')
 
@@ -70,7 +71,7 @@ def md_bom():
          '`tools/gerador-kicad/designs.py`.', '',
          'Compre **10 % a mais** de resistores, capacitores, LEDs e barras de pinos, e **1 CI reserva** de cada '
          'tipo mais usado (74LS173, 74LS245, 74LS157).', '',
-         '## Totais (todas as 13 placas)', '', '| Quantidade | Componente |', '|---:|---|']
+         f'## Totais (todas as {len(designs.all_boards())} placas)', '', '| Quantidade | Componente |', '|---:|---|']
     for k, v in sorted(tot.items(), key=lambda x: (not x[0].startswith('CI'), x[0])):
         o.append(f'| {v} | {k} |')
     o += ['', '### Soquetes (recomendados para todos os CIs)', '', '| Quantidade | Item |', '|---:|---|']
@@ -241,6 +242,13 @@ if __name__ == '__main__' and '--hardware' in sys.argv:
     open(os.path.join(ROOT, 'hardware', 'README.md'), 'w').write(md_hardware('--sem-imagens' not in sys.argv) + '\n')
     preencher('01-arquitetura.md', 'TABELA_SINAIS', md_sinais())
     preencher('05-interligacao-e-backplane.md', 'TABELA_CABOS', md_cabos())
+    # atualiza a tabela de cabos ja preenchida (entre o comentario e a secao seguinte)
+    p5 = os.path.join(ROOT, 'docs', '05-interligacao-e-backplane.md')
+    t5 = open(p5).read()
+    ini, fim = '<!-- tabela gerada por tools/gerar_docs.py -->\n', '\n### Pinos que mudam'
+    if ini in t5 and fim in t5:
+        a, b = t5.index(ini) + len(ini), t5.index(fim)
+        open(p5, 'w').write(t5[:a] + md_cabos() + '\n' + t5[b:])
     for f in ('_tabela_cabos.md', '_tabela_sinais.md'):
         p = os.path.join(ROOT, 'docs', f)
         if os.path.exists(p):

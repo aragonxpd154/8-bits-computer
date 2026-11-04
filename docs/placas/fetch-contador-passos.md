@@ -1,4 +1,4 @@
-# 08 · Contador de Passos
+# 09 · Contador de Passos
 
 > Placa do **Computador 8 Bits v3.0** — projeto de **Marcos Silva dos Santos** (MarcosObel) — GPL-3.0.
 
@@ -107,4 +107,4 @@ Todos os conectores são barras de pinos de 2,54 mm. Os nomes dos sinais estão 
 - Entradas de carga paralela A..D do 74LS161 aterradas (antes flutuando).
 
 ---
-← [Decodificador de Controle](cd-decodificador-controle.md) · [todas as placas](README.md) · [Registrador A (Acumulador)](acc-registrador-a.md) →
+← [Palavra de Controle](cw-palavra-de-controle.md) · [todas as placas](README.md) · [Registrador A (Acumulador)](acc-registrador-a.md) →

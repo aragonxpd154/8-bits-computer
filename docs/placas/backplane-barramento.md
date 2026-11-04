@@ -98,7 +98,7 @@ Todos os conectores são barras de pinos de 2,54 mm. Os nomes dos sinais estão 
 | **J7** | P_OUT | `+5V` | `+5V` | `GND` | `GND` | Registrador de Saída J1 |
 | **J8** | P_PC | `+5V` | `+5V` | `GND` | `GND` | Contador de Programa (PC) J1 |
 | **J9** | P_RAM | `+5V` | `+5V` | `GND` | `GND` | RAM e MAR J1 |
-| **J10** | P_CD | `+5V` | `+5V` | `GND` | `GND` | Decodificador de Controle J1 |
+| **J10** | P_CD | `+5V` | `+5V` | `GND` | `GND` | Palavra de Controle J1 |
 | **J11** | P_FETCH | `+5V` | `+5V` | `GND` | `GND` | Contador de Passos J1 |
 | **J12** | P_CLOCK | `+5V` | `+5V` | `GND` | `GND` | Clock J1 |
 | **J13** | P_RESET | `+5V` | `+5V` | `GND` | `GND` | Reset J1 |
@@ -127,11 +127,11 @@ Todos os conectores são barras de pinos de 2,54 mm. Os nomes dos sinais estão 
 | **J36** | C_RAM2 | `NC` | `NC` | `/RMO` | `NC` | RAM e MAR J3 |
 | **J37** | C_ALU1 | `/ALUO` | `SUB` | `AL0` | `AL1` | ULA (Unidade Lógica e Aritmética) J8 |
 | **J38** | C_ALU2 | `NOT` | `NC` | `NC` | `NC` | ULA (Unidade Lógica e Aritmética) J9 |
-| **J39** | CD_A | `/IRI` | `/RMO` | `RMI` | `/MAI` | Decodificador de Controle J5 |
-| **J40** | CD_B | `/PCO` | `/JMP` | `PCI` | `HLT` | Decodificador de Controle J6 |
-| **J41** | CD_C | `NOT` | `/ALUO` | `AL0` | `AL1` | Decodificador de Controle J7 |
-| **J42** | CD_D | `SUB` | `/ACI` | `/ACO` | `/IRO` | Decodificador de Controle J8 |
-| **J43** | CD_E | `/BRI` | `/ORI` | `E0_5` | `E0_4` | Decodificador de Controle J9 |
+| **J39** | CD_A | `/IRI` | `/RMO` | `RMI` | `/MAI` | Palavra de Controle J7 |
+| **J40** | CD_B | `/PCO` | `/JMP` | `PCI` | `HLT` | Palavra de Controle J8 |
+| **J41** | CD_C | `NOT` | `/ALUO` | `AL0` | `AL1` | Palavra de Controle J9 |
+| **J42** | CD_D | `SUB` | `/ACI` | `/ACO` | `/IRO` | Palavra de Controle J10 |
+| **J43** | CD_E | `/BRI` | `/ORI` | `E0_5` | `E0_4` | Palavra de Controle J11 |
 | **J44** | C_FETCH | `/Y5` | `/CLK` | `/STCLR` | `NC` | Contador de Passos J3 |
 | **J45** | C_CLOCK | `CLK` | `/CLK` | `HLT` | `NC` | Clock J2 |
 | **J46** | C_RESET | `RST` | `/RST` | `/Y5` | `/STCLR` | Reset J2 |

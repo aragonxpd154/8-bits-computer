@@ -2,6 +2,18 @@
 
 Autor: **Marcos Silva dos Santos** (MarcosObel)
 
+## 3.0.2 — 2026-11-03
+- **Nova tabela de opcodes:** LDI = 2, SUB = 5, AND = 6, OR/ORL = 7, XOR = 8, NOT = 9, JMP = A
+  (NOP, LDA, STA, ADD, OUT e HLT não mudaram); JC/JZ nos opcodes B/C. **Regrave as 3 EEPROMs do Decodificador**
+  se já tinha gravado a versão anterior.
+- **Nova placa opcional: Palavra de Controle** (`cw-palavra-de-controle`) — 18 LEDs mostram os sinais de controle
+  em cada passo; 3× 74HCT541 reforçam as saídas das EEPROMs. Liga entre o Decodificador e o backplane, que
+  **não muda** (a alimentação vem do conector P_CD e é repassada ao Decodificador).
+- Montador aceita `.org`, `.end`, `ORL` e números `0Eh`/`1010b`; 14 programas de teste (um por instrução) em
+  `firmware/programas/testes/` e o teste automático `firmware/ferramentas/testar.py`.
+- `DISPLAY-com-zeros.bin`: tabela do display com zeros à esquerda (042, −014).
+- Corrigido o texto sobre o R1 do Clock.
+
 ## 3.0.1 — 2026-11-02
 - **Guia das placas** (`docs/placas/`): uma página por placa com função, explicação do circuito, diagrama de
   funcionamento, papel de cada CI, LEDs, chaves, esquemático em imagem, faces da placa como saem da fábrica,

@@ -1,4 +1,4 @@
-# 11 · ULA (Unidade Lógica e Aritmética)
+# 12 · ULA (Unidade Lógica e Aritmética)
 
 > Placa do **Computador 8 Bits v3.0** — projeto de **Marcos Silva dos Santos** (MarcosObel) — GPL-3.0.
 

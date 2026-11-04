@@ -39,7 +39,7 @@ com esquemas, placas (PCB) e manual para fabricar e montar tudo em casa.
 
 ## 🧠 O que é
 
-Um computador completo de 8 bits dividido em **12 módulos** + **1 backplane** (placa-mãe de interligação):
+Um computador completo de 8 bits dividido em **13 módulos** (um deles opcional) + **1 backplane** (placa-mãe de interligação):
 
 | Módulo | Principais CIs | Função |
 |---|---|---|
@@ -49,6 +49,7 @@ Um computador completo de 8 bits dividido em **12 módulos** + **1 backplane** (
 | [RAM e MAR](docs/placas/ram-mar-memoria.md) | 2× 74S189, 74LS173, 4× 74LS157 | 16 bytes, programação manual por chaves DIP |
 | [Registrador de Instrução](docs/placas/ir-registrador-instrucao.md) | 2× 74LS173, 74LS245 | opcode + operando |
 | [Decodificador de Controle](docs/placas/cd-decodificador-controle.md) | 3× EEPROM 28C16 | microcódigo: 18 sinais de controle |
+| [Palavra de Controle](docs/placas/cw-palavra-de-controle.md) *(opcional)* | 3× 74HCT541 | 18 LEDs: mostra os sinais de controle em cada passo |
 | [Contador de Passos](docs/placas/fetch-contador-passos.md) | 74LS161, 74LS138 | passos T0…T4 |
 | Registrador [A](docs/placas/acc-registrador-a.md) / [B](docs/placas/b-registrador-b.md) | 2× 74LS173 (+ 74LS245) | acumulador e segundo operando |
 | [ULA](docs/placas/alu-unidade-logica-aritmetica.md) | 74LS283, 74LS86, 74LS08, 74LS32, 74LS153 | soma, subtração, AND, OR, XOR, NOT |
@@ -56,7 +57,7 @@ Um computador completo de 8 bits dividido em **12 módulos** + **1 backplane** (
 | [Display Decimal](docs/placas/display-decimal.md) | 28C16, 555, 74LS161, 74LS139 | 0…255 ou −128…127 em 4 dígitos |
 | [Backplane](docs/placas/backplane-barramento.md) | — | 5 V protegido, barramento D0…D7 com LEDs, todos os sinais |
 
-**16 instruções:** `NOP LDA SUB STA ADD LDI JMP AND OR XOR NOT JC JZ OUT HLT` (JC/JZ prontos para uma futura placa de flags).
+**16 instruções:** `NOP LDA LDI STA ADD SUB AND OR XOR NOT JMP JC JZ OUT HLT` (JC/JZ prontos para uma futura placa de flags).
 Detalhes em [docs/01-arquitetura.md](docs/01-arquitetura.md). Clique no nome de um módulo para ver a página dele.
 
 ## 🧊 As placas em 3D
@@ -87,10 +88,11 @@ além do **modelo 3D** (STL que o GitHub mostra girando no navegador, GLB com as
 **Versão 3.0 (novembro/2026)** — projeto completo em **KiCad** (abre no Zorin OS/Ubuntu/Windows):
 
 - [x] Esquemáticos de todos os módulos, com bloco de título e autoria
-- [x] PCBs roteadas de todas as 13 placas, **DRC sem erros** — prontas para fabricação profissional (JLCPCB/PCBWay) e com **serigrafia didática** (sinais nos conectores e LEDs, valores dos componentes)
+- [x] PCBs roteadas de todas as 14 placas, **DRC sem erros** — prontas para fabricação profissional (JLCPCB/PCBWay) e com **serigrafia didática** (sinais nos conectores e LEDs, valores dos componentes)
 - [x] PDFs 1:1 para transferência térmica, fotolitos, mapa de furação e Gerbers para fabricação industrial
 - [x] Backplane (antiga pasta *ASSEMBLY LAYOUT*, que estava vazia) e placa de Reset (que não tinha PCB)
 - [x] Microcódigo completo (Python e C), EEPROM do display, montador e emulador
+- [x] Teste automático do microcódigo: 14 programas de teste, um para cada instrução (`firmware/ferramentas/testar.py`)
 - [x] Revisão de todos os circuitos — 9 erros corrigidos (veja [docs/02-revisao-e-correcoes.md](docs/02-revisao-e-correcoes.md))
 - [x] Manual completo de fabricação, montagem, gravação e uso
 - [x] Página detalhada de cada placa, com diagrama de funcionamento e **modelo 3D** (STL, GLB, STEP e visualizador)
@@ -112,7 +114,7 @@ Manual detalhado, capítulo por capítulo — tudo em português:
 2. [Revisão e correções](docs/02-revisao-e-correcoes.md) — o que mudou desde a versão EasyEDA
 3. [Fabricação das placas](docs/03-fabricacao-das-placas.md) — enviar os Gerbers para a China (JLCPCB/PCBWay)
 4. [Montagem das placas](docs/04-montagem-das-placas.md) — componente por componente, com testes
-5. [Interligação e backplane](docs/05-interligacao-e-backplane.md) — os 52 cabos e o arranjo na base
+5. [Interligação e backplane](docs/05-interligacao-e-backplane.md) — os 58 cabos e o arranjo na base
 6. [Gravação das EEPROMs](docs/06-gravacao-das-eeproms.md) — microcódigo e display com `minipro`
 7. [Programação e uso](docs/07-programacao-e-uso.md) — escrever, montar e rodar programas
 8. [Testes e diagnóstico](docs/08-testes-e-diagnostico.md)
@@ -132,20 +134,20 @@ Manual detalhado, capítulo por capítulo — tudo em português:
 ├── docs/                         MANUAL COMPLETO (pt-BR)
 │   ├── GUIA-VISUAL-PASSO-A-PASSO.md  o projeto inteiro em diagramas, etapa por etapa
 │   ├── placas/                       UMA PÁGINA POR PLACA: função, funcionamento, 3D, esquema, conectores, teste
-│   ├── 3d/                           visualizador 3D, modelos .glb, .stl e texturas das 13 placas
+│   ├── 3d/                           visualizador 3D, modelos .glb, .stl e texturas das 14 placas
 │   ├── pdf/                          guia visual e manual completo em PDF
 │   ├── 01-arquitetura.md             blocos, instruções, tabela de todos os sinais
 │   ├── 02-revisao-e-correcoes.md     erros corrigidos em relação à versão EasyEDA
 │   ├── 03-fabricacao-das-placas.md   como pedir as PCBs no JLCPCB/PCBWay
 │   ├── 04-montagem-das-placas.md     soldagem e teste de cada placa
-│   ├── 05-interligacao-e-backplane.md os 52 cabos e o arranjo na base
+│   ├── 05-interligacao-e-backplane.md os 58 cabos e o arranjo na base
 │   ├── 06-gravacao-das-eeproms.md    gravação com minipro (Zorin/Ubuntu)
 │   ├── 07-programacao-e-uso.md       painel, montador, emulador, exemplos
 │   ├── 08-testes-e-diagnostico.md    subida do sistema e problemas comuns
 │   ├── lista-de-materiais-completa.md
 │   └── imagens/                      diagramas, imagens 2D/3D das placas, esquemas e diagramas de funcionamento
 ├── hardware/
-│   ├── README.md                     tabela das 13 placas (tamanho, imagens, links)
+│   ├── README.md                     tabela das 14 placas (tamanho, imagens, links)
 │   ├── esquema-eletrico-completo.pdf capa + diagrama + interligação + 13 esquemáticos
 │   ├── kicad/<placa>/                projeto KiCad (.kicad_pro / .kicad_sch / .kicad_pcb)
 │   ├── kicad/bibliotecas/            símbolos e footprints do projeto
@@ -154,12 +156,12 @@ Manual detalhado, capítulo por capítulo — tudo em português:
 ├── firmware/
 │   ├── microcodigo/                  EEPROM0/1/2.bin + gerador (Python e C)
 │   ├── display/                      DISPLAY.bin + gerador
-│   ├── programas/                    6 programas de exemplo (.asm)
-│   └── ferramentas/                  montador.py e emulador.py
+│   ├── programas/                    6 exemplos + 14 programas de teste (testes/)
+│   └── ferramentas/                  montador.py, emulador.py e testar.py
 └── tools/                            geradores: hardware (KiCad), 3D, documentação, diagramas, PDFs
 ```
 
-### As 13 placas
+### As 14 placas
 
 | # | Placa (clique para a página) | Pasta |
 |---|---|---|
@@ -170,12 +172,13 @@ Manual detalhado, capítulo por capítulo — tudo em português:
 | 5 | [RAM e MAR](docs/placas/ram-mar-memoria.md) | `ram-mar-memoria` |
 | 6 | [Registrador de Instrução](docs/placas/ir-registrador-instrucao.md) | `ir-registrador-instrucao` |
 | 7 | [Decodificador de Controle](docs/placas/cd-decodificador-controle.md) | `cd-decodificador-controle` |
-| 8 | [Contador de Passos](docs/placas/fetch-contador-passos.md) | `fetch-contador-passos` |
-| 9 | [Registrador A](docs/placas/acc-registrador-a.md) | `acc-registrador-a` |
-| 10 | [Registrador B](docs/placas/b-registrador-b.md) | `b-registrador-b` |
-| 11 | [ULA](docs/placas/alu-unidade-logica-aritmetica.md) | `alu-unidade-logica-aritmetica` |
-| 12 | [Registrador de Saída](docs/placas/out-registrador-saida.md) | `out-registrador-saida` |
-| 13 | [Display Decimal](docs/placas/display-decimal.md) | `display-decimal` |
+| 8 | [Palavra de Controle](docs/placas/cw-palavra-de-controle.md) *(opcional)* | `cw-palavra-de-controle` |
+| 9 | [Contador de Passos](docs/placas/fetch-contador-passos.md) | `fetch-contador-passos` |
+| 10 | [Registrador A](docs/placas/acc-registrador-a.md) | `acc-registrador-a` |
+| 11 | [Registrador B](docs/placas/b-registrador-b.md) | `b-registrador-b` |
+| 12 | [ULA](docs/placas/alu-unidade-logica-aritmetica.md) | `alu-unidade-logica-aritmetica` |
+| 13 | [Registrador de Saída](docs/placas/out-registrador-saida.md) | `out-registrador-saida` |
+| 14 | [Display Decimal](docs/placas/display-decimal.md) | `display-decimal` |
 
 > As versões antigas em EasyEDA (1.0V–3.0V, 2021) ficam preservadas no histórico do Git, na tag
 > [`v2-easyeda`](https://github.com/aragonxpd154/8-bits-computer/tree/v2-easyeda).

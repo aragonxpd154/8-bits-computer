@@ -222,6 +222,9 @@ PLACAS = {
             '**Sinais ativos em 0.** Vários sinais (/PCO, /MAI, /IRI…) ligam em nível baixo. O gerador do microcódigo já '
             'grava esses bits invertidos, então nos passos vazios todas as saídas ficam desligadas.',
             '**Flags.** O conector FLAGS (J4) tem pull-down (R1, R2): sem a futura placa de flags, CF = ZF = 0 e `JC`/`JZ` não saltam.',
+            '**Sem placa inversora.** Os 11 sinais ativos em 0 já saem invertidos das EEPROMs, então não é preciso nenhum '
+            '74LS04 entre o Decodificador e os módulos. Para ver os sinais em LEDs, use a placa opcional '
+            '[Palavra de Controle](cw-palavra-de-controle.md), que só repete os sinais (não inverte).',
         ],
         blocos=[('U1 AT28C16', 'EEPROM2 — sinais de memória, PC e HLT'),
                 ('U2 AT28C16', 'EEPROM1 — sinais da ULA, registrador A e IR'),
@@ -231,12 +234,55 @@ PLACAS = {
         controles=[],
         teste=['Grave as EEPROMs (capítulo 6) e confira com `minipro` que a leitura bate com o .bin.',
                'Ligue IR e Contador de Passos e use o clock MANUAL. Com o opcode 0000 (NOP), em T0 os sinais /PCO e /MAI devem ir a 0 V e em T1 /RMO e /IRI a 0 V e PCI a 5 V.',
-               'Mude o opcode para 1110 (OUT) e confira em T2: /ACO = 0 V e /ORI = 0 V.'],
+               'Mude o opcode para 1110 (OUT) e confira em T2: /ACO = 0 V e /ORI = 0 V.',
+               'No PC, rode `python3 firmware/ferramentas/testar.py`: os 14 programas de teste devem dar OK.'],
         atencao=['Encaixe cada EEPROM no soquete certo: **U1 = EEPROM2.bin, U2 = EEPROM1.bin, U3 = EEPROM0.bin** (etiquete os chips).',
                  'O pino 1 (marca/chanfro) de cada EEPROM fica para o lado indicado na serigrafia. Use soquete de 24 pinos.'],
     ),
+    'CW': dict(
+        ordem=8, nome='Palavra de Controle', icone='💡',
+        resumo='Placa opcional: 18 LEDs mostram, em cada passo, quais sinais de controle o microcódigo ligou.',
+        funcao=(
+            'Mostra a **palavra de controle** — os 18 sinais que o Decodificador liga em cada passo de cada instrução. '
+            'Com o clock em MANUAL dá para ver, passo a passo, por que cada registrador carrega ou escreve no barramento. '
+            'De quebra, os 3 buffers reforçam os sinais que saem das EEPROMs. É **opcional**: sem ela os cabos do '
+            'Decodificador vão direto ao backplane, como antes, e o backplane não muda em nada.'),
+        funcionamento=[
+            '**Onde fica.** Entre o Decodificador e o backplane. Os 5 cabos CTRL_A…CTRL_E do Decodificador entram em '
+            'ENTRADA_A…E (J2…J6); as saídas SAIDA_A…E (J7…J11) vão para CD_A…CD_E no backplane, com a mesma pinagem.',
+            '**Alimentação sem mexer no backplane.** O cabo do conector P_CD do backplane chega em J1 desta placa, e J12 '
+            '(ALIM_DECODIF) repassa os 5 V para o J1 do Decodificador.',
+            '**Buffers (3× 74HCT541).** Cada canal copia a entrada na saída, sem inverter. A família HCT tem entradas '
+            'compatíveis com TTL e saídas CMOS fortes: a EEPROM passa a alimentar só uma entrada CMOS (quase nenhuma '
+            'corrente), e o 74HCT541 é quem aciona os módulos e os LEDs. /OE1 e /OE2 no GND = sempre ligados.',
+            '**LED aceso = sinal ativo.** Nos sinais com barra (ativos em 0) o LED vai do +5 V (via 1 kΩ) até a saída: '
+            'acende quando a saída vai a 0 V. Nos sinais ativos em 1 (HLT, PCI, RMI, SUB, AL0, AL1, NOT) o LED vai da saída '
+            'ao GND (via 1 kΩ). Assim todos os LEDs seguem a mesma regra, sem pensar em polaridade.',
+            '**Não inverte nada.** Os sinais ativos em 0 já saem invertidos das EEPROMs; esta placa só repete e mostra. '
+            'E0_4 e E0_5 (saídas livres da EEPROM0) passam pela placa sem LED.',
+            '**O que esperar.** Em T0 acendem PCO e MAI; em T1, RMO, IRI e PCI — em toda instrução. Em `ADD`: T2 IRO+MAI, '
+            'T3 RMO+BRI, T4 ALUO+ACI. No `HLT` fica aceso só o HLT.',
+        ],
+        blocos=[('U1 74HCT541', 'repete CTRL_A e CTRL_B: /IRI /RMO RMI /MAI /PCO /JMP PCI HLT'),
+                ('U2 74HCT541', 'repete CTRL_C e CTRL_D: NOT /ALUO AL0 AL1 SUB /ACI /ACO /IRO'),
+                ('U3 74HCT541', 'repete CTRL_E: /BRI /ORI E0_5 E0_4 (4 canais livres no GND)'),
+                ('LED1…LED18 + R1…R18', 'um LED por sinal de controle, 1 kΩ cada'),
+                ('J2…J6 / J7…J11', 'entradas do Decodificador / saídas para o backplane'),
+                ('J1 / J12', 'entrada de 5 V (P_CD) / repasse para o Decodificador')],
+        leds=[('LED1…LED4', '/IRI /RMO RMI /MAI'), ('LED5…LED8', '/PCO /JMP PCI HLT'),
+              ('LED9…LED12', 'NOT /ALUO AL0 AL1'), ('LED13…LED16', 'SUB /ACI /ACO /IRO'),
+              ('LED17, LED18', '/BRI /ORI'), ('todos', 'aceso = sinal ATIVO naquele passo')],
+        controles=[],
+        teste=['Só a alimentação (J1 em P_CD), sem cabos de sinal: confira 5 V em J12 e no pino 20 dos três CIs. Com as entradas soltas os LEDs podem acender ao acaso — é normal; por isso **nunca** ligue as saídas no backplane sem o Decodificador conectado nas entradas.',
+               'Com um fio, ponha J2 pino 1 (/IRI) no GND: o LED do /IRI acende. No +5 V: apaga. Repita para alguns sinais ativos em 1 (ex.: HLT, J3 pino 4): acende no +5 V.',
+               'Monte o computador com o Decodificador e o Contador de Passos, clock em MANUAL e RESET: em T0 acendem PCO e MAI, em T1 RMO, IRI e PCI.',
+               'Rode `t04-add.asm` passo a passo e confira os LEDs com a tabela de instruções (capítulo 1).'],
+        atencao=['Use **74HCT541** (não 74LS541): a família HCT tira quase nenhuma corrente da EEPROM e acende bem os LEDs azuis.',
+                 'Lembre de passar o cabo de alimentação: backplane P_CD → J1 desta placa, e J12 → J1 do Decodificador.',
+                 'Sem esta placa, ligue o Decodificador direto no backplane (J1 → P_CD e J5…J9 → CD_A…CD_E): funciona igual, só sem os LEDs.'],
+    ),
     'FETCH': dict(
-        ordem=8, nome='Contador de Passos', icone='👣',
+        ordem=9, nome='Contador de Passos', icone='👣',
         resumo='Conta os passos T0…T4 de cada instrução e avisa (/Y5) quando a instrução terminou.',
         funcao=(
             'Toda instrução é executada em até 5 passos (T0 a T4), um por pulso de clock. Esta placa conta o passo atual, '
@@ -259,7 +305,7 @@ PLACAS = {
         atencao=['Sem a placa de Reset ligada o contador vai até T7 (não há quem gere /STCLR) — monte as duas juntas.'],
     ),
     'ACC': dict(
-        ordem=9, nome='Registrador A (Acumulador)', icone='🅰️',
+        ordem=10, nome='Registrador A (Acumulador)', icone='🅰️',
         resumo='Registrador principal de 8 bits: guarda o resultado das contas e alimenta a ULA.',
         funcao=(
             'O **acumulador** guarda o operando principal e o resultado das operações. Sua saída está sempre ligada à '
@@ -278,7 +324,7 @@ PLACAS = {
         atencao=['Placa idêntica ao Registrador B e ao IR — confira o nome na serigrafia antes de soldar os conectores.'],
     ),
     'B': dict(
-        ordem=10, nome='Registrador B', icone='🅱️',
+        ordem=11, nome='Registrador B', icone='🅱️',
         resumo='Segundo operando da ULA: recebe o valor da RAM nas contas ADD, SUB, AND, OR e XOR.',
         funcao=(
             'Guarda o **segundo operando** das operações. O valor vem da RAM (passo T3 de ADD/SUB/AND/OR/XOR) e fica '
@@ -295,7 +341,7 @@ PLACAS = {
         atencao=[],
     ),
     'ALU': dict(
-        ordem=11, nome='ULA (Unidade Lógica e Aritmética)', icone='➕',
+        ordem=12, nome='ULA (Unidade Lógica e Aritmética)', icone='➕',
         resumo='Faz soma, subtração, AND, OR, XOR e NOT entre A e B; resultado vai ao barramento.',
         funcao=(
             'Calcula, **o tempo todo**, o resultado da operação escolhida entre o registrador A e o registrador B. '
@@ -328,7 +374,7 @@ PLACAS = {
                  'Na v3.0 foram corrigidos dois erros do projeto antigo (AL0/AL1 sem conector e saídas AND em curto com o GND).'],
     ),
     'OUT': dict(
-        ordem=12, nome='Registrador de Saída', icone='📤',
+        ordem=13, nome='Registrador de Saída', icone='📤',
         resumo='Guarda o valor que aparece no display (instrução OUT).',
         funcao=(
             'Guarda o número que o programa quer mostrar. Na instrução `OUT` o valor de A passa pelo barramento e é '
@@ -344,7 +390,7 @@ PLACAS = {
         atencao=[],
     ),
     'DISPLAY': dict(
-        ordem=13, nome='Display Decimal', icone='🔟',
+        ordem=14, nome='Display Decimal', icone='🔟',
         resumo='Mostra o valor do registrador de saída em decimal, 0…255 ou −128…127, em 4 dígitos.',
         funcao=(
             'Converte o número binário de 8 bits em **decimal** e mostra num display de 4 dígitos de 7 segmentos. '
@@ -375,6 +421,6 @@ PASTAS = {
     'BACKPLANE': 'backplane-barramento', 'CLOCK': 'clock-astavel-monoestavel', 'RESET': 'reset-circuito',
     'PC': 'pc-contador-programa', 'RAM': 'ram-mar-memoria', 'IR': 'ir-registrador-instrucao',
     'CD': 'cd-decodificador-controle', 'FETCH': 'fetch-contador-passos', 'ACC': 'acc-registrador-a',
-    'B': 'b-registrador-b', 'ALU': 'alu-unidade-logica-aritmetica', 'OUT': 'out-registrador-saida',
+    'B': 'b-registrador-b', 'CW': 'cw-palavra-de-controle', 'ALU': 'alu-unidade-logica-aritmetica', 'OUT': 'out-registrador-saida',
     'DISPLAY': 'display-decimal',
 }

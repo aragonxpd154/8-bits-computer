@@ -32,7 +32,9 @@ y:      DB 14
 ```
 
 - Cada linha ocupa **1 byte** (16 bytes no total): instrução + operando de 4 bits, ou `DB` (dado de 8 bits).
-- Rótulos (`x:`) viram o endereço da linha. Operandos aceitam decimal, `0x0F`, `0b1010` ou rótulo.
+- Rótulos (`x:`) viram o endereço da linha. Operandos aceitam decimal, `0x0F`, `0b1010`, `0Eh`, `1010b` ou rótulo.
+- `.org N` coloca o próximo byte no endereço N (útil para dados no fim da RAM). `.end` e `ORL` (= `OR`) também são aceitos,
+  (`.org 0h`, `lda Ch`, `orl Eh` também funcionam).
 
 ### Montar (gera a tabela das chaves)
 
@@ -93,7 +95,36 @@ Acompanhe nos LEDs: Passos (T0…T4), PC, endereço da RAM, IR (opcode/operando)
 | `05-logica.asm` | AND, OR, XOR, NOT de 0xF0 e 0x3C | 48, 252, 204, 15 |
 | `06-multiplica-por-soma.asm` | tabuada do 7 por soma repetida | 7, 14, 21, 28 … |
 
-Todos foram verificados no emulador com os binários finais das EEPROMs.
+### Programas de teste (`firmware/programas/testes/`)
+
+Um programa curto para cada instrução — bom para testar o computador montado, uma instrução por vez:
+
+| Arquivo | Testa | Resultado no display |
+|---|---|---|
+| `t01-lda.asm` | LDA | 77 |
+| `t02-ldi.asm` | LDI | 12 |
+| `t03-sta.asm` | STA (grava e lê de volta) | 7 |
+| `t04-add.asm` | ADD 100 + 55 | 155 |
+| `t05-add-estouro.asm` | ADD 200 + 100 (passa de 255) | 44 |
+| `t06-sub.asm` | SUB 90 − 25 | 65 |
+| `t07-sub-negativo.asm` | SUB 5 − 9 | 252 (−4 com a chave "com sinal") |
+| `t08-and.asm` | 11110000 AND 10101010 | 160 (10100000) |
+| `t09-or.asm` | 11110000 OR 00001111 | 255 |
+| `t10-xor.asm` | 11001100 XOR 10101010 | 102 (01100110) |
+| `t11-not.asm` | NOT 00001111 | 240 (11110000) |
+| `t12-jmp.asm` | JMP pula uma instrução | 1 |
+| `t13-laco.asm` | laço com JMP, +3 por volta | 0, 3, 6, 9 … |
+| `t14-nop.asm` | NOP | 5 |
+
+### Conferir tudo de uma vez
+
+```bash
+cd firmware
+python3 ferramentas/testar.py
+```
+
+O teste monta cada programa, roda no emulador com os binários finais das EEPROMs (verificando conflito
+no barramento) e compara o resultado com o esperado.
 
 ## 7.6 Conjunto de instruções (resumo)
 
@@ -101,15 +132,15 @@ Todos foram verificados no emulador com os binários finais das EEPROMs.
 |---|---|---|
 | 0 | `NOP` | nada |
 | 1 | `LDA end` | A ← RAM[end] |
-| 2 | `SUB end` | A ← A − RAM[end] |
+| 2 | `LDI n` | A ← n (0…15) |
 | 3 | `STA end` | RAM[end] ← A |
 | 4 | `ADD end` | A ← A + RAM[end] |
-| 5 | `LDI n` | A ← n (0…15) |
-| 6 | `JMP end` | PC ← end |
-| 7 | `AND end` | A ← A AND RAM[end] |
-| 8 | `OR end` | A ← A OR RAM[end] |
-| 9 | `XOR end` | A ← A XOR RAM[end] |
-| A | `NOT` | A ← NOT A |
+| 5 | `SUB end` | A ← A − RAM[end] |
+| 6 | `AND end` | A ← A AND RAM[end] |
+| 7 | `OR end` (ou `ORL`) | A ← A OR RAM[end] |
+| 8 | `XOR end` | A ← A XOR RAM[end] |
+| 9 | `NOT` | A ← NOT A |
+| A | `JMP end` | PC ← end |
 | B | `JC end` | salta se carry (requer placa de flags) |
 | C | `JZ end` | salta se zero (requer placa de flags) |
 | E | `OUT` | display ← A |

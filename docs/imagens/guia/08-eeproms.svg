@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-01T15:22:36.683233</dc:date>
+    <dc:date>2026-11-03T21:05:06.614422</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -35,7 +35,7 @@ L 520.56 251.136
 L 520.56 73.728 
 L 40.68 73.728 
 z
-" clip-path="url(#p89c2f140f0)" style="fill: #c6f6d5; stroke: #2f855a; stroke-width: 2; stroke-linejoin: miter"/>
+" clip-path="url(#p46e5784333)" style="fill: #c6f6d5; stroke: #2f855a; stroke-width: 2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_3">
     <path d="M 63 206.784 
@@ -43,7 +43,7 @@ L 191.34 206.784
 L 191.34 145.8 
 L 63 145.8 
 z
-" clip-path="url(#p89c2f140f0)" style="fill: #1a202c"/>
+" clip-path="url(#p46e5784333)" style="fill: #1a202c"/>
    </g>
    <g id="patch_4">
     <path d="M 216.45 206.784 
@@ -51,7 +51,7 @@ L 344.79 206.784
 L 344.79 145.8 
 L 216.45 145.8 
 z
-" clip-path="url(#p89c2f140f0)" style="fill: #1a202c"/>
+" clip-path="url(#p46e5784333)" style="fill: #1a202c"/>
    </g>
    <g id="patch_5">
     <path d="M 369.9 206.784 
@@ -59,7 +59,7 @@ L 498.24 206.784
 L 498.24 145.8 
 L 369.9 145.8 
 z
-" clip-path="url(#p89c2f140f0)" style="fill: #1a202c"/>
+" clip-path="url(#p46e5784333)" style="fill: #1a202c"/>
    </g>
    <g id="patch_6">
     <path d="M 565.2 251.136 
@@ -67,7 +67,7 @@ L 754.92 251.136
 L 754.92 73.728 
 L 565.2 73.728 
 z
-" clip-path="url(#p89c2f140f0)" style="fill: #feebc8; stroke: #c05621; stroke-width: 2; stroke-linejoin: miter"/>
+" clip-path="url(#p46e5784333)" style="fill: #feebc8; stroke: #c05621; stroke-width: 2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_7">
     <path d="M 595.89 206.784 
@@ -75,7 +75,7 @@ L 724.23 206.784
 L 724.23 145.8 
 L 595.89 145.8 
 z
-" clip-path="url(#p89c2f140f0)" style="fill: #1a202c"/>
+" clip-path="url(#p46e5784333)" style="fill: #1a202c"/>
    </g>
    <g id="text_1">
     <!-- Gravacao das EEPROMs - qual arquivo vai em qual chip -->
@@ -2609,7 +2609,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="p89c2f140f0">
+  <clipPath id="p46e5784333">
    <rect x="7.2" y="7.2" width="781.2" height="310.464"/>
   </clipPath>
  </defs>

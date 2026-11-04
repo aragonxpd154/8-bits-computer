@@ -8,6 +8,7 @@
 - Jumpers macho-fêmea para forçar níveis (+5 V / GND) nas barras de pinos.
 - Clock em **MANUAL**: o computador pode ser executado um passo por vez, indefinidamente devagar.
 - O **emulador** (`firmware/ferramentas/emulador.py --passos`) mostra, passo a passo, o que cada LED deveria mostrar — compare com a placa real.
+- `firmware/ferramentas/testar.py` confere o microcódigo com os 14 programas de teste (um por instrução) e com os exemplos do projeto. Rode depois de qualquer mudança no `microcodigo.py`.
 
 ## 8.2 Subida do sistema (bring-up) em etapas
 

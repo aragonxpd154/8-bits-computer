@@ -1,4 +1,4 @@
-# 09 · Registrador A (Acumulador)
+# 10 · Registrador A (Acumulador)
 
 > Placa do **Computador 8 Bits v3.0** — projeto de **Marcos Silva dos Santos** (MarcosObel) — GPL-3.0.
 
