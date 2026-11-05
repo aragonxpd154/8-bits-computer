@@ -1,6 +1,6 @@
 # 02 · Clock
 
-> Placa do **Computador 8 Bits v3.0** — projeto de **Marcos Silva dos Santos** (MarcosObel) — GPL-3.0.
+> Placa do **Computador 8 Bits v3.0** - projeto de **Marcos Silva dos Santos** (MarcosObel) - GPL-3.0.
 
 **Gera o "batimento" do computador: automático (0,7–140 Hz) ou passo a passo, e para no HLT.**
 
@@ -20,19 +20,19 @@
 
 ## Função
 
-Produz o sinal **CLK** que sincroniza todo o computador, e o seu inverso **/CLK**. Há dois modos: **AUTOMÁTICO**, com velocidade ajustável no potenciômetro, e **MANUAL**, em que cada toque no botão PASSO gera exatamente um pulso — ideal para ver cada passo da instrução nos LEDs. Quando o programa executa `HLT`, o sinal HLT chega aqui e trava o clock.
+Produz o sinal **CLK** que sincroniza todo o computador, e o seu inverso **/CLK**. Há dois modos: **AUTOMÁTICO**, com velocidade ajustável no potenciômetro, e **MANUAL**, em que cada toque no botão PASSO gera exatamente um pulso - ideal para ver cada passo da instrução nos LEDs. Quando o programa executa `HLT`, o sinal HLT chega aqui e trava o clock.
 
 ## Diagrama de funcionamento
 
-![Diagrama de funcionamento — Clock](../imagens/placas-funcionamento/clock-astavel-monoestavel.png)
+![Diagrama de funcionamento - Clock](../imagens/placas-funcionamento/clock-astavel-monoestavel.png)
 
 <sub>Laranja = barramento/dados · roxo = sinais de controle do microcódigo · verde = clock e reset · cinza = sinais internos da placa.</sub>
 
 ## Como funciona
 
-**Metade 1 do NE556 — astável.** Oscila sozinho, carregando e descarregando C1 (10 µF) através de R1 (1 kΩ) e do potenciômetro RV1 (100 kΩ). A frequência é f ≈ 1,44 / ((R1 + 2·RV1) · C1): de **≈ 0,7 Hz** (RV1 no máximo) até **≈ 140 Hz** (RV1 no mínimo). R2 (10 Ω) evita curto quando o potenciômetro está em zero.
+**Metade 1 do NE556 - astável.** Oscila sozinho, carregando e descarregando C1 (10 µF) através de R1 (1 kΩ) e do potenciômetro RV1 (100 kΩ). A frequência é f ≈ 1,44 / ((R1 + 2·RV1) · C1): de **≈ 0,7 Hz** (RV1 no máximo) até **≈ 140 Hz** (RV1 no mínimo). R2 (10 Ω) evita curto quando o potenciômetro está em zero.
 
-**Metade 2 do NE556 — monoestável.** O botão PASSO (SW1) dispara um único pulso de t ≈ 1,1 · R5 · C4 = 1,1 · 330 kΩ · 330 nF ≈ 0,12 s. Como o pulso tem duração fixa, o **repique** (bounce) do botão é ignorado: um toque = um pulso.
+**Metade 2 do NE556 - monoestável.** O botão PASSO (SW1) dispara um único pulso de t ≈ 1,1 · R5 · C4 = 1,1 · 330 kΩ · 330 nF ≈ 0,12 s. Como o pulso tem duração fixa, o **repique** (bounce) do botão é ignorado: um toque = um pulso.
 
 **Seleção do modo.** A chave AUTO/MANUAL (SW2) é invertida duas vezes pelo 74LS04 (sinal MODE limpo). Três portas NAND do 74LS00 formam um multiplexador: quando MODE = 1 passa o astável, quando MODE = 0 passa o monoestável.
 
@@ -66,7 +66,7 @@ C2 e C3 (10 nF) estabilizam o pino de controle (CV) de cada 555; C5…C7 são de
 
 ## Esquemático
 
-[![Esquemático — Clock](../imagens/esquemas/clock-astavel-monoestavel.png)](../../hardware/fabricacao/clock-astavel-monoestavel/0-esquematico.pdf)
+[![Esquemático - Clock](../imagens/esquemas/clock-astavel-monoestavel.png)](../../hardware/fabricacao/clock-astavel-monoestavel/0-esquematico.pdf)
 
 <sub>Clique para abrir o PDF em alta resolução. Sinais com barra (ex.: /RST) são ativos em nível baixo.</sub>
 
@@ -113,7 +113,7 @@ Todos os conectores são barras de pinos de 2,54 mm. Os nomes dos sinais estão 
 
 ## Como testar
 
-1. Ligue só esta placa ao backplane e ponha o pino HLT (J2-3) no GND com um fio — sem o Decodificador a entrada fica solta, e entrada TTL solta vale 1 (clock parado).
+1. Ligue só esta placa ao backplane e ponha o pino HLT (J2-3) no GND com um fio - sem o Decodificador a entrada fica solta, e entrada TTL solta vale 1 (clock parado).
 2. Em AUTO, o LED azul pisca; girando RV1 a velocidade muda de ~1 a muitas piscadas por segundo.
 3. Em MANUAL, cada toque em PASSO acende o LED uma única vez.
 4. Passe o fio do HLT do GND para o +5 V: o clock para. Volte para o GND: funciona de novo.
