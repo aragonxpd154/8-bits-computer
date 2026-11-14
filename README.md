@@ -5,7 +5,7 @@
 
 <h4 align="center">
 
-Computador de 8 bits feito só com lógica TTL (série 74LS), EEPROMs e temporizadores 555 —
+Computador de 8 bits feito só com lógica TTL (série 74LS), EEPROMs e temporizadores 555  
 **sem microcontrolador, sem CPU pronta**, "como antigamente". Projeto educacional e hobby,
 com esquemas, placas (PCB) e manual para fabricar e montar tudo em casa.
 
@@ -76,7 +76,7 @@ Arranjo, medidas e comprimento de cada cabo: [docs/05-interligacao-e-backplane.m
 ## 🧊 As placas em 3D
 
 Cada placa tem uma **página própria** explicando a função dela no computador, como o circuito funciona, o papel
-de cada CI, o que cada LED mostra, o esquemático, a pinagem dos conectores, a lista de componentes e como testar —
+de cada CI, o que cada LED mostra, o esquemático, a pinagem dos conectores, a lista de componentes e como testar  
 além do **modelo 3D** (STL que o GitHub mostra girando no navegador, GLB com as cores reais e STEP para CAD).
 
 <p align="center"><a href="https://aragonxpd154.github.io/8-bits-computer/docs/3d/visualizador.html"><img alt="Abrir o 3D Viewer" src="https://img.shields.io/badge/%E2%96%B6%20Abrir%20o%203D%20Viewer-as%2013%20placas%20em%203D-1d5c34?style=for-the-badge&logo=threedotjs&logoColor=white&labelColor=0f3a20" height="36"></a></p>
